@@ -15,7 +15,7 @@ const Skills = () => {
        <ProgressBar  now={90} label="90%" variant="secondary" />
       </div>
       <div className="p-2 f">
-      <Form.Label>SYSTEM DESIGN</Form.Label>
+      <Form.Label>RESPONSIVE WEB DESIGN</Form.Label>
       <ProgressBar  now={95} label="95%"  variant="secondary" />
       </div>
       <div className="p-2">
@@ -23,7 +23,7 @@ const Skills = () => {
       <ProgressBar  now={100} label="100%" variant="secondary" />
       </div>
       <div className="p-2">
-      <Form.Label>API DEV</Form.Label>
+      <Form.Label>API</Form.Label>
       <ProgressBar  now={100} label="100%" variant="secondary" />
       </div>
       <div className="p-2">
@@ -31,7 +31,7 @@ const Skills = () => {
       <ProgressBar  now={90} label="90%" variant="secondary" />
       </div>
       <div className="p-2">
-      <Form.Label>LOAD BALANCING</Form.Label>
+      <Form.Label>DATA STRUCTURE</Form.Label>
       <ProgressBar  now={90} label="90%" variant="secondary" />
       </div>
     </Row>

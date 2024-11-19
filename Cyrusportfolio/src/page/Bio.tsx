@@ -5,7 +5,7 @@ import { useState, useEffect } from "react";
 import  {Container, Image, Col, Row, Stack} from "react-bootstrap"
 
 
-import profile from "../assets/images/cyrusAi.png"
+import profile from "../assets/images/cyruspics.png"
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
 import { Link } from "react-router-dom";
@@ -81,10 +81,10 @@ const Bio = () => {
     <Stack direction="horizontal" style={{marginTop:"100px"}} gap={3}>
       <div className="p-2">
         <Row>
-          <p className="fs-3">FIND  ME</p>
-        <Col className="socail p-1"><Link to="https://www.linkedin.com/in/emmanuel-adeyemi-464ba5227"><i className='bx bxl-linkedin bx-border border border-light  bx-md'></i></Link></Col>
-        <Col className="socail p-1"><Link to="https://github.com/cyrus-nodejs"><i className='bx bxl-github bx-border bx-md border border-light'></i></Link></Col>
-        <Col className="socail p-1"><Link to="https://x.com/cyrus_nodejs"><i className='bx bxl-twitter bx-border border border-light bx-md'></i></Link></Col>
+          <p className="fs-6">FIND  ME</p>
+        <Col className="socail p-1"><Link to="https://www.linkedin.com/in/emmanuel-adeyemi-464ba5227"><i className='bx bxl-linkedin bx-border border border-light  bx-sm'></i></Link></Col>
+        <Col className="socail p-1"><Link to="https://github.com/cyrus-nodejs"><i className='bx bxl-github bx-border bx-sm border border-light'></i></Link></Col>
+        <Col className="socail p-1"><Link to="https://x.com/cyrus_nodejs"><i className='bx bxl-twitter bx-border border border-light bx-sm'></i></Link></Col>
      
         </Row>
       </div>

@@ -13,14 +13,17 @@ const ProjectCard = ({ imgL,title, field, url }) => {
     <Row style={{ display:"inline-flex"}} >
 
     <Col  className="Projectframe "    >
+    <div className="proj-imgbx">
       <Image className="pImage" src={imgL}  style={{borderRadius:"5px", margin:""}} fluid />
-     
-  <Link to={url}><div className="d-flex bg-dark rounded-2 flex-column middle ">
-  <div className="p-1">{title}</div>
-  <div className="p-1">{field}</div>
-  <div className="p-1 stack">Click to Visit</div>
+      <Link to={url} className="text-decoration-none text-reset">
+  <div className="proj-txtx " >
+  <h5 className="text-center ">{title}</h5>
+  <h6 className="text-center">{field}</h6>
+  <span className="text-center stack">Click to Visit</span>
 </div>
+
 </Link>
+</div>
   </Col>
   
 
