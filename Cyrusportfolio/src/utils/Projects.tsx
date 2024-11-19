@@ -5,15 +5,6 @@ import Soundlg from "../assets/images/soundplanet.netlify.app_(Nest Hub).png"
 import SwiftLg from "../assets/images/swiftLG.png"
 
 
-// interface Project {
-//     title: string,
-// field: string,
-// imgL:string,
-// imgS:string,
-// imgM:string,
-// imgX:string,
-// Frontend:string,
-//   }
 export const Projects  = [
    
     {
@@ -34,7 +25,7 @@ export const Projects  = [
     {
         title:"Logistic",
         field:"REACT APP ",
-        url:"https://swiftlogistic.netlify.app/",
+        url:"https://github.com/cyrus-nodejs/logistic",
         imgL:SwiftLg,
         
     },
