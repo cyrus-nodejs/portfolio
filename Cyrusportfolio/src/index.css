@@ -1,0 +1,228 @@
+
+* {
+  box-sizing: border-box;
+  text-align: left;
+  background: rgb(6,6,6);
+background: -moz-linear-gradient(0deg, rgba(6,6,6,1) 50%, rgba(5,1,1,0.700717787114846) 100%);
+background: -webkit-linear-gradient(0deg, rgba(6,6,6,1) 50%, rgba(5,1,1,0.700717787114846) 100%);
+background: linear-gradient(0deg, rgba(6,6,6,1) 50%, rgba(5,1,1,0.700717787114846) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#060606",endColorstr="#050101",GradientType=1);
+  line-height: 1.5;
+  font-weight: 400;
+  /* color: rgba(255, 255, 255, 0.87); */
+  color:white;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color-scheme: light dark;
+}
+
+
+
+/* .navpad{
+  padding-top: 70px;
+} */
+
+
+
+
+.resumelink{
+  
+  color:white;
+  font-weight: 500;
+  font-size: large;
+  height: 70px;
+}
+
+.resumelink:hover{
+  color:#00171f;
+  
+}
+
+.nav-link{
+  color: white;
+}
+
+.features{
+  width: 1000px;
+  margin: 10px;
+}
+
+
+.Designrange{
+  height:5px;
+  border: #242424;
+  box-shadow: #242424;
+  background-color: rgb(219, 28, 28);;
+}
+
+
+
+.Educationframe{
+margin: 10px;
+width: 90%;
+border-radius: 10px;
+
+
+}
+
+.education{
+
+}
+
+
+.stack{
+  color:rgb(255, 0, 0);
+}
+.Skillframe{
+
+ 
+border-radius: 5px;
+
+margin:30px;
+width:300px;
+height:250px;
+}
+
+.Projectframe{
+
+  position: relative;
+ border-radius: 5px;
+ margin:30px;
+ max-width:300px;
+ max-height:200px;
+ }
+ 
+
+
+
+/* .Skillframe:hover{
+ transition: 0.4s ease-in-out;
+ background-color: #181818;
+ } */
+
+
+
+.bg{
+  background: rgb(25,20,20);
+background: linear-gradient(360deg, rgba(25,20,20,0) 40%, rgba(42,54,54,0.5382528011204482) 87%);
+}
+
+.Projectframe:hover .pImage {
+  opacity: 0.2;
+}
+
+.Projectframe:hover .middle {
+  opacity: 1;
+}
+
+.pImage{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0,);
+  width:270px;
+  height: 190px;
+  transition: width 1s, height 1s;
+  transition-timing-function: linear;
+  opacity: 1;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background: transparent;
+}
+.text {
+  font-size: 32px;
+
+  background: transparent;
+  color: #00171f;
+  font-weight: 500;
+}
+
+.profile{
+
+  z-index: 3;
+}
+
+.profile:hover{
+  transform: rotate(20deg);
+  background: rgb(25,20,20);
+background: linear-gradient(360deg, rgba(25,20,20,0) 40%, rgba(42,54,54,0.5382528011204482) 87%);
+}
+  .pbox{
+    background: rgb(25,20,20);
+background: linear-gradient(360deg, rgba(25,20,20,0) 40%, rgba(42,54,54,0.5382528011204482) 87%);
+  }
+.Resume{
+  width:350px;
+  height:70px;
+  border: 1px solid  #181818;;
+box-shadow: 5px 10px 10px #000000;
+border-radius: 5px;
+background-color: #181818;
+}
+
+.Contactframe{
+  box-shadow: 5px 10px 18px #000000;
+  border-radius: 5px;
+  margin:0px;
+}
+
+.img-hover img {
+  -webkit-transition: all .3s ease; /* Safari and Chrome */
+  -moz-transition: all .3s ease; /* Firefox */
+  -o-transition: all .3s ease; /* IE 9 */
+  -ms-transition: all .3s ease; /* Opera */
+  transition: all .3s ease;
+  position:relative;
+}
+.img-hover img:hover {
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-transform:translateZ(0) scale(1.20); /* Safari and Chrome */
+  -moz-transform:scale(1.20); /* Firefox */
+  -ms-transform:scale(1.20); /* IE 9 */
+  -o-transform:translatZ(0) scale(1.20); /* Opera */
+  transform:translatZ(0) scale(1.20);
+}
+
+.img-hover:hover:after {
+  content:"";
+  position:absolute;
+  top:0;
+  left:0;
+  z-index:2;
+  width:30px;
+  height:30px;
+  border:1px solid #000;
+}
+
+.grayscale {
+-webkit-filter: brightness(1.10) grayscale(100%) contrast(90%);
+-moz-filter: brightness(1.10) grayscale(100%) contrast(90%);
+filter: brightness(1.10) grayscale(100%); 
+}
+
+
+
+
+@media (max-width : 992px) {
+ 
+  
+  .offcanvas {
+    width : 250px !important;
+    background:rgba(16, 45, 53, 0.836) ;
+  }
+
+ 
+}
+
+
+  
