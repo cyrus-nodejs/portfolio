@@ -16,7 +16,7 @@ const Education = () => {
       <Row  className="Educationframe education" >
         <Col className="education ">
      
-      <p className="education fw-medium fs-5">2022</p>
+      <p className="education  fw-medium fs-5">2022</p>
     <p className="education fs-4 fw-medium">The Complete 2022 Web Development Bootcamp</p>
     <p className="fs-6 education ">Udemy  </p>
       </Col>
@@ -24,7 +24,7 @@ const Education = () => {
       <Row  className="Educationframe education" >
         <Col className="education">
       
-      <p className="stack fw-medium fs-5 education">2023</p>
+      <p className=" fw-medium fs-5 education">2023</p>
     <p className="text-white fs-4 fw-medium education">Legacy Javscript ALgorithms & Data Structure </p>
     <p className="fs-6 education">FreeCode Camp,  </p>
 
@@ -33,7 +33,7 @@ const Education = () => {
       </Row>
       <Row  className="Educationframe education" >
       <Col className="education">
-      <p className="stack fw-medium fs-5 education">Current</p>
+      <p className=" fw-medium fs-5 education">Current</p>
     <p className="text-white fs-4 fw-medium education">CS50's Introduction to Computer Science</p>
     <p className="fs-6 education">Harvard University </p>
       </Col>
@@ -61,7 +61,7 @@ const Education = () => {
         <Col className="education">
    
       
-   <p className="stack fw-medium  education fs-5">2015</p>
+   <p className=" fw-medium  education fs-5">2015</p>
  <p className="text-white education fs-4 fw-medium">Prince Abubakar Audu University </p>
  <p className="fs-6 education fw-medium">B. Agric </p>
    </Col>
