@@ -34,7 +34,8 @@ const Education = () => {
       <Row  className="Educationframe education" >
       <Col className="education">
       <p className=" fw-medium fs-5 education">Current</p>
-    <p className="text-white fs-4 fw-medium education">CS50's Introduction to Computer Science</p>
+    <p className="text-white fs-4 fw-medium education">CS50's Introduction to Artificial Intelligence with Python
+    </p>
     <p className="fs-6 education">Harvard University </p>
       </Col>
       
