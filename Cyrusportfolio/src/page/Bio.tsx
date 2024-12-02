@@ -72,7 +72,8 @@ const Bio = () => {
             </TrackVisibility>
       </div>
       <div className="p-2 ">
-      <p className="fs-5 fw-medium  ">I enjoy buiilding fullstack  applications. Though I have personal preference for  integrating NODEJS + REACT or DJANGO  REACT as a fullstack developer,  I can also take on Node JS  and DJANGO projects as a backend developer.I can't wait to collaborate on some challenging cool stuffs😊!  </p>
+      <p className="fs-5 fw-medium  ">Tech-savvy Fullstack developer proficient in React Js  frameworks and Node js and Django at server-side. In depth Knowledge of Mysql, Mongodb, ProgresQl. Analytical and precise professional with 2 years of hands-on experience taking charge of front & back end web development. Skillful creating servers and databases for functionality and designing and developing API. Hard working collaborator with track record of superiror results
+      </p>
  
       </div>
     </Stack>
