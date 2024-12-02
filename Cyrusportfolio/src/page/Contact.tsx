@@ -48,7 +48,7 @@ const Contact = () => {
         <Container>
             <Row  >
             <h6 className="color navpad text-center">CONTACT</h6>
-                  <h1 className='text-center  '>Contact With Me</h1>
+                  <h1 className='text-center  '>Contact Me</h1>
 
                 <Col sm={12} lg={6}   className="Contactframe">
                 
