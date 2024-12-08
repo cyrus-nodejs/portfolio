@@ -72,7 +72,7 @@ const Bio = () => {
             </TrackVisibility>
       </div>
       <div className="p-2 ">
-      <p className="fs-5 fw-medium  ">Tech-savy Fullstack developer proficient in  React Js frameworks and Node Js and Django at server-side. In depth Knowledge of Mysql, Mongodb, PostgreSQl. Analytical and precise professional with 2 years of hands-on experience taking charge of front & back end web development. Skillful creating servers and databases for functionality and designing and developing API. Hard working collaborator with track record of superiror results
+      <p className="fs-5 fw-medium  ">Tech-savy Fullstack developer proficient in  React Js frameworks and Node Js and Django at server-side. In depth Knowledge of Mysql, Mongodb, PostgreSQl. Analytical and precise professional with 2 years of hands-on experience taking charge of front & back end web development. Skillful creating servers and databases for functionality and designing and developing API. Hard working collaborator with track record of superior results
       </p>
  
       </div>
