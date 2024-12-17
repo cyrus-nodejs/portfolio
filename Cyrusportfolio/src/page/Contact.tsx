@@ -80,33 +80,33 @@ const Contact = () => {
       <Row className="mb-1">
         <Form.Group as={Col} controlId="formGridEmail">
           <Form.Label>YOUR NAME</Form.Label>
-          <Form.Control className="Formtext text-light" value={formDetails.name} onChange={(e) => onFormUpdate('name', e.target.value)}  type="text" placeholder="" />
+          <Form.Control className="Formtext text-light" value={formDetails.name} onChange={(e) => onFormUpdate('name', e.target.value)}  type="text" placeholder="" required/>
         </Form.Group>
 
         <Form.Group as={Col} controlId="formGridPassword">
           <Form.Label>PHONE</Form.Label>
-          <Form.Control className="Formtext text-light" value={formDetails.phone} onChange={(e) => onFormUpdate('phone', e.target.value)} type="text" placeholder="" />
+          <Form.Control className="Formtext text-light" value={formDetails.phone} onChange={(e) => onFormUpdate('phone', e.target.value)} type="text" placeholder="" required />
         </Form.Group>
       </Row>
 
 
       <Form.Group className="mb-3" controlId="formGridAddress1">
         <Form.Label>EMAIL</Form.Label>
-        <Form.Control className="Formtext text-light" value={formDetails.email} onChange={(e) => onFormUpdate('email', e.target.value)} type="email" placeholder="" />
+        <Form.Control className="Formtext text-light" value={formDetails.email} onChange={(e) => onFormUpdate('email', e.target.value)} type="email" placeholder="" required/>
       </Form.Group>
 
       <Form.Group className="mb-3" controlId="formGridAddress1">
         <Form.Label>SUBJECT</Form.Label>
-        <Form.Control className="Formtext text-light" value={formDetails.subject} type="text" onChange={(e) => onFormUpdate('subject', e.target.value)} placeholder="" />
+        <Form.Control className="Formtext text-light" value={formDetails.subject} type="text" onChange={(e) => onFormUpdate('subject', e.target.value)} placeholder="" required/>
       </Form.Group>
 
       <Form.Group className="mb-3" controlId="formGridAddress2">
         <Form.Label>YOUR MESSAGE</Form.Label>
-        <Form.Control className="Formtext text-light" value={formDetails.message}  as="textarea" onChange={(e) => onFormUpdate('message', e.target.value)} rows={8} placeholder="" />
+        <Form.Control className="Formtext text-light" value={formDetails.message}  as="textarea" onChange={(e) => onFormUpdate('message', e.target.value)} rows={8} placeholder="" required />
       </Form.Group>
 
       <div className="d-grid gap-2">
-      <Button className="stack" variant="light" type="submit" size="lg">
+      <Button className="stack " variant="outline-primary" type="submit" size="lg">
        {buttonText}
       </Button>
       <p className="stack">{status}</p>

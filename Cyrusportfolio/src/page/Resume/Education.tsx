@@ -41,7 +41,7 @@ const Education = () => {
 
       <h2 className="fs-4 ">Education</h2>
     
-      <Row className="Educationframe  " >
+      {/* <Row className="Educationframe  " >
         
   
 
@@ -57,7 +57,7 @@ const Education = () => {
         
   
    
-  </Row>
+  </Row> */}
   <Row  className="Educationframe education" >
         <Col className="education">
       <p className=" fw-medium fs-5 education">June, 2015</p>
