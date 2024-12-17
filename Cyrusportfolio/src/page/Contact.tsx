@@ -1,5 +1,5 @@
 import  {Container, Image, Col, Row, Form, Button} from "react-bootstrap"
-
+import { Link } from "react-router-dom"
 import img from "../assets/images/contact1.png"
 import {  useState } from "react"
 
@@ -56,18 +56,20 @@ const Contact = () => {
                 <Image src={img} fluid  /> 
                <Col>
                <Row className=" w-100  mt-5  ">
+               <Link to='https://wa.link/vqp6e0' target="_blank" className='text-decoration-none text-light'>
   <div className="d-flex align-items-center ">
-  <div className=" flex-shrink-0"><i className='bx bx-phone bx-md'></i></div>
-  <div className="flex-grow-1 ms-3"><div className="text-start fs-5 fw-normal">Phone</div><div className="text-start fs-4 ">+2349044569655</div></div>
+  <div className=" flex-shrink-0"><i className='bx bxl-whatsapp bx-md'></i></div>
+  <div className="flex-grow-1 ms-3"><div className="text-start fs-5 fw-normal">Whatsapp</div><div className="text-start fs-5 ">https://wa.link/vqp6e0</div></div>
   
-</div></Row>
+</div>
+</Link></Row>
 
 <Row className=" w-100  my-2  ">
+  <Link to='https://www.linkedin.com/in/emmanuel-adeyemi-464ba5227' target="_blank" className='text-decoration-none text-light'>
   <div className="d-flex align-items-center ">
   <div className=" flex-shrink-0"><i className='bx bxs-envelope bx-md'></i></div>
-  <div className="flex-grow-1 ms-3"><div className="text-start fs-5 fw-normal">Email</div><div className="text-start fs-4 ">adeyemiemma45@gmail.com</div></div>
-</div></Row>
-
+  <div className="flex-grow-1 ms-3"><div className="text-start fs-5 fw-normal">Linkedin</div><div className="text-start fs-5 ">https://www.linkedin.com/in/emmanuel-adeyemi-464ba5227</div></div>
+</div></Link></Row>
 
                
              </Col>
@@ -106,7 +108,7 @@ const Contact = () => {
       </Form.Group>
 
       <div className="d-grid gap-2">
-      <Button className="stack " variant="outline-primary" type="submit" size="lg">
+      <Button className="stack  " variant="outline-secondary" type="submit" size="lg">
        {buttonText}
       </Button>
       <p className="stack">{status}</p>
