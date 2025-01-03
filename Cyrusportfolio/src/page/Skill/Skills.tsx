@@ -8,30 +8,30 @@ const Skills = () => {
     <Row >
     <Col sm={12} md={6} lg={6} className="p-3 Education" >
     <Row >
-      <div className="p-2 fs-6 text-secondary"></div>
-       <div className="p-2 fs-2 ">Technical Skill</div>
+
+       <div className="p-2 fs-2 ">FRONT END</div>
       <div className="p-2 fs-6">
-       <Form.Label>OOD</Form.Label>
+       <Form.Label>TYPESCRIPT</Form.Label>
        <ProgressBar  now={90} label="90%" variant="secondary" />
       </div>
       <div className="p-2 f">
-      <Form.Label>RESPONSIVE WEB DESIGN</Form.Label>
+      <Form.Label>REDUX</Form.Label>
       <ProgressBar  now={95} label="95%"  variant="secondary" />
       </div>
       <div className="p-2">
-      <Form.Label>CI/CD</Form.Label>
+      <Form.Label>REACT</Form.Label>
       <ProgressBar  now={100} label="100%" variant="secondary" />
       </div>
       <div className="p-2">
-      <Form.Label>API</Form.Label>
+      <Form.Label>JAVASCRIPT</Form.Label>
       <ProgressBar  now={100} label="100%" variant="secondary" />
       </div>
       <div className="p-2">
-      <Form.Label> TESTING</Form.Label>
+      <Form.Label> TAILWIND CSS</Form.Label>
       <ProgressBar  now={90} label="90%" variant="secondary" />
       </div>
       <div className="p-2">
-      <Form.Label>DATA STRUCTURE</Form.Label>
+      <Form.Label>HTML</Form.Label>
       <ProgressBar  now={90} label="90%" variant="secondary" />
       </div>
     </Row>
@@ -40,13 +40,13 @@ const Skills = () => {
     <Col className="p-3   Education " sm={12} md={6} lg={6}>
     <Row >
       
-       <div className="p-2 fs-2 ">Coding Skill</div>
+       <div className="p-2 fs-2 ">BACK END</div>
        <div className="p-2">
-      <Form.Label>TYPESCRIPT</Form.Label>
+      <Form.Label>PYTHON</Form.Label>
       <ProgressBar  now={90} label="90%" variant="secondary" />
       </div>
       <div className="p-2">
-      <Form.Label>PYTHON</Form.Label>
+      <Form.Label>RUST</Form.Label>
       <ProgressBar  now={90} label="90%" variant="secondary" />
       </div>
       <div className="p-2">
@@ -58,11 +58,11 @@ const Skills = () => {
       <ProgressBar  now={90} label="90%" variant="secondary" />
       </div>
       <div className="p-2">
-      <Form.Label>JAVASCRIPT</Form.Label>
+      <Form.Label>ANCHOR</Form.Label>
       <ProgressBar  now={90} label="90%" variant="secondary" />
       </div>
       <div className="p-2 fs-6">
-       <Form.Label>REACT JS</Form.Label>
+       <Form.Label>EXPRESS</Form.Label>
        <ProgressBar  now={100} label="100%" variant="secondary" />
       </div>
       
@@ -82,10 +82,10 @@ const Skills = () => {
       <Form.Label>BOOTSTRAP</Form.Label>
       <ProgressBar  now={100} label="100%" variant="secondary" />
       </div> */}
-      <div className="p-2">
+      {/* <div className="p-2">
       <Form.Label>REDUX</Form.Label>
       <ProgressBar  now={100} label="100%" variant="secondary" />
-      </div>
+      </div> */}
     </Row>
        
     

@@ -34,10 +34,10 @@ const Resumebox = () => {
         <Col sm={12}>
           <Nav variant="tabs" className=""  as="li" justify>
           <Nav.Item>
-              <Nav.Link eventKey="second" className="resumelink text-center">Professional Skills</Nav.Link>
+              <Nav.Link eventKey="second" className="resumelink text-center">CODING SKILLS</Nav.Link>
             </Nav.Item>
             <Nav.Item>
-              <Nav.Link eventKey="first" className="resumelink  text-center">Education</Nav.Link>
+              <Nav.Link eventKey="first" className="resumelink  text-center">CERTIFICATIONS</Nav.Link>
             </Nav.Item>
             
             {/* <Nav.Item>

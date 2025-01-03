@@ -36,7 +36,7 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#060606",endCo
 }
 
 .resumelink:hover{
-  color:#00171f;
+  color:white;
   
 }
 
@@ -70,7 +70,7 @@ border-radius: 10px;
 
 
 .stack{
-  color:#FF0000
+  color:#66c7f4
 }
 .Skillframe{
 

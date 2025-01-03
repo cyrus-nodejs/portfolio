@@ -12,6 +12,7 @@ import { Link } from "react-router-dom";
 
 
 const Bio = () => {
+  const [isTruncated, setIsTruncated] = useState(true);
   const [loopNum, setLoopNum] = useState(0);
   const [isDeleting, setIsDeleting] = useState(false);
   const [text, setText] = useState('');
@@ -19,7 +20,7 @@ const Bio = () => {
   const [index, setIndex] = useState(1);
   //  const [open, setOpen] = useState(false);
   
-  const toRotate : string [] = [ "FULLSTACK ", "MERN STACK", "NODE JS"  ];
+  const toRotate : string [] = [ "MERN ", "WEB 3 ", "FULLSTACK "  ];
   const period : number = 2000;
 
   useEffect(() => {
@@ -66,15 +67,32 @@ const Bio = () => {
       <TrackVisibility>
               {({ isVisible }) =>
               <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
-                  <p className="fs-6 navpad fw-light">Welcome to my World</p>
+                  <p className="fs-3 navpad fw-light">Welcome to my World</p>
                 <p className="fs-1 fw-bold " >Hi, I'm <span className=" stack fs-1 fw-bold"> Emmanuel  Adeyemi</span> <p className="txt-rotate"   data-rotate='[ "Software Engineer"]'><p className="wrap fs-1 fw-bold ">a {text} DEVELOPER</p></p></p>
               </div>}
             </TrackVisibility>
       </div>
       <div className="p-2 ">
-      <p className="fs-5 fw-medium  ">Tech-savy Fullstack developer proficient in  React Js frameworks and Node Js and Django at server-side. In depth Knowledge of Mysql, Mongodb, PostgreSQl. Analytical and precise professional with 2 years of hands-on experience taking charge of front & back end web development. Skillful creating servers and databases for functionality and designing and developing API. Hard working collaborator with track record of superior results
-      </p>
- 
+      <div className={`${
+          isTruncated ? "truncate-text   fs-6" : "fs-6  "
+        }`}
+        style={{
+          display: '-webkit-box',
+          WebkitBoxOrient: 'vertical',
+          overflow: 'hidden',
+          textOverflow: 'ellipsis',
+          WebkitLineClamp: isTruncated ? 4 : 'unset',  // Truncate to 3 lines or show all
+        }}><p>A versatile and highly skilled software developer with expertise in both Web 2.0 and Web 3.0 technologies. Proficient in developing robust, scalable, and efficient applications using the MERN stack (MongoDB, Express.js, React, Node.js) for Web 2.0 environments.</p>
+         <p> Passionate about exploring the cutting edge of blockchain technology, with hands-on experience in building decentralized applications (dApps) and smart contracts in Web 3.0.</p>
+         <p>With a strong foundation in JavaScript, TypeScript, and Rust, I am able to deliver clean, maintainable code while keeping up with the latest advancements in the tech world.</p>
+<p>In addition to front-end and back-end web development, skilled in Rust for high-performance, systems-level programming and leveraging its concurrency features to build safe and efficient applications. </p>
+      </div>
+      <button
+        className="btn btn-primary mt-2"
+        onClick={() => setIsTruncated(!isTruncated)}
+      >
+        {isTruncated ? 'Show More' : 'Show Less'}
+      </button>
       </div>
     </Stack>
     

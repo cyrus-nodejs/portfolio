@@ -47,8 +47,8 @@ const Contact = () => {
     <section id="Contact" className="section">
         <Container>
             <Row  >
-            <h6 className="color navpad text-center">CONTACT</h6>
-                  <h1 className='text-center  '>Contact Me</h1>
+            <h1 className="stack navpad text-center">CONTACT</h1>
+                  <h6 className='text-center  '>Contact Me</h6>
 
                 <Col sm={12} lg={6}   className="Contactframe">
                 

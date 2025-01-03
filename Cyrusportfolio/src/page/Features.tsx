@@ -6,9 +6,10 @@ const Features = () => {
   return (
     <section id="Features">
       <Container >
-      <Row>
-      <h6 className="color navpad text-center">SKILLS</h6>
-      <h1 className="text-center">What I Do</h1>
+      <Row className='my-5'>
+
+      <h1 className="text-center stack">What I Do</h1>
+      <h6 className=" navpad text-center">SKILLS</h6>
       <Col className="p-2">
     
         <Skillbox  />
