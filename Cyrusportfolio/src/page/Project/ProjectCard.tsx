@@ -4,7 +4,7 @@ import  { Col, Image, Row} from "react-bootstrap"
 import { Link } from "react-router-dom";
 
 
-const ProjectCard = ({ imgL,title, field, url }) => {
+const ProjectCard = ({ imgL,title, demoUrl,  gitUrl }) => {
   
   
 
@@ -15,14 +15,13 @@ const ProjectCard = ({ imgL,title, field, url }) => {
     <Col  className="Projectframe "    >
     <div className="proj-imgbx">
       <Image className="pImage" src={imgL}  style={{borderRadius:"5px", margin:""}} fluid />
-      <Link to={url} className="text-decoration-none text-reset">
+     
   <div className="proj-txtx " >
-  <h5 className="text-center ">{title}</h5>
-  <h6 className="text-center">{field}</h6>
-  <span className="text-center stack">Click to Visit</span>
+   <h4 className="text-center port-text ">{title}</h4>
+  <Link to={gitUrl} className="text-decoration-none text-reset"><h5 className="text-center port-text">Github Repo</h5></Link>
+  <Link to={demoUrl} className="text-decoration-none text-reset"> <h5 className="text-center port-text">Live Demo</h5></Link>
 </div>
 
-</Link>
 </div>
   </Col>
   

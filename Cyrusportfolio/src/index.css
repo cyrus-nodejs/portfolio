@@ -67,6 +67,13 @@ border-radius: 10px;
 
 }
 
+/* .port-text{
+  color:#66c7f4
+} */
+
+.port-text:hover{
+  color:#66c7f4
+}
 
 
 .stack{

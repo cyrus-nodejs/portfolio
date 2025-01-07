@@ -12,26 +12,29 @@ import projectBg from "../assets/images/projectimg.jpg"
 export const Projects  = [
    
     {
-        title:"Music Streaming",
-        field:"MERN APP",
+        title:"Spotify clone",
        imgL:projectBg,
-       url:"https://github.com/cyrus-nodejs/soundplanet",
+       gitUrl:"https://github.com/cyrus-nodejs/soundplanet",
+       demoUrl:"https://soundplanet.netlify.app",
        
     },
     {
-        title:"E-Commerce",
-        field:"MERN APP",
+        title:"E-Commerce App",
         imgL:projectBg,
-        url:"https://github.com/cyrus-nodejs/e-commerce    ",
+        gitUrl:"https://github.com/cyrus-nodejs/e-commerce",
+        demoUrl:"https://shoppingluxury.netlify.app",
+       
         
     },
 
 
     {
-        title:"Video Streaming ",
+        title:"Youtube clone ",
         field:"REACT APP ",
-        url:"https://github.com/cyrus-nodejs/videoplanet",
         imgL:projectBg,
+        gitUrl:"https://github.com/cyrus-nodejs/videoplanet",
+        demoUrl:"https://videoisland.netlify.app/",
+     
         
     },
 
@@ -39,8 +42,9 @@ export const Projects  = [
     {
         title:"Logistic",
         field:"REACT APP ",
-        url:"https://github.com/cyrus-nodejs/logistic",
         imgL:projectBg,
+        gitUrl:"https://github.com/cyrus-nodejs/logistic",
+        demoUrl:"https://swiftlogistic.netlify.app",
         
     },
 

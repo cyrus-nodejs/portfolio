@@ -11,7 +11,7 @@ const Skills = () => {
 
        <div className="p-2 fs-2 ">FRONT END</div>
       <div className="p-2 fs-6">
-       <Form.Label>TYPESCRIPT</Form.Label>
+       <Form.Label>REACT</Form.Label>
        <ProgressBar  now={90} label="90%" variant="secondary" />
       </div>
       <div className="p-2 f">
@@ -19,11 +19,11 @@ const Skills = () => {
       <ProgressBar  now={95} label="95%"  variant="secondary" />
       </div>
       <div className="p-2">
-      <Form.Label>REACT</Form.Label>
+      <Form.Label>JAVASCRIPT</Form.Label>
       <ProgressBar  now={100} label="100%" variant="secondary" />
       </div>
       <div className="p-2">
-      <Form.Label>JAVASCRIPT</Form.Label>
+      <Form.Label>BOOTSTRAP</Form.Label>
       <ProgressBar  now={100} label="100%" variant="secondary" />
       </div>
       <div className="p-2">
@@ -46,11 +46,11 @@ const Skills = () => {
       <ProgressBar  now={90} label="90%" variant="secondary" />
       </div>
       <div className="p-2">
-      <Form.Label>RUST</Form.Label>
+      <Form.Label>TYPESCRIPT </Form.Label>
       <ProgressBar  now={90} label="90%" variant="secondary" />
       </div>
       <div className="p-2">
-      <Form.Label>NODE JS</Form.Label>
+      <Form.Label>EXPRESS JS</Form.Label>
       <ProgressBar  now={90} label="90%" variant="secondary" />
       </div>
       <div className="p-2">
@@ -58,11 +58,11 @@ const Skills = () => {
       <ProgressBar  now={90} label="90%" variant="secondary" />
       </div>
       <div className="p-2">
-      <Form.Label>ANCHOR</Form.Label>
+      <Form.Label>MONGODB</Form.Label>
       <ProgressBar  now={90} label="90%" variant="secondary" />
       </div>
       <div className="p-2 fs-6">
-       <Form.Label>EXPRESS</Form.Label>
+       <Form.Label>MYSQL</Form.Label>
        <ProgressBar  now={100} label="100%" variant="secondary" />
       </div>
       
