@@ -10,9 +10,19 @@ import projectBg from "../assets/images/projectimg.jpg"
 
 
 export const Projects  = [
+    {
+        title:"Messaging  App ",
+        field:"MERN AP ",
+        imgL:projectBg,
+        gitUrl:"https://github.com/cyrus-nodejs/chatplanet",
+        demoUrl:"https://chatplanet.netlify.app/",
+     
+        
+    },
+
    
     {
-        title:"Spotify clone",
+        title:"Music App",
        imgL:projectBg,
        gitUrl:"https://github.com/cyrus-nodejs/soundplanet",
        demoUrl:"https://soundplanet.netlify.app",
@@ -28,25 +38,8 @@ export const Projects  = [
     },
 
 
-    {
-        title:"Youtube clone ",
-        field:"REACT APP ",
-        imgL:projectBg,
-        gitUrl:"https://github.com/cyrus-nodejs/videoplanet",
-        demoUrl:"https://videoisland.netlify.app/",
-     
-        
-    },
 
         
-    {
-        title:"Logistic",
-        field:"REACT APP ",
-        imgL:projectBg,
-        gitUrl:"https://github.com/cyrus-nodejs/logistic",
-        demoUrl:"https://swiftlogistic.netlify.app",
-        
-    },
 
     
 ]
