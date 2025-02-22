@@ -20,7 +20,7 @@ const Bio = () => {
   const [index, setIndex] = useState(1);
   //  const [open, setOpen] = useState(false);
 
-  const toRotate: string[] = ["MERN ", "WEB 3 ", "FULLSTACK "];
+  const toRotate: string[] = ["MERN STACK ", "BACKEND "];
   const period: number = 2000;
 
   useEffect(() => {
@@ -81,8 +81,8 @@ const Bio = () => {
                     overflow: 'hidden',
                     textOverflow: 'ellipsis',
                     WebkitLineClamp: isTruncated ? 4 : 'unset',  // Truncate to 3 lines or show all
-                  }}><p>I am a passionate and versatile Full-Stack Developer with a strong proficiency in building dynamic, high-performance web applications. With hands-on expertise in both the MERN stack and Django, I craft seamless user experiences and robust back-end services.</p>
-                  <p>I thrive in fast-paced environments, blending creativity with technical expertise to build solutions that deliver both on the front-end and back-end. Whether designing a user-friendly interface in React or creating powerful, scalable backend systems with Node.js and Django, my goal is to bring ideas to life through seamless integration of all layers of the stack.</p>
+                  }}><p>I am a passionate and versatile Software Engineer with a strong proficiency in building dynamic, high-performance web applications. With hands-on expertise in both the MERN stack , Python(Django), I craft seamless user experiences and robust back-end services.</p>
+                  <p>I thrive in fast-paced environments, blending creativity with technical expertise to build solutions that deliver both on the front-end and back-end. Whether designing a user-friendly interface in React or creating powerful, scalable backend systems with Node.js, Django and Rust, my goal is to bring ideas to life through seamless integration of all layers of the stack.</p>
 
                 </div>
                 <button

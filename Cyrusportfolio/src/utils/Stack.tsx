@@ -21,8 +21,8 @@ export const Stacks = [
    
     {
         img:<i className='bx   bx-message-dots stack  bx-tada-hover  bx-md'></i>,
-        title: "Front-End development",
-        description:"Proficient in HTML5, CSS3, TYPESCRIPT, and building intuitive and responsive user interfaces using React.js.",
+        title: "RUST",
+        description:"Proficient in Rust, with experience in async programming, concurrency, and error handling. Familiar with building  applications using Rust’s ecosystem (Cargo, Crates.io, etc.).",
        
     },
     
