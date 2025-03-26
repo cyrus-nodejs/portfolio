@@ -24,8 +24,8 @@ export const Projects  = [
     {
         title:"Music App",
        imgL:projectBg,
-       gitUrl:"https://github.com/cyrus-nodejs/soundplanet",
-       demoUrl:"https://soundplanet.netlify.app",
+       gitUrl:"https://github.com/cyrus-nodejs/musicapp",
+       demoUrl:"https://musicplanet.netlify.app/",
        
     },
     {
