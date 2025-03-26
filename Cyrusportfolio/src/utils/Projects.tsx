@@ -15,7 +15,7 @@ export const Projects  = [
         field:"MERN AP ",
         imgL:projectBg,
         gitUrl:"https://github.com/cyrus-nodejs/chatplanet",
-        demoUrl:"https://chatplanet.netlify.app/",
+        demoUrl:"https://chatplanet.netlify.app",
      
         
     },
@@ -25,7 +25,7 @@ export const Projects  = [
         title:"Music App",
        imgL:projectBg,
        gitUrl:"https://github.com/cyrus-nodejs/musicapp",
-       demoUrl:"https://musicplanet.netlify.app/",
+       demoUrl:"https://musicplanet.netlify.app",
        
     },
     {
