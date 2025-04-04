@@ -15,7 +15,7 @@ export const Projects  = [
         field:"MERN AP ",
         imgL:projectBg,
         gitUrl:"https://github.com/cyrus-nodejs/chatplanet",
-        demoUrl:"https://chatplanet.netlify.app",
+        demoUrl:"https://wen-chat.netlify.app/",
      
         
     },
