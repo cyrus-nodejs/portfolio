@@ -16,14 +16,14 @@ const Contact = () => {
   const [buttonText, setButtonText] = useState('Send Message');
   const [status, setStatus] = useState('');
 
-  const onFormUpdate = (category, value:string) : void => {
+  const onFormUpdate = (category: string, value:string) : void => {
       setFormDetails({
         ...formDetails,
         [category]: value
       })
   }
 
-  const handleSubmit = async (e) => {
+  const handleSubmit = async (e: { preventDefault: () => void }) => {
     e.preventDefault();
     setButtonText("Sending...");
     const response = await fetch("https://connect-9q0l.onrender.com/contact", {
@@ -47,7 +47,7 @@ const Contact = () => {
     <section id="Contact" className="section">
         <Container>
             <Row  >
-            <h1 className="stack navpad text-center">CONTACT</h1>
+            <h1 className="stack navpad text-center">Contact</h1>
                   <h6 className='text-center  '>Contact Me</h6>
 
                 <Col sm={12} lg={6}   className="Contactframe">

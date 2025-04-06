@@ -15,7 +15,7 @@ const Resume = () => {
       <Col className="p-2">
         <Row className='my-3'>
   
-      <h1 className="text-center stack">MY RESUME</h1>
+      <h1 className="text-center stack">My Resume</h1>
       </Row>
         <Resumebox   />
         </Col>

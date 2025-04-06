@@ -6,7 +6,7 @@ import {
 import "./index.css";
 import './App.css'
 
-import Home from "../Home"
+import Home from "../src/page/Home"
 import ErrorPage from "../src/ErrorPage"
 function App() {
 
