@@ -37,11 +37,12 @@ const Resumebox = () => {
               <Nav.Link eventKey="second" className="resumelink text-center">CODING SKILLS</Nav.Link>
             </Nav.Item>
             <Nav.Item>
-              <Nav.Link eventKey="first" className="resumelink  text-center">CERTIFICATIONS</Nav.Link>
+            
+              <Nav.Link eventKey="third" className="resumelink text-center text-outline-danger">EXPERIENCE</Nav.Link>
             </Nav.Item>
             
              <Nav.Item>
-              <Nav.Link eventKey="third" className="resumelink text-center text-outline-danger">Experience</Nav.Link>
+             <Nav.Link eventKey="first" className="resumelink  text-center">CERTIFICATIONS</Nav.Link>
             </Nav.Item> 
           </Nav>
         

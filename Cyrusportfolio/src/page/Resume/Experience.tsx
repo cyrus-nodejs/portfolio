@@ -8,16 +8,16 @@ const Experience = () => {
       <Row>
       <Row >
     
-    <h2 className='fs-2 text-center'>Work Experience </h2>
+    <h4 className='fs-4    mt-2  text-center'>WORK EXPERIENCE </h4>
     </Row>
     <Col className="p-2"  sm={12} md={6} lg={6}  >
      
      
     <Row  className="Educationframe education"  >
     <Col className="education" sm={12}>
-      <p className="stack education fw-medium fs-5">2022 - Current</p>
+      <p className="stack education fw-medium fs-6">2022 - Current</p>
     <p className="text-white education fs-5 ">Upwork </p>
-    <p className="fs-5 education">MERN Developer</p>
+    <p className="fs-6 education">MERN Developer</p>
     </Col>
   </Row>
 
@@ -30,9 +30,9 @@ const Experience = () => {
   
   <Row  className="Educationframe education"  >
     <Col className="education" sm={12}>
-    <p className="stack fw-medium education fs-5">March 2024 - Current</p>
+    <p className="stack fw-medium education fs-6">March 2024 - Current</p>
     <p className="text-white education fs-5">Super Team Global </p>
-    <p className="fs-5 education">Fullstack Developer</p>
+    <p className="fs-6 education">Fullstack Developer</p>
     </Col>
   </Row>
       
