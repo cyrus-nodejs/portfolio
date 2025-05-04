@@ -20,7 +20,7 @@ const Bio = () => {
   const [index, setIndex] = useState(1);
   //  const [open, setOpen] = useState(false);
 
-  const toRotate: string[] = ["MERN STACK ", "FULLSTACK", "BACKEND "];
+  const toRotate: string[] = ["BACKEND ","MERN STACK "];
   const period: number = 2000;
 
   useEffect(() => {
