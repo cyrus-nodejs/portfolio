@@ -27,7 +27,7 @@ export const Stacks = [
     },
     
     {   img:<i className='bx stack  bx-book-open  bx-tada-hover  bx-md'></i>,
-        title: "Back-End Development ",
+        title: "BACK END",
         description:"Skilled in developing REST APIs with Express.js and Django REST Framework, managing server-side logic, and ensuring high availability and scalability. ",
         
     },
