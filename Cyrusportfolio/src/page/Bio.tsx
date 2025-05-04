@@ -20,7 +20,7 @@ const Bio = () => {
   const [index, setIndex] = useState(1);
   //  const [open, setOpen] = useState(false);
 
-  const toRotate: string[] = ["BACKEND ","MERN STACK "];
+  const toRotate: string[] = ["DJANGO ","NODEJS ",'RUST', "MERN" ];
   const period: number = 2000;
 
   useEffect(() => {
@@ -68,7 +68,7 @@ const Bio = () => {
                   {({ isVisible }) =>
                     <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
                       <p className="fs-3 navpad fw-light">Welcome to my World</p>
-                      <p className="fs-1 fw-bold " >Hi, I'm <span className=" stack fs-1 fw-bold"> Emmanuel  Adeyemi</span> <p className="txt-rotate" data-rotate='[ "Software Engineer"]'><p className="wrap fs-1 fw-bold ">a {text} DEVELOPER</p></p></p>
+                      <p className="fs-1 fw-bold " >Hi, I'm <span className=" stack fs-1 fw-bold"> Emmanuel  Adeyemi</span> <p className="txt-rotate" data-rotate='[ "Back end Software Engineer"]'><p className="wrap fs-1 fw-bold ">a {text} DEVELOPER</p></p></p>
                     </div>}
                 </TrackVisibility>
               </div>
