@@ -5,7 +5,7 @@ import { useState, useEffect } from "react";
 import { Container, Image, Col, Row, Stack } from "react-bootstrap"
 
 
-import profile from "../assets/images/cyruspics.png"
+import profile from "../assets/images/Tech baron II.png"
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
 import { Link } from "react-router-dom";
