@@ -7,7 +7,7 @@ export const Stacks = [
         
     },
     {   img:<i className='bx stack  bx-tv  bx-tada-hover  bx-md'></i>,
-        title: "DJANGO ",
+        title: "PYTHON",
         description:"Deep experience in developing web applications using Python and the Django framework, ensuring clean and maintainable code while implementing RESTful APIs and complex data models.",
         
     },
