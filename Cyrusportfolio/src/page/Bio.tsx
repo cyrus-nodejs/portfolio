@@ -81,7 +81,7 @@ const Bio = () => {
                     overflow: 'hidden',
                     textOverflow: 'ellipsis',
                     WebkitLineClamp: isTruncated ? 4 : 'unset',  // Truncate to 3 lines or show all
-                  }}><p>Experienced back-end engineer with a strong foundation in building scalable, high-performance server-side applications. Proficient in Node.js for event-driven, real-time systems, Rust for performance-critical and memory-safe back-end components, and Django for rapid development of secure, maintainable APIs and services. Skilled in designing microservices architectures, integrating with cloud platforms (AWS, GCP), and implementing robust CI/CD pipelines.</p>
+                  }}><p>Experienced Software Engineer with a strong foundation in building scalable, high-performance server-side applications. Proficient in Node.js for event-driven, real-time systems, Rust for performance-critical and memory-safe back-end components, and Django for rapid development of secure, maintainable APIs and services. Skilled in designing microservices architectures, integrating with cloud platforms (AWS, GCP), and implementing robust CI/CD pipelines.</p>
      
                   <p>Driven by clean architecture and efficient systems design, I enjoy turning complex business requirements into elegant, production-ready solutions. Passionate about learning new technologies and contributing to high-impact engineering teams.</p>
                 </div>
