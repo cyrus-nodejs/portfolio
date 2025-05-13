@@ -20,7 +20,7 @@ const Bio = () => {
   const [index, setIndex] = useState(1);
   //  const [open, setOpen] = useState(false);
 
-  const toRotate: string[] = ["PYTHON ","NODEJS ",'RUST', "MERN" ];
+  const toRotate: string[] = ["FULLSTACK","MOBILE ",'WEB',  ];
   const period: number = 2000;
 
   useEffect(() => {
@@ -81,9 +81,9 @@ const Bio = () => {
                     overflow: 'hidden',
                     textOverflow: 'ellipsis',
                     WebkitLineClamp: isTruncated ? 4 : 'unset',  // Truncate to 3 lines or show all
-                  }}><p>Experienced Software Engineer with a strong foundation in building scalable, high-performance server-side applications. Proficient in Node.js for event-driven, real-time systems, Rust for performance-critical and memory-safe back-end components, and Django for rapid development of secure, maintainable APIs and services. Skilled in designing microservices architectures, integrating with cloud platforms (AWS, GCP), and implementing robust CI/CD pipelines.</p>
+                  }}><p>Hi, I'm a full-stack Software Engineer who loves turning complex challenges into elegant code. My toolkit includes React, React Native, Node.js, Django, and Rust, and I use it to build everything from interactive mobile apps to powerful backend systems.</p>
      
-                  <p>Driven by clean architecture and efficient systems design, I enjoy turning complex business requirements into elegant, production-ready solutions. Passionate about learning new technologies and contributing to high-impact engineering teams.</p>
+                  <p>I'm always exploring better ways to write fast, scalable, and maintainable software.</p>
                 </div>
                 <button
                   className="btn btn-primary mt-2"
