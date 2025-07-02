@@ -48,7 +48,7 @@ const Contact = () => {
         <Container>
             <Row  >
             <h1 className="stack navpad text-center">Contact</h1>
-                  <h6 className='text-center  '>Contact Me</h6>
+               
 
                 <Col sm={12} lg={6}   className="Contactframe">
                 
@@ -108,7 +108,7 @@ const Contact = () => {
       </Form.Group>
 
       <div className="d-grid gap-2">
-      <Button className="stack  " variant="outline-secondary" type="submit" size="lg">
+      <Button className=" bio-button " variant="outline-secondary" type="submit" size="lg">
        {buttonText}
       </Button>
       <p className="stack">{status}</p>

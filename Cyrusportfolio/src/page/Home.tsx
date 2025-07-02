@@ -6,7 +6,7 @@ import { Row} from 'react-bootstrap';
 import Appbar from '../../src/component/Appbar'
 import Bio from "../page/Bio"
 import Features from "../page/Features"
-import Portfolio from "../page/Portfolio"
+import Portfolio from "./Portfolio/Portfolio"
 import Resume from "../page/Resume/Resume"
 import Contact from "../page/Contact"
 import Footer from "../../src/component/Footer"

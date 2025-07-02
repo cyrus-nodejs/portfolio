@@ -11,8 +11,8 @@ const SkillCard = ({title, description, img}) => {
     <Col className="Skillframe education color border"  style={{marginTop:"0px"}}   >
       <Row  className="education" gap={0} style={{margin:"2px", border:""}}>
      <Col className="education " style={{margin:"", borderRadius:"10px"}}  >{img}</Col>
-    <h5 className="  education ">{title}</h5>
-    <p className="fs-6  education">{description}</p>
+    <h2 className="  education ">{title}</h2>
+    <p className="">{description}</p>
     </Row>
   
    

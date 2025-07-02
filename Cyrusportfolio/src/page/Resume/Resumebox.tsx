@@ -12,23 +12,7 @@ const Resumebox = () => {
   return (
     <Row style={{ display:"flex"}}>
       <Col sm={12} >
-       {/* <Tabs
-      defaultActiveKey="Education"
-      id="Education"
-      className="mb-3 bg-dark text-light tab"
-      justify
-    >
-      <Tab className="t" eventKey="Education" title="Education">
-        <Education />
-      </Tab>
-      <Tab eventKey="Skills" title="Skills">
-        <Skills />
-      </Tab>
-      <Tab eventKey="Experience" title="Experience">
-        <Experience />
-      </Tab>
-    </Tabs> 
-   */}
+  
      <Tab.Container id=""  defaultActiveKey="first">
       <Row>
         <Col sm={12}>

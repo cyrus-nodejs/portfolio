@@ -1,57 +1,116 @@
-// import Emall from "../assets/images/projectimg.jpg"
-
-// import Soundlg from "../assets/images/soundplanet.netlify.app_(Nest Hub).png"
-
-// import SwiftLg from "../assets/images/swiftLG.png"
-
-// import BaseLg from "../assets/images/BaseLG.png"
-
-import projectBg from "../assets/images/projectimg.jpg"
+import chatWeb from "../assets/images/Screenshot_20250701-225651_Samsung Internet.jpg"
+import  shopWeb from '../assets/images/Screenshot_20250701-224732_Chrome.jpg'
+import musicapp from '../assets/images/Screenshot_20250702-000442_Chrome.jpg'
+import videoapp from '../assets/images/Screenshot_20250701-231101_Chrome.jpg'
+import calculatorapp from '../assets/images/Screenshot_20250701-231124_Chrome.jpg'
+import drumapp from '../assets/images/Screenshot_20250701-231209_Chrome.jpg'
+import portfolioapp from '../assets/images/Screenshot_20250701-235803_Chrome.jpg'
 
 
-export const Projects  = [
+
+
+export const  AllApp  = [
     {
-        title:" Chatting  App ",
-        field: "Postgresql | Express.js |Node.js | React.js | Redux | Socket.io ",
-        imgL:projectBg,
-        gitUrl:"https://github.com/cyrus-nodejs/chatplanet",
-        demoUrl:"https://wen-chat.netlify.app/",
-        tools:<i className='bx bx-cog' ></i> ,
-        gitIcon:<i className='bx bxl-github'></i>,
-        homeIcon:<i className='bx bx-home'></i>
-     
-        
-    },
+    url: "https://musicplanet.netlify.app",
+    image:musicapp,
+  
 
-   
+},
     {
-        title:"Music App",
-        field:" Postgresql | Python | Django | React.js | Redux | Stripe Api",
-       imgL:projectBg,
-       gitUrl:"https://github.com/cyrus-nodejs/musicapp",
-       demoUrl:"https://musicplanet.netlify.app",
-       tools:<i className='bx bx-cog' ></i> ,
-       gitIcon:<i className='bx bxl-github'></i>,
-       homeIcon:<i className='bx bx-home'></i>
+url: "https://wukinc.netlify.app",
+image:portfolioapp,
 
-       
-    },
+
+},
+
+{
+url: "https://videoisland.netlify.app/",
+image:videoapp,
+
+
+},
+{
+url: "https://sm-drum.netlify.app/",
+image:drumapp,
+
+
+},
+
+{
+    title: "https://wen-chat.netlify.app",
+    image:chatWeb,
+  
+
+},
+{
+url: "https://shoppingluxury.netlify.app/",
+image:shopWeb,
+
+},
+
+{
+    url: "https://sm-calculator.netlify.app/",
+    image:calculatorapp,
+  
+
+},
+
+]
+
+
+
+export const  Web  = [
+  {
+    url: "https://musicplanet.netlify.app",
+    image:musicapp,
+  
+
+},
     {
-        title:"E-Commerce App",
-        field:" Mongodb | Express.js | Node.js | React.js | Redux | Stripe Api ",
-        imgL:projectBg,
-        gitUrl:"https://github.com/cyrus-nodejs/e-commerce",
-        demoUrl:"https://shoppingluxury.netlify.app",
-        tools:<i className='bx bx-cog' ></i> ,
-        gitIcon:<i className='bx bxl-github'></i>,
-        homeIcon:<i className='bx bx-home'></i>
-       
-        
-    },
+url: "https://wukinc.netlify.app",
+image:portfolioapp,
+
+
+},
+
+{
+url: "https://videoisland.netlify.app/",
+image:videoapp,
+
+
+},
+{
+    title: "https://wen-chat.netlify.app",
+    image:chatWeb,
+  
+
+},
+{
+url: "https://shoppingluxury.netlify.app/",
+image:shopWeb,
+
+},
+
+]
+
+
+export const  Mobile  = [
+{
+url: "https://sm-drum.netlify.app/",
+image:drumapp,
+
+
+},
+{
+    url: "https://sm-calculator.netlify.app/",
+    image:calculatorapp,
+  
+
+},
+]
 
 
 
-        
+export const  Desktop  = [
 
-    
 ]

@@ -9,7 +9,7 @@ const Features = () => {
       <Row className='my-5'>
 
       <h1 className="text-center stack">What I Do</h1>
-      <h6 className=" navpad text-center">SKILLS</h6>
+   
       <Col className="p-2">
     
         <Skillbox  />

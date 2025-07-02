@@ -1,16 +1,17 @@
+:root {
+    --color-primary: #1e2f3f;
+  --color-accent: #5D2B1C;
+   --color-background: #020202;
+    --color-text: white;
+}
 
 * {
   box-sizing: border-box;
   text-align: left;
-  background: rgb(6,6,6);
-background: -moz-linear-gradient(0deg, rgba(6,6,6,1) 50%, rgba(5,1,1,0.700717787114846) 100%);
-background: -webkit-linear-gradient(0deg, rgba(6,6,6,1) 50%, rgba(5,1,1,0.700717787114846) 100%);
-background: linear-gradient(0deg, rgba(6,6,6,1) 50%, rgba(5,1,1,0.700717787114846) 100%);
-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#060606",endColorstr="#050101",GradientType=1);
+  background: var(--color-background);
   line-height: 1.5;
-  font-weight: 400;
-  /* color: rgba(255, 255, 255, 0.87); */
-  color:#efe9f4;
+  font-family: 'Inter', sans-serif;
+  color: var(--color-text);
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -18,30 +19,64 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#060606",endCo
   color-scheme: light dark;
 }
 
+h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+}
 
+h2 {
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+p {
+  font-size: 1rem;
+  line-height: 1.6;
+}
 
 /* .navpad{
   padding-top: 70px;
 } */
 
 
+.bio-button{
+  background: var(--color-primary);
+color: var(--color-text);
+}
 
+.bio-button:hover{
+  background: var(--color-accent) ;
+  color: var(--color-text);
 
+}
+.feature-icon .bio-icon{
+   color: var(--color-text);
+}
+
+.feature-icon:hover{
+    color: var(--color-accent);
+}
+.bio-icon{
+    color: var(--color-text);
+}
+.bio-icon:hover{
+    color: var(--color-accent);
+}
 .resumelink{
   
-  color:white;
+
   font-weight: 500;
   font-size: large;
   height: 70px;
 }
 
 .resumelink:hover{
-  color:white;
+  color:var(--color-accent);
   
 }
 
 .nav-link{
-  color: white;
+  color: var(--color-text);
 }
 
 .features{
@@ -72,25 +107,18 @@ border-radius: 10px;
 } */
 
 .port-text:hover{
-  color:#66c7f4
+  color:var(--color-accent)
 }
 
 
-.stack{
-  color:#ccd1e3
-}
 .Skillframe{
-
- 
 border-radius: 5px;
-
 margin:30px;
 width:300px;
-height:250px;
+height:300px;
 }
 
 .Projectframe{
-
   position: relative;
  border-radius: 5px;
  margin:30px;
@@ -109,8 +137,8 @@ height:250px;
 
 
 .bg{
-  background: rgb(25,20,20);
-background: linear-gradient(360deg, rgba(25,20,20,0) 40%, rgba(42,54,54,0.5382528011204482) 87%);
+  background: var(--color-background)
+
 }
 
 .Projectframe:hover .pImage {
@@ -122,7 +150,7 @@ background: linear-gradient(360deg, rgba(25,20,20,0) 40%, rgba(42,54,54,0.538252
 }
 
 .pImage{
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0,);
+  box-shadow: var(--color-accent);
   width:270px;
   height: 190px;
   transition: width 1s, height 1s;

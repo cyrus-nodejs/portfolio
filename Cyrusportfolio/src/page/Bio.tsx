@@ -20,7 +20,7 @@ const Bio = () => {
   const [index, setIndex] = useState(1);
   //  const [open, setOpen] = useState(false);
 
-  const toRotate: string[] = ["FULLSTACK","MOBILE ",'WEB',  ];
+  const toRotate: string[] = ["Full Stack","Front End ",'Back End',  ];
   const period: number = 2000;
 
   useEffect(() => {
@@ -67,8 +67,8 @@ const Bio = () => {
                 <TrackVisibility>
                   {({ isVisible }) =>
                     <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
-                      <p className="fs-3 navpad fw-light">Welcome to my World</p>
-                      <p className="fs-1 fw-bold " >Hi, I'm <span className=" stack fs-1 fw-bold"> Emmanuel  Adeyemi</span> <p className="txt-rotate" data-rotate='[ "SOFTWARE ENGINEER"]'><p className="wrap fs-1 fw-bold ">a {text} DEVELOPER</p></p></p>
+                      <p className=" navpad fw-light">Welcome to my World</p>
+                      <h2 className="fs-1 fw-bold " >Hi, I'm <span className=" stack fs-1 fw-bold"> Emmanuel  Adeyemi</span> <h2 className="txt-rotate" data-rotate='[ "SOFTWARE ENGINEER"]'><h2 className="wrap fs-1 fw-bold ">a {text} Developer</h2></h2></h2>
                     </div>}
                 </TrackVisibility>
               </div>
@@ -81,12 +81,12 @@ const Bio = () => {
                     overflow: 'hidden',
                     textOverflow: 'ellipsis',
                     WebkitLineClamp: isTruncated ? 4 : 'unset',  // Truncate to 3 lines or show all
-                  }}><p>Hi, I'm a full-stack Software Engineer who loves turning complex challenges into elegant code. My toolkit includes React, React Native, Node.js, Django, and Rust, and I use it to build everything from interactive mobile apps to powerful backend systems.</p>
+                  }}><p>Hi, I'm a  Software Engineer who loves turning complex challenges into elegant code. My toolkit includes React, React Native, Node.js, Django, and Python and I use it to build everything from interactive mobile apps to powerful backend systems.</p>
      
                   <p>I'm always exploring better ways to write fast, scalable, and maintainable software.</p>
                 </div>
                 <button
-                  className="btn btn-primary mt-2"
+                  className="btn bio-button mt-2"
                   onClick={() => setIsTruncated(!isTruncated)}
                 >
                   {isTruncated ? 'Show More' : 'Show Less'}
@@ -98,10 +98,10 @@ const Bio = () => {
             <Stack direction="horizontal" style={{ marginTop: "100px" }} gap={3}>
               <div className="p-2">
                 <Row>
-                  <p className="fs-6">FIND  ME</p>
-                  <Col className="socail p-1"><Link to="https://www.linkedin.com/in/emmanuel-adeyemi-464ba5227"><i className='bx bxl-linkedin bx-border border border-light  bx-sm'></i></Link></Col>
-                  <Col className="socail p-1"><Link to="https://github.com/cyrus-nodejs"><i className='bx bxl-github bx-border bx-sm border border-light'></i></Link></Col>
-                  <Col className="socail p-1"><Link to="https://x.com/cyrus_nodejs"><i className='bx bxl-twitter bx-border border border-light bx-sm'></i></Link></Col>
+                  <p className="">FIND  ME</p>
+                  <Col className="socail p-1"><Link to="https://www.linkedin.com/in/emmanuel-adeyemi-464ba5227"><i className='bx bio-icon bxl-linkedin bx-border border border-light  bx-sm'></i></Link></Col>
+                  <Col className="socail p-1"><Link to="https://github.com/cyrus-nodejs"><i className='bx bio-icon bxl-github bx-border bx-sm border border-light'></i></Link></Col>
+                  <Col className="socail p-1"><Link to="https://x.com/cyrus_nodejs"><i className='bx bio-icon bxl-twitter bx-border border border-light bx-sm'></i></Link></Col>
 
                 </Row>
               </div>

@@ -23,19 +23,19 @@ const Appbar = () => {
     <div className="offcanvas-body">
       <ul className="navbar-nav justify-content-end flex-grow-1 pe-3">
         <li className="nav-item">
-          <a className="nav-link fs-5 "  aria-current="page" href="#Bio">HOME</a>
+          <a className="nav-link  "  aria-current="page" href="#Bio">HOME</a>
         </li>
         <li className="nav-item">
-          <a className="nav-link fs-5" target=""  href="#Features">FEATURES</a>
+          <a className="nav-link " target=""  href="#Features">FEATURES</a>
         </li>
         <li className="nav-item">
-          <a className="nav-link fs-5" href="#Portfolio">PORTFOLIO</a>
+          <a className="nav-link " href="#Portfolio">PORTFOLIO</a>
         </li>
         <li className="nav-item">
-          <a className="nav-link fs-5" href="#Resume">RESUME</a>
+          <a className="nav-link " href="#Resume">RESUME</a>
         </li>
         <li className="nav-item">
-          <a className="nav-link fs-5" href="#Contact">CONTACT</a>
+          <a className="nav-link " href="#Contact">CONTACT</a>
         </li>
         
       </ul>
