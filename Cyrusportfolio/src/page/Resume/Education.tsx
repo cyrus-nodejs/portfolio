@@ -4,15 +4,17 @@ const Education = () => {
   return (
     <section id="Education"   >
      <Container>
+        <h2 className='fs-4    mt-2  text-center'>Education & Certification</h2>
     <Row style={{marginRight:""}} >
-      
-    <Col className=""  sm={12} md={6} lg={6}  >
+       <Col className=""  sm={11} md={5} lg={5}  >
     
     
        <Row >
 
       <h2 className='  mt-2 ms-3'> Certifications</h2>
       </Row>
+
+      
       <Row  className="Educationframe education" >
         <Col className="education ">
      
@@ -38,6 +40,9 @@ const Education = () => {
       
      
     </Col>
+  <Col  >
+    <div className='vr'  style={{height: '100%'}}></div>
+  </Col>
 
     <Col className="  " sm={12} md={6} lg={6} >
     

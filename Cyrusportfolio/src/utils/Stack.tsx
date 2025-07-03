@@ -3,12 +3,12 @@ export const Stacks = [
     {
         img: <i className='bx feature-icon  bx-menu  bx-tada-hover  bx-md'></i>,
         title: "Testing",
-        description:"Proficient in software testing, with experience in unit, integration, and end-to-end testing. Skilled in designing testable code and handling edge cases and error scenarios. Familiar with tools and frameworks like Jest, Mocha, Cypress, and Testing Library.",
+        description:"Proficient in software testing, with experience in unit, integration, and end-to-end testing. Skilled in designing testable code and handling edge cases and error scenarios. Familiar with tools  like Jest, Mocha & Cypress, ",
         
     },
     {   img:<i className='bx feature-icon  bx-tv  bx-tada-hover  bx-md'></i>,
         title: "DevOps & Cloud",
-        description:"Proficient in DevOps practices, with experience in automation, CI/CD pipelines, and infrastructure as code. Familiar with tools and ecosystems such as Docker, Kubernetes, Terraform, GitHub Actions, and cloud platforms like AWS and GCP.",
+        description:"Proficient in DevOps practices, with experience in automation, CI/CD pipelines, and infrastructure as code. Familiar with tools  such as Docker, Kubernetes,  GitHub Actions, and cloud platforms like AWS and GCP.",
         
     },
     {
@@ -22,7 +22,7 @@ export const Stacks = [
     {
         img:<i className='bx feature-icon  bx-message-dots  bx-tada-hover  bx-md'></i>,
         title: "Front End",
-        description:"Proficient in React, with experience in building component-based UIs, managing state with hooks and context, and handling side effects using useEffect and async functions. Familiar with React’s ecosystem including React Router, Redux, and Next.js.",
+        description:"Proficient in React, with experience in building component-based UIs, managing state with hooks and context, and handling side effects using useEffect and async functions.",
        
     },
     

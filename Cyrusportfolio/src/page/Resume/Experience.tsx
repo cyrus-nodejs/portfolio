@@ -10,9 +10,8 @@ const Experience = () => {
     
     <h2 className='fs-4    mt-2  text-center'>Work Experience</h2>
     </Row>
-    <Col className="p-2"  sm={12} md={6} lg={6}  >
-     
-     
+   
+    <Col className="p-2"  sm={11} md={5} lg={5}  >
     <Row  className="Educationframe education"  >
     <Col className="education" sm={12}>
    
@@ -25,13 +24,15 @@ const Experience = () => {
     </Col>
   </Row>
 
-   
+  </Col>
+  <Col  >
+    <div className='vr'  style={{height: '100%'}}></div>
   </Col>
 
+  
+  
+  
   <Col className="p-2  " sm={12} md={6} lg={6} >
-  
-    
-  
   <Row  className="Educationframe education"  >
     <Col className="education" sm={12}>
      <p className="">Super Team - Remote </p>

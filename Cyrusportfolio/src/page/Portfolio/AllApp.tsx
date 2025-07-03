@@ -10,7 +10,7 @@ const AllAppImage = () => {
    <Container>
       <Row>
         {AllApp.map((item, index) => (
-          <Col  key={index} xs={12} sm={6} md={3} className="p-5">
+          <Col  key={index} xs={4} sm={4} md={2} className="p-3">
          <Link to={item.url}>
                <LazyLoadImage
       alt="A sample image"
@@ -18,7 +18,7 @@ const AllAppImage = () => {
       effect="blur"
       src={item.image}
       width={100}
-      className="all rounded-2"
+      className="all m-2 rounded-2"
     /></Link>
           </Col>
         ))}

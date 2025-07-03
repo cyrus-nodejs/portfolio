@@ -10,7 +10,7 @@ const MobileImage = () => {
  <Container>
       <Row>
         {Mobile.map((item, index) => (
-          <Col  key={index} xs={12} sm={6} md={4} className="p-5">
+          <Col  key={index} xs={4} sm={4} md={2} className="p-3">
          
                <LazyLoadImage
       alt="A sample image"
@@ -18,7 +18,7 @@ const MobileImage = () => {
       effect="blur"
       src={item.image}
       width={100}
-      className="all rounded-2"
+      className="all  rounded-2"
     />
           </Col>
         ))}

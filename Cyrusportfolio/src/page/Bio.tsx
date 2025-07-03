@@ -1,5 +1,7 @@
 /* eslint-disable react-hooks/exhaustive-deps */
 /* eslint-disable @typescript-eslint/no-unused-vars */
+import { LazyLoadImage } from 'react-lazy-load-image-component';
+import 'react-lazy-load-image-component/src/effects/blur.css';
 
 import { useState, useEffect } from "react";
 import { Container, Image, Col, Row, Stack } from "react-bootstrap"
@@ -109,9 +111,22 @@ const Bio = () => {
             </Stack>
           </Col>
           <Col sm={12} md={6} lg={6}>
-            <Image src={profile} fluid className=" profile   object-fit-fill border border-success border-opacity-10 rounded" rounded />
+            {/* <Image src={profile} fluid className=" profile   object-fit-fill border border-success border-opacity-10 rounded" rounded /> */}
+            <LazyLoadImage
+                        alt="A sample image"
+                        
+                        effect="blur"
+                        src={profile}
+                          width="100%"
+                        className="all  rounded-2 profile opacity-25  object-fit-fill border border-success border-opacity-10 rounded"
+                     style={{
+          zIndex: 0,
+          opacity: 0.2, // make it faint
+        }}
+                      />
+            
           </Col>
-
+ 
 
         </Row>
       </Container>

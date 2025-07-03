@@ -17,18 +17,18 @@ const Portfolio = () => {
     <Tab.Container id="left-tabs-example" defaultActiveKey="all"   >
       <Row>
           <Nav variant="tab" className="  "  >
-            <Nav.Item className="border">
+            
+            <Nav.Item className="border rounded-2 mx-1">
               <Nav.Link className=" text-reset " eventKey="all">All</Nav.Link>
             </Nav.Item>
-             <Nav.Item className="border">
-              <Nav.Link className="border-dark text-reset" eventKey="web">Web App</Nav.Link>
+            <Nav.Item className="border rounded-2 mx-1">
+              <Nav.Link className="border-dark text-reset" eventKey="desktop">Desktop App</Nav.Link>
             </Nav.Item>
-            <Nav.Item className="border">
+            <Nav.Item className="border rounded-2  mx-1">
               <Nav.Link className="border-dark text-reset" eventKey="mobile">Mobile App</Nav.Link>
             </Nav.Item >
-           
-            <Nav.Item className="border">
-              <Nav.Link className="border-dark text-reset" eventKey="desktop">Desktop App</Nav.Link>
+             <Nav.Item className="border rounded-2 mx-1">
+              <Nav.Link className="border-dark text-reset" eventKey="web">Web App</Nav.Link>
             </Nav.Item>
           </Nav>
       

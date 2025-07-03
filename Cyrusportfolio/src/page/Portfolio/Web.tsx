@@ -8,7 +8,7 @@ const WebImage = () => {
      <Container>
       <Row>
         {Web.map((item, index) => (
-          <Col key={index} xs={12} sm={6} md={4} className="p-5">
+          <Col key={index} xs={4} sm={6} md={2} className="p-3">
        
                <LazyLoadImage
       alt="A sample image"
@@ -16,7 +16,7 @@ const WebImage = () => {
       effect="blur"
       src={item.image}
       width={100}
-      className="all"
+      className="all rounded-2"
     />
         
           </Col>
