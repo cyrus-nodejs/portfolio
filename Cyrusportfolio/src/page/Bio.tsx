@@ -70,7 +70,7 @@ const Bio = () => {
                   {({ isVisible }) =>
                     <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
                       <p className=" navpad fw-light">Welcome to my World</p>
-                      <h2 className="fs-1 fw-bold " >Hi, I'm <span className=" stack fs-1 fw-bold"> Emmanuel  Adeyemi</span> <h2 className="txt-rotate" data-rotate='[ "SOFTWARE ENGINEER"]'><h2 className="wrap fs-1 fw-bold ">a {text} Developer</h2></h2></h2>
+                      <h2 className="fs-1 fw-bold " >Hi, I'm <span className=" stack fs-1 fw-bold"> Emmanuel  Adeyemi</span> <h2 className="txt-rotate" data-rotate='[ "SOFTWARE ENGINEER"]'><h2 className="wrap fs-1 fw-bold ">a {text} Engineer</h2></h2></h2>
                     </div>}
                 </TrackVisibility>
               </div>
@@ -101,9 +101,9 @@ const Bio = () => {
               <div className="p-2">
                 <Row>
                   <p className="">FIND  ME</p>
-                  <Col className="socail p-1"><Link to="https://www.linkedin.com/in/emmanuel-adeyemi-464ba5227"><i className='bx bio-icon bxl-linkedin bx-border border border-light  bx-sm'></i></Link></Col>
-                  <Col className="socail p-1"><Link to="https://github.com/cyrus-nodejs"><i className='bx bio-icon bxl-github bx-border bx-sm border border-light'></i></Link></Col>
-                  <Col className="socail p-1"><Link to="https://x.com/cyrus_nodejs"><i className='bx bio-icon bxl-twitter bx-border border border-light bx-sm'></i></Link></Col>
+                  <Col className="socail p-1"><Link to="https://www.linkedin.com/in/emmanuel-adeyemi-464ba5227"><i className='bx bio-icon bxl-linkedin p-3 rounded  bx-sm'></i></Link></Col>
+                  <Col className="socail p-1"><Link to="https://github.com/cyrus-nodejs"><i className='bx bio-icon bxl-github bx-border bx-sm p-3 rounded'></i></Link></Col>
+                  <Col className="socail p-1"><Link to="https://x.com/cyrus_nodejs"><i className='bx bio-icon bxl-twitter p-3 rounded bx-sm'></i></Link></Col>
 
                 </Row>
               </div>

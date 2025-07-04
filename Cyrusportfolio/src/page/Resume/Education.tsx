@@ -41,7 +41,7 @@ const Education = () => {
      
     </Col>
   <Col  >
-    <div className='vr'  style={{height: '100%'}}></div>
+    <div className='vr vr-thick mx-3'  style={{height: '100%'}}></div>
   </Col>
 
     <Col className="  " sm={12} md={6} lg={6} >

@@ -16,17 +16,17 @@ const Resumebox = () => {
      <Tab.Container id=""  defaultActiveKey="first">
       <Row>
         <Col sm={12}>
-          <Nav variant="tabs" className=""  as="li" justify>
+          <Nav variant="tabs" className=" "  as="li" justify>
           <Nav.Item>
-              <Nav.Link eventKey="second" className="resumelink text-center">CODING SKILLS</Nav.Link>
+              <Nav.Link eventKey="second" className="resumelink text-center">Coding Skills</Nav.Link>
             </Nav.Item>
             <Nav.Item>
             
-              <Nav.Link eventKey="third" className="resumelink text-center text-outline-danger">EXPERIENCE</Nav.Link>
+              <Nav.Link eventKey="third" className="resumelink text-center ">Work Experience</Nav.Link>
             </Nav.Item>
             
              <Nav.Item>
-             <Nav.Link eventKey="first" className="resumelink  text-center">CERTIFICATIONS</Nav.Link>
+             <Nav.Link eventKey="first" className="resumelink  text-center">Certifications & Training</Nav.Link>
             </Nav.Item> 
           </Nav>
         

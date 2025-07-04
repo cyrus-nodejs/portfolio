@@ -1,38 +1,51 @@
 import {Col, Row, Form, ProgressBar} from 'react-bootstrap';
 
 
+import React, { useState, useEffect } from 'react';
+
+
 
 const Skills = () => {
+   const [progress, setProgress] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setProgress(prev => (prev < 100 ? prev + 1 : 100));
+    }, 100); // update every 100ms
+
+    return () => clearInterval(interval);
+  }, []);
+
   return (
     <section id="Skills"  >
     <Row >
     <Col sm={12} md={6} lg={6} className="p-3 Education" >
     <Row >
 
-       <div className="p-2 fs-2 ">FRONT END</div>
+       <div className="p-2 fs-2 ">Front End</div>
       <div className="p-2 fs-6">
-       <Form.Label>REACT</Form.Label>
-       <ProgressBar  now={90} label="90%" variant="secondary" />
+       <Form.Label>React</Form.Label>
+       <ProgressBar className='progress-bar'   animated now={progress} label={`${progress}%`} />
       </div>
       <div className="p-2 f">
-      <Form.Label>REDUX</Form.Label>
-      <ProgressBar  now={95} label="95%"  variant="secondary" />
+      <Form.Label>Redux</Form.Label>
+      <ProgressBar  animated now={progress} label={`${progress}%`} className='progress-bar'  variant="" />
       </div>
       <div className="p-2">
-      <Form.Label>JAVASCRIPT</Form.Label>
-      <ProgressBar  now={100} label="100%" variant="secondary" />
+      <Form.Label>Typescript</Form.Label>
+      <ProgressBar  animated now={progress} label={`${progress}%`} className='progress-bar' variant="" />
       </div>
       <div className="p-2">
-      <Form.Label>BOOTSTRAP</Form.Label>
-      <ProgressBar  now={100} label="100%" variant="secondary" />
+      <Form.Label>Bootstrap</Form.Label>
+      <ProgressBar  animated now={progress} label={`${progress}%`} className='progress-bar' variant="" />
       </div>
       <div className="p-2">
-      <Form.Label> TAILWIND CSS</Form.Label>
-      <ProgressBar  now={90} label="90%" variant="secondary" />
+      <Form.Label> Tailwind Css</Form.Label>
+      <ProgressBar  animated now={progress} label={`${progress}%`} className='progress-bar' variant="" />
       </div>
       <div className="p-2">
       <Form.Label>HTML</Form.Label>
-      <ProgressBar  now={90} label="90%" variant="secondary" />
+      <ProgressBar  animated now={progress} label={`${progress}%`} className='progress-bar' variant="" />
       </div>
     </Row>
     
@@ -40,52 +53,34 @@ const Skills = () => {
     <Col className="p-3   Education " sm={12} md={6} lg={6}>
     <Row >
       
-       <div className="p-2 fs-2 ">BACK END</div>
+       <div className="p-2 fs-2 ">Back End</div>
        <div className="p-2">
-      <Form.Label>PYTHON</Form.Label>
-      <ProgressBar  now={90} label="90%" variant="secondary" />
+      <Form.Label>Python</Form.Label>
+      <ProgressBar  animated now={progress} label={`${progress}%`} variant="" className='progress-bar' />
       </div>
       <div className="p-2">
-      <Form.Label>TYPESCRIPT </Form.Label>
-      <ProgressBar  now={90} label="90%" variant="secondary" />
+      <Form.Label>Typescript </Form.Label>
+      <ProgressBar  animated now={progress} label={`${progress}%`} className='progress-bar' variant="" />
       </div>
       <div className="p-2">
-      <Form.Label>EXPRESS JS</Form.Label>
-      <ProgressBar  now={90} label="90%" variant="secondary" />
+      <Form.Label>Express Js</Form.Label>
+      <ProgressBar animated now={progress} label={`${progress}%`} className='progress-bar' variant="" />
       </div>
       <div className="p-2">
-      <Form.Label>DJANGO</Form.Label>
-      <ProgressBar  now={90} label="90%" variant="secondary" />
+      <Form.Label>Django</Form.Label>
+      <ProgressBar  animated now={progress} label={`${progress}%`} className='progress-bar' variant="" />
       </div>
       <div className="p-2">
-      <Form.Label>MONGODB</Form.Label>
-      <ProgressBar  now={90} label="90%" variant="secondary" />
+      <Form.Label>Nodejs</Form.Label>
+      <ProgressBar  animated now={progress} label={`${progress}%`} className='progress-bar' variant="" />
       </div>
       <div className="p-2 fs-6">
-       <Form.Label>MYSQL</Form.Label>
-       <ProgressBar  now={100} label="100%" variant="secondary" />
+       <Form.Label>Postgresql</Form.Label>
+       <ProgressBar animated now={progress} label={`${progress}%`} className='progress-bar' variant="" />
       </div>
       
      
-      {/* <div className="p-2">
-      <Form.Label>HTML</Form.Label>
-      <ProgressBar  now={100} label="100%" variant="secondary" />
-      </div>
-      
-      <div className="p-2">
-      <Form.Label>CSS</Form.Label>
-      <ProgressBar  now={100} label="100%" variant="secondary" />
-      </div>
-      
-
-      <div className="p-2">
-      <Form.Label>BOOTSTRAP</Form.Label>
-      <ProgressBar  now={100} label="100%" variant="secondary" />
-      </div> */}
-      {/* <div className="p-2">
-      <Form.Label>REDUX</Form.Label>
-      <ProgressBar  now={100} label="100%" variant="secondary" />
-      </div> */}
+     
     </Row>
        
     
