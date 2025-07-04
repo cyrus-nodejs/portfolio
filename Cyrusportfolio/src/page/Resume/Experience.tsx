@@ -8,7 +8,7 @@ const Experience = () => {
       <Row>
       <Row >
     
-    <h2 className='fs-4    mt-2  text-center'>Work Experience</h2>
+    <p className='fs-5    mt-2  text-center'>Work Experience</p>
     </Row>
    
     <Col className="p-2"  sm={11} md={5} lg={5}  >

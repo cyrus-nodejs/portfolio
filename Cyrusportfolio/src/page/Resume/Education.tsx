@@ -4,14 +4,14 @@ const Education = () => {
   return (
     <section id="Education"   >
      <Container>
-        <h2 className='fs-4    mt-2  text-center'>Education & Certification</h2>
+        <p className='fs-4    mt-2  text-center'>Education & Certification</p>
     <Row style={{marginRight:""}} >
        <Col className=""  sm={11} md={5} lg={5}  >
     
     
        <Row >
 
-      <h2 className='  mt-2 ms-3'> Certifications</h2>
+      <p className='fs-5  mt-2 ms-3'> Certifications</p>
       </Row>
 
       
@@ -47,7 +47,7 @@ const Education = () => {
     <Col className="  " sm={12} md={6} lg={6} >
     
 
-      <h2 className="   mt-2 ms-4">Education</h2>
+      <p className=" fs-5  mt-2 ms-4">Education</p>
     
 
   <Row  className="Educationframe education" >

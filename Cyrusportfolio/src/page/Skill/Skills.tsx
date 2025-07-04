@@ -22,7 +22,7 @@ const Skills = () => {
     <Col sm={12} md={6} lg={6} className="p-3 Education" >
     <Row >
 
-       <div className="p-2 fs-2 ">Front End</div>
+       <p className="p-2 fs-5">Front End</p>
       <div className="p-2 fs-6">
        <Form.Label>React</Form.Label>
        <ProgressBar className='progress-bar'   animated now={progress} label={`${progress}%`} />
@@ -53,7 +53,7 @@ const Skills = () => {
     <Col className="p-3   Education " sm={12} md={6} lg={6}>
     <Row >
       
-       <div className="p-2 fs-2 ">Back End</div>
+       <p className="p-2 fs-5 ">Back End</p>
        <div className="p-2">
       <Form.Label>Python</Form.Label>
       <ProgressBar  animated now={progress} label={`${progress}%`} variant="" className='progress-bar' />

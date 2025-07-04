@@ -45,13 +45,13 @@ const Contact = () => {
   
   return (
     <section id="Contact" className="section">
-        <Container>
+        <Container className='py-5'>
          
-            <Row className='my-5' >
+            <Row className='' >
              
               
                 
-                     <h1 className=" mb-3 text-center">Contact</h1>
+                     <h2 className=" pt-3 text-center">Contact</h2>
                   
                
 
@@ -64,24 +64,19 @@ const Contact = () => {
                <Link to='https://wa.link/vqp6e0' target="_blank" className='text-decoration-none text-light'>
   <div className="d-flex align-items-center ">
   <div className=" flex-shrink-0"><i className='bx bxl-whatsapp bx-md'></i></div>
-  <div className="flex-grow-1 ms-3"><div className="text-start fs-5 fw-normal">Whatsapp</div><div className="text-start fs-5 ">https://wa.link/vqp6e0</div></div>
+  <div className="flex-grow-1 ms-3"><div className="text-start fs-5 ">https://wa.link/vqp6e0</div></div>
   
 </div>
 </Link></Row>
 
-<Row className=" w-100  my-2  ">
-  <Link to='https://www.linkedin.com/in/emmanuel-adeyemi-464ba5227' target="_blank" className='text-decoration-none text-light'>
-  <div className="d-flex align-items-center ">
-  <div className=" flex-shrink-0"><i className='bx bxs-envelope bx-md'></i></div>
-  <div className="flex-grow-1 ms-3"><div className="text-start fs-5 fw-normal">Linkedin</div><div className="text-start fs-5 ">https://www.linkedin.com/in/emmanuel-adeyemi-464ba5227</div></div>
-</div></Link></Row>
+
 
                
              </Col>
              </Row>
              </Col>
                 
-                <Col sm={12} lg={6}   className="Contactframe">
+                <Col sm={12} lg={6}   className="Contactframe py-5">
                     <Col>
                 <Form onSubmit={handleSubmit}>
       <Row className="mb-1">

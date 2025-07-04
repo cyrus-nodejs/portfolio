@@ -5,10 +5,10 @@ import Skillbox from './Skill/SkillBox'
 const Features = () => {
   return (
     <section id="Features">
-      <Container >
-      <Row className='my-5'>
+      <Container className='py-5' >
+      <Row className=''>
 
-      <h1 className="text-center stack">What I Do</h1>
+      <h2 className="text-center pt-3">What I Do</h2>
    
       <Col className="p-2">
     

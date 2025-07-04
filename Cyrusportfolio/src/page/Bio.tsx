@@ -60,8 +60,8 @@ const Bio = () => {
   }
 
   return (
-    <section id="Bio" className="section">
-      <Container >
+    <section id="Bio" className="section pt-3">
+      <Container className='pt-5' >
         <Row>
           <Col sm={12} md={6} lg={6}>
             <Stack gap={1}>
@@ -70,7 +70,7 @@ const Bio = () => {
                   {({ isVisible }) =>
                     <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
                       <p className=" navpad fw-light">Welcome to my World</p>
-                      <h2 className="fs-1 fw-bold " >Hi, I'm <span className=" stack fs-1 fw-bold"> Emmanuel  Adeyemi</span> <h2 className="txt-rotate" data-rotate='[ "SOFTWARE ENGINEER"]'><h2 className="wrap fs-1 fw-bold ">a {text} Engineer</h2></h2></h2>
+                      <h2 className=" " >Hi, I'm <span className=" "> Emmanuel  Adeyemi</span> <h2 className="txt-rotate" data-rotate='[ "SOFTWARE ENGINEER"]'><h2 className="wrap ">a {text} Engineer</h2></h2></h2>
                     </div>}
                 </TrackVisibility>
               </div>

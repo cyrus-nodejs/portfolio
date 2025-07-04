@@ -9,10 +9,10 @@ const Portfolio = () => {
 
   return (
     <section  id="Portfolio" className="  section">
-    <Container className="mt-5">
-      <Row className='my-3'>
+    <Container className="pt-5">
+      <Row className=''>
   
-      <h1 className="text-center ">Projects</h1>
+      <h2 className="text-center pt-3">Projects</h2>
       </Row>
     <Tab.Container id="left-tabs-example" defaultActiveKey="all"   >
       <Row>

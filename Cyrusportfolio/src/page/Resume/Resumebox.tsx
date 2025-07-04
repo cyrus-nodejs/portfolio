@@ -26,7 +26,7 @@ const Resumebox = () => {
             </Nav.Item>
             
              <Nav.Item>
-             <Nav.Link eventKey="first" className="resumelink  text-center">Certifications & Training</Nav.Link>
+             <Nav.Link eventKey="first" className="resumelink  text-center">Certifications</Nav.Link>
             </Nav.Item> 
           </Nav>
         
