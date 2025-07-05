@@ -6,10 +6,10 @@ import portfolioMobile from '../assets/images/Screenshot_20250701-235803_Chrome.
 // import calculatorapp from '../assets/images/Screenshot_20250701-231124_Chrome.jpg'
 // import drumapp from '../assets/images/Screenshot_20250701-231209_Chrome.jpg'
 
-import musicDesktop from '../assets/images/musicplanet.netlify.app_(Nest Hub Max).png'
+import musicDesktop from '../assets/images/localhost_5173_allartists(Nest Hub Max).png'
 import videoDesktop from '../assets/images/videoisland.netlify.app_(Nest Hub Max).png'
 
-import musicWeb from '../assets/images/musicplanet.netlify.app_(iPhone 14 Pro Max).png'
+import musicWeb from '../assets/images/localhost_5173_allartists(Surface Duo).png'
 import portfolioWeb from '../assets/images/localhost_5173_(Surface Duo).png'
 import videoWeb from '../assets/images/videoisland.netlify.app_(iPad Pro).png'
 import chatWeb from '../assets/images/wen-chat.netlify.app_(Surface Duo) (1).png'
