@@ -12,7 +12,7 @@ import videoDesktop from '../assets/images/videoisland.netlify.app_(Nest Hub Max
 import musicWeb from '../assets/images/localhost_5173_allartists(Surface Duo).png'
 import portfolioWeb from '../assets/images/wukinc.netlify.app_(iPad Pro).png'
 import videoWeb from '../assets/images/videoisland.netlify.app_(iPad Pro).png'
-import chatWeb from '../assets/images/wen-chat.netlify.app_(Surface Duo) (1).png'
+import chatWeb from '../assets/images/localhost_5173_(iPad Mini).png'
 import shoppingWeb  from '../assets/images/shoppingluxury.netlify.app_(iPad Pro) (1).png'
 
 
