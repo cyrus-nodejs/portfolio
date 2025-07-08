@@ -20,15 +20,7 @@
   color-scheme: light dark;
 }
 
-darkmode{
-    color: var(--color-text);
-    background: var(--color-background);
-}
 
-lightmode{
-   color: var(--color-background);
-    background: var(--color-text);
-}
 
 body.dark-mode {
   --color-background: #0D1016;

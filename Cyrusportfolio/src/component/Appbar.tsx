@@ -11,10 +11,6 @@ type DarkModeProps = {
 
 const Appbar : React.FC<DarkModeProps>  = ({darkMode, setDarkMode}) => {
  
-
-
-
-
    const toggleDarkMode = () => setDarkMode(!darkMode);
      useEffect(() => {
     document.body.classList.toggle('dark-mode', darkMode);
