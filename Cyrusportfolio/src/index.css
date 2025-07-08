@@ -20,6 +20,31 @@
   color-scheme: light dark;
 }
 
+darkmode{
+    color: var(--color-text);
+    background: var(--color-background);
+}
+
+lightmode{
+   color: var(--color-background);
+    background: var(--color-text);
+}
+
+body.dark-mode {
+  --color-background: #0D1016;
+  --color-sub-background: #08090D;
+  --color-text: white;
+  --color-primary: #314252;
+  --color-accent: #3B82F6;
+}
+
+body.light-mode {
+  --color-background: #FEFEFE;
+  --color-sub-background: #E4E6EC;
+  --color-text: #0c1217;
+  --color-primary: #d1d5db;
+  --color-accent: #2563eb;
+}
 h1 {
   font-size: 2.5rem;
   font-weight: 700;

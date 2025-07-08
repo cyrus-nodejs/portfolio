@@ -6,7 +6,7 @@ const Footer = () => {
 <Container>
   <Row>
     <Col className="text-center  fs-6 fw-light">
-    © 2024. All rights reserved by Cyrus.
+    © 2024. All rights reserved by Emmanuel Adeyemi.
     </Col>
   </Row>
 </Container>
