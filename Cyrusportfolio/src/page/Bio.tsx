@@ -83,9 +83,9 @@ const Bio = () => {
                     overflow: 'hidden',
                     textOverflow: 'ellipsis',
                     WebkitLineClamp: isTruncated ? 4 : 'unset',  // Truncate to 3 lines or show all
-                  }}><p>Hi, I'm a  Software Engineer who loves turning complex challenges into elegant code. My toolkit includes React, React Native, Node.js, Django, and Python and I use it to build everything from interactive mobile apps to powerful backend systems.</p>
+                  }}><p>I’m a passionate Software Engineer with 2 years of experience designing, developing, and maintaining scalable software solutions. I specialize in  full-stack web development, backend systems, mobile apps and I enjoy solving complex problems with clean, efficient code.</p>
      
-                  <p>I'm always exploring better ways to write fast, scalable, and maintainable software.</p>
+                  <p>My approach combines solid engineering principles with creative problem-solving to deliver reliable and user-friendly products. I thrive in collaborative environments and continuously seek to learn new technologies and best practices to stay ahead in the ever-evolving tech landscape</p>
                 </div>
                 <button
                   className="btn bio-button mt-2"

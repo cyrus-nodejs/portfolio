@@ -87,7 +87,7 @@ const Appbar : React.FC<DarkModeProps>  = ({darkMode, setDarkMode}) => {
               </li>
               <li className="nav-item">
                 <Button
-                  className="nav-link nav-menu rounded-5 px-3"
+                  className="nav-link nav-menu darkmode  rounded-5 px-3"
                   onClick={toggleDarkMode}
                   variant={darkMode ? 'light' : 'dark'}
                 >

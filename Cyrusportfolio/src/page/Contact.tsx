@@ -60,16 +60,25 @@ const Contact = () => {
                 <Row className="mt-3">
                 <Image src={img} fluid  /> 
                <Col>
+ 
+
+
                <Row className=" w-100  mt-5  ">
                <Link to='https://wa.link/vqp6e0' target="_blank" className='text-decoration-none text-light'>
   <div className="d-flex align-items-center ">
-  <div className=" flex-shrink-0"><i className='bx bxl-whatsapp bx-md'></i></div>
-  <div className="flex-grow-1 ms-3"><div className="text-start fs-5 ">https://wa.link/vqp6e0</div></div>
+  <div className=" flex-shrink-0"><i className='bx bx-phone-call  bx-sm'></i></div>
+  <div className="flex-grow-1 ms-3"><div className="text-start fs-5 ">+234904456965</div></div>
   
 </div>
 </Link></Row>
-
-
+               <Row className=" w-100  mt-5  ">
+               <Link to='https://wa.link/vqp6e0' target="_blank" className='text-decoration-none text-light'>
+  <div className="d-flex align-items-center ">
+  <div className=" flex-shrink-0"><i className='bx bx-envelope  bx-sm'></i></div>
+  <div className="flex-grow-1 ms-3"><div className="text-start fs-5 ">adeyemiemma45@gmail.com</div></div>
+  
+</div>
+</Link></Row>
 
                
              </Col>
