@@ -27,7 +27,7 @@ const Education = () => {
       <Row  className="Educationframe education" >
         <Col className="education">
       
-        <p className="text-white ">HTML, CSS & Python Django Fullstack for Web Development </p>
+        <p className=" ">HTML, CSS & Python Django Fullstack for Web Development </p>
         <p className=""> Oak Academy </p>
       <p className=" "> 2023</p>
    
@@ -54,7 +54,7 @@ const Education = () => {
         <Col className="education">
 
     <p className=" ">BSc in Agriculture  </p>
-    <p className="text-white ">Kogi State University, Nigeria</p>
+    <p className=" ">Kogi State University, Nigeria</p>
     <p className="  "> 2015</p>
       </Col>
       </Row>

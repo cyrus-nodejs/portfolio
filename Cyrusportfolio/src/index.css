@@ -30,12 +30,15 @@ body.dark-mode {
 }
 
 body.light-mode {
-  --color-background: #F4F0FD;
-  --color-sub-background: #E6DDF8;
+  --color-background: #F4F3F7;
+  --color-sub-background: #D2CDDE;
   --color-text: #0c1217;
   --color-primary: #d1d5db;
   --color-accent: #2563eb;
 }
+
+
+
 h1 {
   font-size: 2.5rem;
   font-weight: 700;

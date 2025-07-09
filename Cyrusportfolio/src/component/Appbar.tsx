@@ -21,7 +21,7 @@ const Appbar : React.FC<DarkModeProps>  = ({darkMode, setDarkMode}) => {
     
  <nav
       className={`navbar navbar-expand-lg sticky-top ${
-        darkMode ? 'navbar-dark bg-dark' : 'navbar-light bg-light'
+        darkMode ? 'navbar-dark ' : 'navbar-light '
       }`}
     >
       <div className="container-fluid">
@@ -91,7 +91,7 @@ const Appbar : React.FC<DarkModeProps>  = ({darkMode, setDarkMode}) => {
                   onClick={toggleDarkMode}
                   variant={darkMode ? 'light' : 'dark'}
                 >
-                  {darkMode ? 'Light Mode' : 'Dark Mode'}
+                  {!darkMode ? 'Light Mode' : 'Dark Mode'}
                 </Button>
               </li>
             </ul>
