@@ -21,7 +21,7 @@ const contactEmail = nodemailer.createTransport({
   },
 });
 
-contactEmail.verify((error) => {
+contactEmail.verify((error: any) => {
   if (error) {
     console.log(error);
   } else {
@@ -41,7 +41,7 @@ router.post("/contact", (req, res) => {
   const phone = req.body.phone;
   const mail = {
     from: name,
-    to: "adeyemiemma45@gmail.com",
+    to: process.env.WORK_EMAIL,
     subject: "Contact Form Submission - Portfolio",
     html: `<p>Name: ${name}</p>
            <p>Email: ${email}</p>
@@ -49,7 +49,7 @@ router.post("/contact", (req, res) => {
            <p>Subject: ${subject}</p>
            <p>Message: ${message}</p>`,
   };
-  contactEmail.sendMail(mail, (error) => {
+  contactEmail.sendMail(mail, (error: any) => {
     if (error) {
       res.json(error);
     } else {

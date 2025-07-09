@@ -64,7 +64,7 @@ const Contact = () => {
 
 
                <Row className=" w-100  mt-5  ">
-               <Link to='https://wa.link/vqp6e0' target="_blank" className='text-decoration-none text-light'>
+               <Link to='https://wa.link/vqp6e0' target="_blank" className='text-decoration-none '>
   <div className="d-flex align-items-center ">
   <div className=" flex-shrink-0"><i className='bx bx-phone-call  bx-sm'></i></div>
   <div className="flex-grow-1 ms-3"><div className="text-start fs-5 ">+234904456965</div></div>
@@ -72,10 +72,10 @@ const Contact = () => {
 </div>
 </Link></Row>
                <Row className=" w-100  mt-5  ">
-               <Link to='https://wa.link/vqp6e0' target="_blank" className='text-decoration-none text-light'>
+               <Link to='https://wa.link/vqp6e0' target="_blank" className='text-decoration-none '>
   <div className="d-flex align-items-center ">
   <div className=" flex-shrink-0"><i className='bx bx-envelope  bx-sm'></i></div>
-  <div className="flex-grow-1 ms-3"><div className="text-start fs-5 ">adeyemiemma45@gmail.com</div></div>
+  <div className="flex-grow-1 ms-3"><div className="text-start fs-5 ">adeyemibukun.softwareengineer</div></div>
   
 </div>
 </Link></Row>
@@ -91,29 +91,29 @@ const Contact = () => {
       <Row className="mb-1">
         <Form.Group as={Col} controlId="formGridEmail">
           <Form.Label>YOUR NAME</Form.Label>
-          <Form.Control className="form-text shadow-none text-light" value={formDetails.name} onChange={(e) => onFormUpdate('name', e.target.value)}  type="text" placeholder="" required/>
+          <Form.Control className="form-text shadow-none text-dark" value={formDetails.name} onChange={(e) => onFormUpdate('name', e.target.value)}  type="text" placeholder="" required/>
         </Form.Group>
 
         <Form.Group as={Col} controlId="formGridPassword">
           <Form.Label>PHONE</Form.Label>
-          <Form.Control className="form-text shadow-none text-light" value={formDetails.phone} onChange={(e) => onFormUpdate('phone', e.target.value)} type="text" placeholder="" required />
+          <Form.Control className="form-text shadow-none " value={formDetails.phone} onChange={(e) => onFormUpdate('phone', e.target.value)} type="text" placeholder="" required />
         </Form.Group>
       </Row>
 
 
       <Form.Group className="mb-3" controlId="formGridAddress1">
         <Form.Label>EMAIL</Form.Label>
-        <Form.Control className="form-text shadow-none text-light" value={formDetails.email} onChange={(e) => onFormUpdate('email', e.target.value)} type="email" placeholder="" required/>
+        <Form.Control className="form-text shadow-none " value={formDetails.email} onChange={(e) => onFormUpdate('email', e.target.value)} type="email" placeholder="" required/>
       </Form.Group>
 
       <Form.Group className="mb-3" controlId="formGridAddress1">
         <Form.Label>SUBJECT</Form.Label>
-        <Form.Control className="form-text shadow-none text-light" value={formDetails.subject} type="text" onChange={(e) => onFormUpdate('subject', e.target.value)} placeholder="" required/>
+        <Form.Control className="form-text shadow-none " value={formDetails.subject} type="text" onChange={(e) => onFormUpdate('subject', e.target.value)} placeholder="" required/>
       </Form.Group>
 
       <Form.Group className="mb-3" controlId="formGridAddress2">
         <Form.Label>YOUR MESSAGE</Form.Label>
-        <Form.Control className="form-text shadow-none text-light" value={formDetails.message}  as="textarea" onChange={(e) => onFormUpdate('message', e.target.value)} rows={8} placeholder="" required />
+        <Form.Control className="form-text shadow-none " value={formDetails.message}  as="textarea" onChange={(e) => onFormUpdate('message', e.target.value)} rows={8} placeholder="" required />
       </Form.Group>
 
       <div className="d-grid gap-2">

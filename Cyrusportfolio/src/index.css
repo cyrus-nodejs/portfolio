@@ -21,7 +21,6 @@
 }
 
 
-
 body.dark-mode {
   --color-background: #0D1016;
   --color-sub-background: #08090D;
@@ -31,8 +30,8 @@ body.dark-mode {
 }
 
 body.light-mode {
-  --color-background: #FEFEFE;
-  --color-sub-background: #E4E6EC;
+  --color-background: #F4F0FD;
+  --color-sub-background: #E6DDF8;
   --color-text: #0c1217;
   --color-primary: #d1d5db;
   --color-accent: #2563eb;
@@ -149,9 +148,18 @@ color: var(--color-text);
   background-color: rgb(219, 28, 28);;
 }
 
-.form-text{
+.form-control{
 background:var(--color-primary) ;
 }
+
+.form-control:focus{
+background:var(--color-primary) ;
+}
+
+.form-control:hover{
+background:var(--color-primary) ;
+}
+
 
 .Educationframe{
 margin: 10px;
