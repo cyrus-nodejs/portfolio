@@ -1,16 +1,12 @@
 
 
 import { Button } from 'react-bootstrap';
-
+import { useTheme } from "../context/themecontext";
 import { useEffect } from 'react';
-type DarkModeProps = {
-    darkMode:  boolean;
-    setDarkMode: React.Dispatch<React.SetStateAction<boolean>>;
-  };
-  
 
-const Appbar : React.FC<DarkModeProps>  = ({darkMode, setDarkMode}) => {
- 
+
+const Appbar   = () => {
+  const { darkMode, setDarkMode } = useTheme();
    const toggleDarkMode = () => setDarkMode(!darkMode);
      useEffect(() => {
     document.body.classList.toggle('dark-mode', darkMode);

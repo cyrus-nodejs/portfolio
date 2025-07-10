@@ -1,7 +1,7 @@
 
 import Container from 'react-bootstrap/Container';
 import { Row} from 'react-bootstrap';
-import React, { useState } from 'react';
+
 
 import Appbar from '../../src/component/Appbar'
 import Bio from "../page/Bio"
@@ -14,11 +14,11 @@ import Footer from "../../src/component/Footer"
 const Home = () => {
 
 
-    const [darkMode, setDarkMode] = useState(false);
+  
   return (
     <Container fluid >
       <Row>
-        <Appbar darkMode={darkMode}  setDarkMode= {setDarkMode}/>
+        <Appbar />
          <Bio />
          <Portfolio />
          <Features />

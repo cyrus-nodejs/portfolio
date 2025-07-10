@@ -3,13 +3,18 @@ import { LazyLoadImage } from 'react-lazy-load-image-component';
 import 'react-lazy-load-image-component/src/effects/blur.css';
 
 import { Container, Row, Col } from 'react-bootstrap';
-import {Mobile } from '../../utils/Projects';
+import { allmobile} from '../../utils/Project/Darkmode';
+import { allmobile2 } from '../../utils/Project/LightMode';
+import { useTheme } from "../../context/themecontext";
 import { Link } from 'react-router-dom';
+
 const MobileImage = () => {
+
+    const { darkMode} = useTheme();
   return (
  <Container>
       <Row>
-        {Mobile.map((item, index) => (
+        { darkMode ? ( allmobile.map((item, index) => (
           <Col  key={index} xs={4} sm={4} md={2} className="p-3">
          <Link to={item.url}>
                <LazyLoadImage
@@ -23,7 +28,21 @@ const MobileImage = () => {
     </Link>
           </Col>
           
-        ))}
+        ))) : ( allmobile2.map((item, index) => (
+          <Col  key={index} xs={4} sm={4} md={2} className="p-3">
+         <Link to={item.url}>
+               <LazyLoadImage
+      alt="A sample image"
+      height={200}
+      effect="blur"
+      src={item.image}
+      width={100}
+      className="all  rounded-2"
+    />
+    </Link>
+          </Col>
+          
+        ))) }
       </Row>
     </Container>
   )

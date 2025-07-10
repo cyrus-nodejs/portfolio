@@ -30,11 +30,11 @@ body.dark-mode {
 }
 
 body.light-mode {
-  --color-background: #F4F3F7;
-  --color-sub-background: #D2CDDE;
+  --color-background: #E9E7EF;
+  --color-sub-background: #DDDAE7;
   --color-text: #0c1217;
-  --color-primary: #d1d5db;
-  --color-accent: #2563eb;
+  --color-primary: #C8C2D6;
+  --color-accent: #20294f;
 }
 
 
@@ -99,7 +99,8 @@ color: var(--color-text);
 }
 
 .progress-bar{
-  background:  var(--color-primary); ;
+  background:  var(--color-primary); 
+  color:var(--color-text)
 }
 .resumelink{
   
