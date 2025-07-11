@@ -91,7 +91,7 @@ const Contact = () => {
       <Row className="mb-1">
         <Form.Group as={Col} controlId="formGridEmail">
           <Form.Label>YOUR NAME</Form.Label>
-          <Form.Control className="form-text shadow-none text-dark" value={formDetails.name} onChange={(e) => onFormUpdate('name', e.target.value)}  type="text" placeholder="" required/>
+          <Form.Control className="form-text shadow-none " value={formDetails.name} onChange={(e) => onFormUpdate('name', e.target.value)}  type="text" placeholder="" required/>
         </Form.Group>
 
         <Form.Group as={Col} controlId="formGridPassword">

@@ -118,7 +118,7 @@ const Bio = () => {
                         effect="blur"
                         src={profile}
                           width="100%"
-                        className="all  rounded-2 profile opacity-25  object-fit-fill border border-success border-opacity-10 rounded"
+                        className="all  rounded-2 profile opacity-75  object-fit-fill border border-success border-opacity-10 rounded"
                      style={{
           zIndex: 0,
           opacity: 0.2, // make it faint
