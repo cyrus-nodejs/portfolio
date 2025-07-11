@@ -60,7 +60,9 @@ p {
   padding-top: 70px;
 } */
 
-
+.portfoliobg{
+  background:  var(--color-sub-background);
+}
 .bio-button{
   background: var(--color-sub-background);
 color: var(--color-text);
