@@ -70,7 +70,7 @@ const Bio = () => {
                   {({ isVisible }) =>
                     <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
                       <p className=" navpad fw-light">Welcome to my World</p>
-                      <h2 className=" " >Hi, I'm <span className=" "> Emmanuel  Adeyemi</span> <h2 className="txt-rotate" data-rotate='[ "SOFTWARE ENGINEER"]'><h2 className="wrap ">a {text} Engineer</h2></h2></h2>
+                      <h2 className=" " >Hi, I'm <span className=" "> Emmanuel  Adeyemi</span> <h2 className="txt-rotate" data-rotate='[ "SOFTWARE ENGINEER"]'><h2 className="wrap ">a {text} developer</h2></h2></h2>
                     </div>}
                 </TrackVisibility>
               </div>
@@ -83,7 +83,7 @@ const Bio = () => {
                     overflow: 'hidden',
                     textOverflow: 'ellipsis',
                     WebkitLineClamp: isTruncated ? 4 : 'unset',  // Truncate to 3 lines or show all
-                  }}><p>I’m a passionate Software Engineer with 2 years of experience designing, developing, and maintaining scalable software solutions. I specialize in  full-stack web development, backend systems, mobile apps and I enjoy solving complex problems with clean, efficient code.</p>
+                  }}><p>I’m a passionate fullstack developer with 2 years of experience designing, developing, and maintaining scalable software solutions. I specialize in  full-stack web development, backend systems, mobile apps and I enjoy solving complex problems with clean, efficient code.</p>
      
                   <p>My approach combines solid engineering principles with creative problem-solving to deliver reliable and user-friendly products. I thrive in collaborative environments and continuously seek to learn new technologies and best practices to stay ahead in the ever-evolving tech landscape</p>
                 </div>

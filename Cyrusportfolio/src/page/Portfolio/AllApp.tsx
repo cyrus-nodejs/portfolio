@@ -10,11 +10,11 @@ import { useTheme } from "../../context/themecontext";
 const AllAppImage = () => {
     const { darkMode} = useTheme();
   return (
-   <Container>
+   <Container >
 
     {darkMode ? (<Row>
         {allapp.map((item, index) => (
-          <Col  key={index} xs={4} sm={6} md={2} className="p-3">
+          <Col  key={index} xs={4} sm={6} md={2} className="p-3 portfoliobg ">
          <Link to={item.url}>
                <LazyLoadImage
       alt="A sample image"
