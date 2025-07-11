@@ -1,24 +1,25 @@
 
 
 
-import musicdesktop from '../../assets/images/lightmusicappdesktop.png'
-import chatdesktop from '../../assets/images/lightwenchatdesktop.png'
+import musicdesktop from '../../assets/images/Lightmusicappdesktop.png'
+import chatdesktop from '../../assets/images/Lightchatdesktop.png'
 
-import chatweb from '../../assets/images/lightwenweb.png'
-import  shoppingweb from '../../assets/images/lightemallweb.png'
- import  portfolioweb  from '../../assets/images/lightportfolioweb (1).png'
+import chatweb from '../../assets/images/Lighchatappweb.png'
+import  shoppingweb from '../../assets/images/shoppingluxury.netlify.app_(iPad Pro) (1).png'
+ import  portfolioweb  from '../../assets/images/lightportfolioweb.png'
+  import  musicweb  from '../../assets/images/Lightmusicappweb.png'
 
-// import musicmobile from '../../assets/images/darkmusicmobile.jpg'
-import shoppingmobile  from '../../assets/images/lightemallmobile.jpg'
+ import musicmobile from '../../assets/images/Lightmusicappmobile.png'
+import shoppingmobile  from '../../assets/images/lightshopmobile.jpg'
  import  portfoliomobile  from '../../assets/images/lightportfoliomobile.png'
 
 export const  allapp2 = [
-//     {
-//     url: "https://musicplanet.netlify.app",
-//     image:musicweb,
+    {
+    url: "https://musicplanet.netlify.app",
+    image:musicweb,
   
 
-// },
+},
 
 {
 url: "https://shoppingluxury.netlify.app/",
@@ -80,12 +81,12 @@ image:shoppingweb,
 
 
 export const  allmobile2  = [
-//   {
-//     url: "https://musicplanet.netlify.app",
-//     image:musicmobile,
+  {
+    url: "https://musicplanet.netlify.app",
+    image:musicmobile,
   
 
-// },
+},
     {
 url: "https://wukinc.netlify.app",
 image:portfoliomobile,

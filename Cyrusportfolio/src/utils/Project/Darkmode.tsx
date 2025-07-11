@@ -1,15 +1,16 @@
 
-import musicdesktop from '../../assets/images/darkmusicappdesktop.png'
-import videodesktop from '../../assets/images/videoisland.netlify.app_(Nest Hub Max).png'
+import musicdesktop from '../../assets/images/DarkmusicappDesktop.png'
+import videodesktop from '../../assets/images/darkvideodesktop.png'
 
-import musicweb from '../../assets/images/darkmusicappweb.png'
-import chatweb from '../../assets/images/darkwenweb.png'
-import  videoweb from '../../assets/images/darkvideoappweb.png'
+import musicweb from '../../assets/images/Darkmusicappweb.png'
+import chatweb from '../../assets/images/Darkchatappmobile.png'
+import  videoweb from '../../assets/images/darkvideoapmobile.jpg'
+import portfolioweb from  '../../assets/images/darkportfolioweb.png'
 
 
-import musicmobile from '../../assets/images/darkmusicmobile.jpg'
-import videomobile  from '../../assets/images/darkvideoappmobile.jpg'
-import  portfoliomobile  from '../../assets/images/darkportfoliomobile.jpg'
+import musicmobile from '../../assets/images/Darkmusicappmobile.png'
+import videomobile  from '../../assets/images/darkvideoapmobile.png'
+import  portfoliomobile  from '../../assets/images/darkportfoliomobile.png'
 
 export const  allapp = [
     {
@@ -18,12 +19,12 @@ export const  allapp = [
   
 
 },
-//     {
-// url: "https://wukinc.netlify.app",
-// image:portfolioWeb,
+    {
+ url: "https://wukinc.netlify.app",
+ image:portfolioweb,
 
 
-// },
+ },
 
 {
 url: "https://videoisland.netlify.app/",
@@ -60,12 +61,12 @@ image:videoweb,
   
 
 },
-//     {
-// url: "https://wukinc.netlify.app",
-// image:portfolioWeb,
+    {
+url: "https://wukinc.netlify.app",
+image:portfolioweb,
 
 
-// },
+},
 ]
 
 
