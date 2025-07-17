@@ -34,11 +34,14 @@ router.get("/", (req, res)=>{
 })
 
 router.post("/contact", (req, res) => {
-  const name = req.body.name
-  const email = req.body.email;
-  const subject = req.body.subject
-  const message = req.body.message;
-  const phone = req.body.phone;
+
+ const  {name, email, subject, message, phone} =  req.body
+ console.log(req.body)
+  // const name = req.body.name
+  // const email = req.body.email;
+  // const subject = req.body.subject
+  // const message = req.body.message;
+  // const phone = req.body.phone;
   const mail = {
     from: name,
     to: process.env.WORK_EMAIL,
@@ -51,9 +54,11 @@ router.post("/contact", (req, res) => {
   };
   contactEmail.sendMail(mail, (error: any) => {
     if (error) {
-      res.json(error);
+      console.log(error)
+          res.status(401).json({ success:false, status: "Failed to send" });
+     
     } else {
-      res.json({ code: 200, status: "Message Sent" });
+      res.status(200).json({ success: true, status: "Message Sent" });
     }
   });
 })
