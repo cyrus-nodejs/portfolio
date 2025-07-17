@@ -11,7 +11,7 @@
     "nodemailer": "^6.9.11"
   },
   "scripts": {
-    "start": "node dist/src/index.js",
+    "start": "node src/index.js",
     "dev": "nodemon src/index.ts",
     "build": "npx tsc",
     "ts.check": "tsc --project tsconfig.json",
