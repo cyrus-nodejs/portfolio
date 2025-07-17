@@ -55,10 +55,10 @@ router.post("/contact", (req, res) => {
   contactEmail.sendMail(mail, (error: any) => {
     if (error) {
       console.log(error)
-          res.status(401).json({ success:false, status: "Failed to send" });
+          res.status(401).json({ success:false, message: "Failed to send" });
      
     } else {
-      res.status(200).json({ success: true, status: "Message Sent" });
+      res.status(200).json({ success: true, message: "Message Sent" });
     }
   });
 })
