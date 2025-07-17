@@ -3,8 +3,11 @@ import { Link } from "react-router-dom"
 import img from "../assets/images/contact1.png"
 import {  useState } from "react"
 
+
+
+const BASE_URL = import.meta.env.VITE_APP_BASE_URL
 const Contact = () => {
-  
+  console.log(BASE_URL)
   const formInitialDetails = {
     name: '',
     email: '',
@@ -26,7 +29,7 @@ const Contact = () => {
   const handleSubmit = async (e: { preventDefault: () => void }) => {
     e.preventDefault();
     setButtonText("Sending...");
-    const response = await fetch("https://connect-9q0l.onrender.com/contact", {
+    const response = await fetch(`${BASE_URL}/contact`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json;charset=utf-8",
@@ -36,10 +39,11 @@ const Contact = () => {
     setButtonText("Send");
     const result = await response.json();
     setFormDetails(formInitialDetails);
-    if (result.code === 200) {
-      setStatus( 'Message sent successfully');
+    if (result.success === true) {
+      setStatus( result.message);
+      
     } else {
-      setStatus('Something went wrong, please try again later.');
+      setStatus(result.message);
     }
   };
   
@@ -75,7 +79,7 @@ const Contact = () => {
                <Link to='https://wa.link/vqp6e0' target="_blank" className='text-decoration-none '>
   <div className="d-flex align-items-center ">
   <div className=" flex-shrink-0"><i className='bx bx-envelope  bx-sm'></i></div>
-  <div className="flex-grow-1 ms-3"><div className="text-start fs-5 ">adeyemibukun.softwareengineer</div></div>
+  <div className="flex-grow-1 ms-3"><div className="text-start fs-5 ">adeyemibukun.softwareengineer@gmail.com</div></div>
   
 </div>
 </Link></Row>

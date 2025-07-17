@@ -22,7 +22,7 @@ const WebImage = () => {
       effect="blur"
       src={item.image}
       width={100}
-      className="all rounded-2"
+      className="all img-bg p-3 rounded-2"
     />
         </Link>
           </Col>
@@ -35,7 +35,7 @@ const WebImage = () => {
       effect="blur"
       src={item.image}
       width={100}
-      className="all rounded-2"
+      className="all img-bg p-3 rounded-2"
     />
         </Link>
           </Col>

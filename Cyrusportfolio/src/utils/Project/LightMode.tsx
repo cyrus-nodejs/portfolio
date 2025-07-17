@@ -2,16 +2,20 @@
 
 
 import musicdesktop from '../../assets/images/Lightmusicappdesktop.png'
-import chatdesktop from '../../assets/images/Lightchatdesktop.png'
+import chatdesktop from '../../assets/images/shoppingluxury.netlify.app_(Nest Hub Max) (2).png'
+import videodesktop from '../../assets/images/videoarc.netlify.app_(Nest Hub) (1).png'
+
 
 import chatweb from '../../assets/images/Lighchatappweb.png'
 import  shoppingweb from '../../assets/images/shoppingluxury.netlify.app_(iPad Pro) (1).png'
  import  portfolioweb  from '../../assets/images/lightportfolioweb.png'
   import  musicweb  from '../../assets/images/Lightmusicappweb.png'
+  import  videoweb from '../../assets/images/videoarc.netlify.app_(iPad Air).png'
 
- import musicmobile from '../../assets/images/Lightmusicappmobile.png'
-import shoppingmobile  from '../../assets/images/lightshopmobile.jpg'
- import  portfoliomobile  from '../../assets/images/lightportfoliomobile.png'
+ import musicmobile from '../../assets/images/mobile/MusicappMobileLight.jpg'
+import shoppingmobile  from '../../assets/images/mobile/ShoopingMobilelight.jpg'
+ import  portfoliomobile  from '../../assets/images/mobile/PortfolioMobileLight.jpg'
+ import videomobile  from '../../assets/images/mobile/VideoappMobileLightMode.jpg'
 
 export const  allapp2 = [
     {
@@ -28,7 +32,7 @@ image:shoppingweb,
 },
 
     {
-url: "https://wukinc.netlify.app",
+url: "https://emmanuel-ibukun.netlify.app/",
 image:portfolioweb,
 
 
@@ -38,18 +42,19 @@ image:portfolioweb,
   {  url: "https://wen-chat.netlify.app",
     image:chatweb,
   },
+
+    {  url: "https://videoarc.netlify.app",
+    image:videoweb,
+  },
 ]
 
 export const  allweb2  = [
 
 
-// {
-// url: "https://videoisland.netlify.app/",
-// image:videoweb,
 
-
-// },
-
+  {  url: "https://videoarc.netlify.app",
+    image:videoweb,
+  },
 
 {
     url: "https://wen-chat.netlify.app",
@@ -65,7 +70,7 @@ export const  allweb2  = [
 
 // },
     {
-url: "https://wukinc.netlify.app",
+url: "https://emmanuel-ibukun.netlify.app",
 image:portfolioweb,
 
 
@@ -88,18 +93,18 @@ export const  allmobile2  = [
 
 },
     {
-url: "https://wukinc.netlify.app",
+url: "https://emmanuel-ibukun.netlify.app/",
 image:portfoliomobile,
 
 
  },
 
-// {
-// url: "https://videoisland.netlify.app/",
-// image:videomobile,
+{
+url: "https://videoarc.netlify.app",
+image:videomobile,
 
 
-// },
+},
 
 {
 url: "https://shoppingluxury.netlify.app/",
@@ -124,6 +129,12 @@ export const  alldesktop2  = [
 {
     title: "https://wen-chat.netlify.app",
 image:chatdesktop,
+
+
+},
+{
+    title: "https://videoarc.netlify.app",
+image:videodesktop,
 
 
 }

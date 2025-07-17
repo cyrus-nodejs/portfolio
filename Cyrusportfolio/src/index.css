@@ -1,9 +1,10 @@
 :root {
-    --color-primary: #314252;
-  --color-accent: #3B82F6;
-   --color-background: #0D1016; 
-   --color-sub-background:#08090D;
-    --color-text: white;
+    --color-primary: #B8602D;
+  --color-accent: #0E2E68;
+   --color-background: #080B12; 
+   --color-sub-background:#131A2A;
+    --color-text: #B8ACD8;
+
 }
 
 * {
@@ -23,22 +24,27 @@
 
 
 body.dark-mode {
-  --color-background: #0D1016;
-  --color-sub-background: #08090D;
-  --color-text: white;
-  --color-primary: #314252;
-  --color-accent: #3B82F6;
+  --color-background: #080B12;
+  --color-sub-background: #131A2A;
+  --color-text: #B8ACD8;
+  --color-primary: #B8602D;
+  --color-accent: #0E2E68;
+  --color-img-background:#06090E;
 }
 
 body.light-mode {
-  --color-background: #FEFEFE;
-  --color-sub-background: #EBEBEB;
-  --color-text: #0c1217;
-  --color-primary: #D6D6D6;
-  --color-accent: #20294f;
+  --color-background: #C0B5DC;
+  --color-sub-background: #B8ACD8;
+  --color-text: #080B12;
+  --color-primary: #B8602D;
+  --color-accent: #0E2E68;
+    --color-img-background:#A190CB;
+
 }
 
-
+.img-bg{
+  background:var(--color-sub-background);
+}
 
 h1 {
   font-size: 2.5rem;
@@ -104,22 +110,40 @@ color: var(--color-text);
 }
 
 .progress-bar{
-  background:  var(--color-primary); 
+  background:  var(--color-sub-accent); 
   color:var(--color-text)
 }
-.resumelink{
-  
 
-  font-weight: 500;
-  font-size: large;
-  height: 70px;
+.resumelink {
+  background-color: transparent !important;
 }
 
-.resumelink:hover{
-  color:var(--color-accent);
-  
+.resumelink:hover,
+.resumelink:focus {
+  background-color: var(--color-primary) !important;
+  color: var(--color-primary) !important; /* Optional: keep original text color */
+  text-decoration: none;
+  border: 2px solid  var(--color-primary)
+}
+/* 
+.nav-tabs .nav-link.active,
+.nav-tabs .nav-link:hover {
+  border-color: transparent !important;
+  background-color: transparent !important;
+} */
+
+* Custom active tab background and text color */
+.nav-tabs .nav-link.active {
+  background-color: var(--color-primary) !important; /* Change to your desired color */
+  color: var(--color-text) !important;
+  border-color: var(--color-primary) var(--color-primary) var(--color-primary) !important;
 }
 
+/* Optional: Add hover styling */
+.nav-tabs .nav-link:hover {
+  background-color: var(--color-primary);
+    color: var(--color-text) !important;
+}
  .vr-thick {
     width: 4px !important; /* Adjust the thickness here */
     background: var(--color-text) ; /* Keeps it in line with text color */

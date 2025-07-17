@@ -16,7 +16,7 @@ const Resumebox = () => {
      <Tab.Container id=""  defaultActiveKey="first">
       <Row>
         <Col sm={12}>
-          <Nav variant="tabs" className=" "  as="li" justify>
+          <Nav variant="tabs" className="custom-nav  "  as="li" justify>
           <Nav.Item>
               <Nav.Link eventKey="second" className="resumelink text-center">Coding Skills</Nav.Link>
             </Nav.Item>

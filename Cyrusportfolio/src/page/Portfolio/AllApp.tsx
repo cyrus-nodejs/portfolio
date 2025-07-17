@@ -14,7 +14,7 @@ const AllAppImage = () => {
 
     {darkMode ? (<Row>
         {allapp.map((item, index) => (
-          <Col  key={index} xs={4} sm={6} md={2} className="p-3 portfoliobg ">
+          <Col  key={index} xs={4} sm={6} md={2} className="p-3  ">
          <Link to={item.url}>
                <LazyLoadImage
       alt="A sample image"
@@ -22,7 +22,7 @@ const AllAppImage = () => {
       effect="blur"
       src={item.image}
       width={100}
-      className="all m-2 rounded-2"
+      className="all m-2 img-bg p-3 rounded-2"
     /></Link>
           </Col>
         ))}
@@ -36,7 +36,7 @@ const AllAppImage = () => {
       effect="blur"
       src={item.image}
       width={100}
-      className="all m-2 rounded-2"
+      className="all m-2 img-bg p-3 rounded-2"
     /></Link>
           </Col>
         ))}

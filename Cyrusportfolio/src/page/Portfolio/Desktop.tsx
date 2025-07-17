@@ -17,7 +17,7 @@ const DesktopImage = () => {
             { darkMode ? 
                ( alldesktop.map((item) =>{
                     return(
-               <Col className='p-3'>
+               <Col className='p-3 '>
                 <Link to={item.url}>
                     <LazyLoadImage
                         alt="A sample image"
@@ -26,7 +26,7 @@ const DesktopImage = () => {
                         effect="blur"
                         src={item.image}
                         
-                        className="all  rounded-2"
+                        className="all img-bg p-4  rounded-2"
                       />
                       </Link>
                              </Col>
@@ -43,7 +43,7 @@ const DesktopImage = () => {
                         effect="blur"
                         src={item.image}
                         
-                        className="all  rounded-2"
+                        className="all img-bg p-4  rounded-2"
                       />
                       </Link>
                              </Col>
