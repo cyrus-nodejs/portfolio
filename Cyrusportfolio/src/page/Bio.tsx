@@ -22,7 +22,7 @@ const Bio = () => {
   const [index, setIndex] = useState(1);
   //  const [open, setOpen] = useState(false);
 
-  const toRotate: string[] = ["Full Stack","Front End ",'Back End',  ];
+  const toRotate: string[] = ["Fullstack ",'Back End', 'Software' ];
   const period: number = 2000;
 
   useEffect(() => {

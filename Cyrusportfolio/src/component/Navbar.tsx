@@ -2,22 +2,17 @@
 
 import { Button } from 'react-bootstrap';
 import { useTheme } from "../context/themecontext";
-import { useEffect } from 'react';
+
 
 
 const Appbar   = () => {
-  const { darkMode, setDarkMode } = useTheme();
-   const toggleDarkMode = () => setDarkMode(!darkMode);
-     useEffect(() => {
-    document.body.classList.toggle('dark-mode', darkMode);
-    document.body.classList.toggle('light-mode', !darkMode);
-  }, [darkMode]);
+  const { theme, toggleTheme} = useTheme();
 
   return (
     
  <nav
       className={`navbar navbar-expand-lg sticky-top ${
-        darkMode ? 'navbar-dark ' : 'navbar-light '
+        theme === 'dark' ? 'dark ' : 'light '
       }`}
     >
       <div className="container-fluid">
@@ -30,11 +25,11 @@ const Appbar   = () => {
           aria-controls="offcanvasNavbar"
           aria-label="Toggle navigation"
         >
-          <span className="navbar-toggler-icon"></span>
+          <span className={`navbar-toggler-icon `}></span>
         </button>
         <div
           className={`offcanvas offcanvas-start ${
-            darkMode ? 'text-bg-dark' : 'text-bg-light'
+            theme ? 'text-bg-dark' : 'text-bg-light'
           }`}
           tabIndex={-1}
           id="offcanvasNavbar"
@@ -44,7 +39,7 @@ const Appbar   = () => {
             <p className="offcanvas-title fs-4" id="offcanvasNavbarLabel"></p>
             <button
               type="button"
-              className={`btn-close ${darkMode ? 'btn-close-white' : ''}`}
+              className={`btn-close ${theme ? 'btn-close-white' : ''}`}
               data-bs-dismiss="offcanvas"
               aria-label="Close"
             ></button>
@@ -84,10 +79,10 @@ const Appbar   = () => {
               <li className="nav-item">
                 <Button
                   className="nav-link nav-menu darkmode  rounded-5 px-3"
-                  onClick={toggleDarkMode}
-                  variant={darkMode ? 'light' : 'dark'}
+                  onClick={toggleTheme}
+                  variant={theme === 'light' ? 'light' : 'dark'}
                 >
-                  {!darkMode ? 'Light Mode' : 'Dark Mode'}
+                 {theme === 'dark' ? 'Light Mode' : 'Dark Mode'}
                 </Button>
               </li>
             </ul>

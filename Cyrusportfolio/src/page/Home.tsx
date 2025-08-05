@@ -3,7 +3,7 @@ import Container from 'react-bootstrap/Container';
 import { Row} from 'react-bootstrap';
 
 
-import Appbar from '../../src/component/Appbar'
+import Appbar from '../component/Navbar'
 import Bio from "../page/Bio"
 import Features from "../page/Features"
 import Portfolio from "./Portfolio/Portfolio"

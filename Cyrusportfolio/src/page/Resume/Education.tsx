@@ -11,7 +11,7 @@ const Education = () => {
     
        <Row >
 
-      <p className='fs-5  mt-2 ms-3'> Certifications</p>
+  
       </Row>
 
       
@@ -19,25 +19,22 @@ const Education = () => {
         <Col className="education ">
      
   
-    <p className="">The Complete 2023 Web Development Bootcamp</p>
+    <p className="fw-bold">Front End Development Libraries</p>
+    <p className="fw-light ">Freecode Camp  </p>
+    <p className=""> 2023</p>
+      </Col>
+      </Row>
+      
+        
+      <Row  className="Educationframe education" >
+        <Col className="education ">
+     
+  
+    <p className="fw-bold">The Complete 2023 Web Development Bootcamp</p>
     <p className=" ">Udemy  </p>
     <p className=""> 2023</p>
       </Col>
       </Row>
-      <Row  className="Educationframe education" >
-        <Col className="education">
-      
-        <p className=" ">HTML, CSS & Python Django Fullstack for Web Development </p>
-        <p className=""> Oak Academy </p>
-      <p className=" "> 2023</p>
-   
-
-
-    
-      </Col>
-      </Row>
-      
-      
      
     </Col>
   <Col  >
@@ -47,17 +44,34 @@ const Education = () => {
     <Col className="  " sm={12} md={6} lg={6} >
     
 
-      <p className=" fs-5  mt-2 ms-4">Education</p>
-    
 
-  <Row  className="Educationframe education" >
+ <Row  className="Educationframe education" >
         <Col className="education">
+      
+        <p className=" fw-bold">Complete Python Pro Bootcamp</p>
+        <p className=""> App Brewrry </p>
+      <p className=" "> 2023</p>
+   
 
-    <p className=" ">BSc in Agriculture  </p>
-    <p className=" ">Kogi State University, Nigeria</p>
-    <p className="  "> 2015</p>
+
+    
       </Col>
       </Row>
+    
+
+ <Row  className="Educationframe education" >
+        <Col className="education">
+      
+        <p className=" fw-bold">HTML, CSS & Python Django Fullstack for Web Development </p>
+        <p className=""> Oak Academy </p>
+      <p className=" "> 2023</p>
+   
+
+
+    
+      </Col>
+      </Row>
+      
   </Col>
   </Row>
   </Container>

@@ -11,7 +11,6 @@
   box-sizing: border-box;
   text-align: left;
   background: var(--color-background);
-
   line-height: 1.5;
   font-family: 'Inter', sans-serif;
   color: var(--color-text);
@@ -21,6 +20,7 @@
   -moz-osx-font-smoothing: grayscale;
   color-scheme: light dark;
 }
+
 
 
 body.dark-mode {
@@ -33,14 +33,21 @@ body.dark-mode {
 }
 
 body.light-mode {
-  --color-background: #C0B5DC;
-  --color-sub-background: #B8ACD8;
-  --color-text: #080B12;
+  --color-background: #F5F5F5;
+  --color-sub-background: #F5F5F5;
+  --color-text: #0E2E68;;
   --color-primary: #B8602D;
   --color-accent: #0E2E68;
     --color-img-background:#A190CB;
 
 }
+
+/* .navbar-toggler-icon-dark {
+  filter: brightness(0) invert(1); /* Makes icon appear white */
+    
+*/
+
+
 
 .img-bg{
   background:var(--color-sub-background);
@@ -55,7 +62,9 @@ h2 {
   font-size: 1.8rem;
   font-weight: 600;
 }
-
+.context-text{
+color:var(--color-primary)
+}
 
 
 p {
@@ -85,7 +94,13 @@ color: var(--color-text);
 .feature-icon .bio-icon{
    color: var(--color-text);
 }
+body.dark-mode .navbar-toggler-icon {
+  background-color:var(--color-text) ;
 
+}
+  body.dark-mode  .navbar-toggler{
+    border: 2px solid var(--color-sub-background)  ;
+  }
 .feature-icon:hover{
     color: var(--color-accent);
 }
@@ -94,7 +109,7 @@ color: var(--color-text);
       background: var(--color-sub-background)
 }
 .bio-icon:hover{
-    color: var(--color-accent);
+    color: var(--color-primary);
 
 }
 
@@ -104,27 +119,31 @@ color: var(--color-text);
 }
 
 .port-menu:hover{
-  color: var(--color-accent);
+  color: var(--color-primary);
      background: var(--color-sub-background)
 
 }
 
 .progress-bar{
-  background:  var(--color-sub-accent); 
+  background:  var(--color-sub-background); 
   color:var(--color-text)
 }
 
 .resumelink {
-  background-color: transparent !important;
+  background-color:  var(--color-sub-background)  !important;
 }
+
 
 .resumelink:hover,
 .resumelink:focus {
   background-color: var(--color-primary) !important;
-  color: var(--color-primary) !important; /* Optional: keep original text color */
+  color: var(--color-accent) !important; /* Optional: keep original text color */
   text-decoration: none;
   border: 2px solid  var(--color-primary)
 }
+
+
+
 /* 
 .nav-tabs .nav-link.active,
 .nav-tabs .nav-link:hover {
@@ -132,6 +151,45 @@ color: var(--color-text);
   background-color: transparent !important;
 } */
 
+.card-title {
+  color:var(--color-text) ;
+     background: var(--color-sub-background);
+     font-size:small;
+}
+
+.card-description{
+  color:var(--color-text) ;
+     background: var(--color-sub-background);
+      font-size:xx-small;
+}
+
+
+.card-content{
+background: var(--color-background);
+
+}
+
+.card-wrapper{
+background: var(--color-background);
+}
+
+/* .card-overlay {
+   background-color: var(--color-background);
+} */
+
+.card-overlay {
+   background: var(--color-sub-background);
+}
+
+
+.card-container.hovered .card-overlay {
+
+   background: var(--color-sub-background);
+}
+
+.card-wrapper.hovered .card-overlay {
+background: var(--color-sub-background)
+}
 * Custom active tab background and text color */
 .nav-tabs .nav-link.active {
   background-color: var(--color-primary) !important; /* Change to your desired color */
@@ -160,7 +218,10 @@ color: var(--color-text);
   line-height: 1.6;
 }
 
-
+.card-overlay{
+  background:  var(--color-background);
+   background-color:var(--color-background)
+}
 .nav-menu:hover{
   color: var(--color-text);
   background-color:var(--color-primary) ;
@@ -205,19 +266,13 @@ border-radius: 10px;
 
 }
 
-/* .port-text{
-  color:#66c7f4
-} */
 
-.port-text:hover{
-  color:var(--color-accent)
-}
 
 
 .Skillframe{
 border-radius: 5px;
 margin:30px;
-width:300px;
+width:290px;
 height:300px;
 background: var(--color-sub-background);
 
@@ -316,34 +371,7 @@ background-color: #181818;
   margin:0px;
 }
 
-.img-hover img {
-  -webkit-transition: all .3s ease; /* Safari and Chrome */
-  -moz-transition: all .3s ease; /* Firefox */
-  -o-transition: all .3s ease; /* IE 9 */
-  -ms-transition: all .3s ease; /* Opera */
-  transition: all .3s ease;
-  position:relative;
-}
-.img-hover img:hover {
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
-  -webkit-transform:translateZ(0) scale(1.20); /* Safari and Chrome */
-  -moz-transform:scale(1.20); /* Firefox */
-  -ms-transform:scale(1.20); /* IE 9 */
-  -o-transform:translatZ(0) scale(1.20); /* Opera */
-  transform:translatZ(0) scale(1.20);
-}
-
-.img-hover:hover:after {
-  content:"";
-  position:absolute;
-  top:0;
-  left:0;
-  z-index:2;
-  width:30px;
-  height:30px;
-  border:1px solid #000;
-}
+.bio-icon:hover
 .textbg{
   background-color:transparent;
 }
@@ -353,52 +381,10 @@ background-color: #181818;
 filter: brightness(1.10) grayscale(100%); 
 }
 
-.proj-imgbx {
-  position: relative;
-  border-radius: 30px;
-  overflow: hidden;
-  margin-bottom: 24px;
+/* Only show overlay when the bottom 30% is hovered */
+.card-container:hover::after + .card-overlay {
+  transform: translateY(0);
 }
-.proj-imgbx::before {
-  content: "";
-  background: linear-gradient(90.21deg, #AA367C -5.91%, #4A2FBD 111.58%);
-  opacity: 0.85;
-  position: absolute;
-  width: 100%;
-  height: 0;
-  transition: 0.4s ease-in-out;
-}
-.proj-imgbx:hover::before {
-  height: 100%;
-}
-.proj-txtx {
-  position: absolute;
-  text-align: center;
-  top: 65%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  transition: 0.5s ease-in-out;
-  opacity: 0;
-  width: 100%;
-}
-.proj-txtx h4 {
-  font-size: 30px;
-  font-weight: 700;
-  letter-spacing: 0.8px;
-  line-height: 1.1em;
-}
-.proj-txtx span {
-  font-style: italic;
-  font-weight: 400;
-  font-size: 15px;
-  letter-spacing: 0.8px;
-}
-.proj-imgbx:hover .proj-txtx {
-  top: 50%;
-  opacity: 1;
-}
-
-
 
 @media (max-width : 992px) {
  

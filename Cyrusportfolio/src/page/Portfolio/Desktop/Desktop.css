@@ -1,0 +1,46 @@
+.card-wrapper {
+  position: relative;
+  height: 220px;
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.card-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.card-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 10px;
+  background: rgba(0, 0, 0, 0.6);
+  color: white;
+  transform: translateY(100%);
+  opacity: 0;
+  transition: transform 0.4s ease, opacity 0.3s ease;
+  box-sizing: border-box;
+  z-index: 2;
+}
+
+.card-wrapper.hovered .card-overlay {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.card-overlay h5,
+.card-overlay p {
+  opacity: 0;
+  transform: translateY(10px);
+  transition: opacity 0.3s ease 0.1s, transform 0.3s ease 0.1s;
+}
+
+.card-wrapper.hovered .card-overlay h5,
+.card-wrapper.hovered .card-overlay p {
+  opacity: 1;
+  transform: translateY(0);
+}

@@ -1,7 +1,7 @@
-import WebImage from './Web';
-import DesktopImage from './Desktop';
-import MobileImage from './Mobile';
-import AllAppImage from './AllApp';
+import WebImage from './WebApp/Web';
+import DesktopImage from './Desktop/Desktop';
+import MobileImage from './Mobile/Mobile';
+import AllAppImage from './AllApp/AllApp';
 import {Container ,Nav, Tab, Row} from 'react-bootstrap';
 // import Projecbox from "./Project/Projectbox"
 const Portfolio = () => {

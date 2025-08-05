@@ -11,7 +11,7 @@ const Skills = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       setProgress(prev => (prev < 100 ? prev + 1 : 100));
-    }, 100); // update every 100ms
+    }, 500); // update every 100ms
 
     return () => clearInterval(interval);
   }, []);

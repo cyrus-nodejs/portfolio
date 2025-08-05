@@ -1,5 +1,5 @@
 
-import  {Col, Row} from "react-bootstrap"
+import  {Col} from "react-bootstrap"
 
 
 
@@ -7,14 +7,12 @@ import  {Col, Row} from "react-bootstrap"
 
 const SkillCard = ({title, description, img}) => {
   return (
-    <Row style={{ display:"inline-flex"}} className="">
-    <Col className="Skillframe education pt-3 shadow-sm "  style={{marginTop:"0px"}}   >
+    <Col xs={12} sm={12} md={6} lg={4} xl={4} xxl={4} className="Skillframe  pt-3 shadow-sm "     >
      <p className="text-start  skill-text" >{img}</p>
     <p className="skill-text fw-bold fs-5   ">{title}</p>
     <p className="skill-text">{description}</p>
-  
   </Col>
-  </Row>
+  
   
   )
 }

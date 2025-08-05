@@ -36,14 +36,16 @@ const Contact = () => {
       },
       body: JSON.stringify(formDetails),
     });
-    setButtonText("Send");
+   
     const result = await response.json();
     setFormDetails(formInitialDetails);
     if (result.success === true) {
       setStatus( result.message);
       
+
     } else {
       setStatus(result.message);
+      
     }
   };
   
@@ -79,7 +81,7 @@ const Contact = () => {
                <Link to='https://wa.link/vqp6e0' target="_blank" className='text-decoration-none '>
   <div className="d-flex align-items-center ">
   <div className=" flex-shrink-0"><i className='bx bx-envelope  bx-sm'></i></div>
-  <div className="flex-grow-1 ms-3"><div className="text-start fs-5 ">adeyemibukun.softwareengineer@gmail.com</div></div>
+  <div className="flex-grow-1 ms-3"><span className="text-start fs-6 ">adeyemibukun.softwareengineer@gmail.com</span></div>
   
 </div>
 </Link></Row>
@@ -124,7 +126,7 @@ const Contact = () => {
       <Button className=" bio-button " variant="outline-secondary" type="submit" size="lg">
        {buttonText}
       </Button>
-      <p className="stack">{status}</p>
+      <p className="context-text text-center">{status}</p>
       
       </div>
     </Form>
