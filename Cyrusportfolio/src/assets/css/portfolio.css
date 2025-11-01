@@ -1,0 +1,32 @@
+.animated-tab .nav-link {
+  position: relative;
+  font-weight: 500;
+  color: #fff;
+  transition: color 0.3s ease;
+}
+
+.animated-tab .nav-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 4px;
+  width: 0%;
+  height: 2px;
+  background: linear-gradient(90deg, #0dcaf0, #6f42c1);
+  transition: width 0.4s ease;
+  border-radius: 2px;
+  opacity: 0.8;
+}
+
+.animated-tab .nav-link:hover::after {
+  width: 100%;
+}
+
+.animated-tab .nav-link.active::after {
+  width: 100%;
+  background: linear-gradient(90deg, #6f42c1, #0dcaf0);
+}
+
+.animated-tab .nav-link:hover {
+  color: #0dcaf0;
+}

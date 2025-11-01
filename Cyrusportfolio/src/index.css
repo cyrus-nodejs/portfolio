@@ -1,4 +1,4 @@
-:root {
+/* :root {
     --color-primary: #B8602D;
   --color-accent: #0E2E68;
    --color-background: #080B12; 
@@ -42,10 +42,10 @@ body.light-mode {
 
 }
 
-/* .navbar-toggler-icon-dark {
-  filter: brightness(0) invert(1); /* Makes icon appear white */
+ .navbar-toggler-icon-dark {
+  filter: brightness(0) invert(1); /* Makes icon appear white
     
-*/
+
 
 
 
@@ -74,7 +74,7 @@ p {
 
 /* .navpad{
   padding-top: 70px;
-} */
+}
 
 .portfoliobg{
   background:  var(--color-sub-background);
@@ -137,19 +137,18 @@ body.dark-mode .navbar-toggler-icon {
 .resumelink:hover,
 .resumelink:focus {
   background-color: var(--color-primary) !important;
-  color: var(--color-accent) !important; /* Optional: keep original text color */
+  color: var(--color-accent) ;
   text-decoration: none;
   border: 2px solid  var(--color-primary)
 }
 
 
 
-/* 
 .nav-tabs .nav-link.active,
 .nav-tabs .nav-link:hover {
   border-color: transparent !important;
   background-color: transparent !important;
-} */
+} 
 
 .card-title {
   color:var(--color-text) ;
@@ -173,9 +172,9 @@ background: var(--color-background);
 background: var(--color-background);
 }
 
-/* .card-overlay {
+ .card-overlay {
    background-color: var(--color-background);
-} */
+ }
 
 .card-overlay {
    background: var(--color-sub-background);
@@ -190,21 +189,21 @@ background: var(--color-background);
 .card-wrapper.hovered .card-overlay {
 background: var(--color-sub-background)
 }
-* Custom active tab background and text color */
+
 .nav-tabs .nav-link.active {
-  background-color: var(--color-primary) !important; /* Change to your desired color */
+  background-color: var(--color-primary) 
   color: var(--color-text) !important;
   border-color: var(--color-primary) var(--color-primary) var(--color-primary) !important;
 }
 
-/* Optional: Add hover styling */
+
 .nav-tabs .nav-link:hover {
   background-color: var(--color-primary);
     color: var(--color-text) !important;
 }
  .vr-thick {
-    width: 4px !important; /* Adjust the thickness here */
-    background: var(--color-text) ; /* Keeps it in line with text color */
+    width: 4px !important; 
+    background: var(--color-text) ; 
   }
 .nav-link{
   color: var(--color-text);
@@ -293,10 +292,10 @@ background: var(--color-sub-background);
 
 
 
-/* .Skillframe:hover{
+ .Skillframe:hover{
  transition: 0.4s ease-in-out;
  background-color: #181818;
- } */
+ } 
 
 
 
@@ -381,7 +380,7 @@ background-color: #181818;
 filter: brightness(1.10) grayscale(100%); 
 }
 
-/* Only show overlay when the bottom 30% is hovered */
+
 .card-container:hover::after + .card-overlay {
   transform: translateY(0);
 }
@@ -398,4 +397,18 @@ filter: brightness(1.10) grayscale(100%);
 }
 
 
-  
+   */
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}

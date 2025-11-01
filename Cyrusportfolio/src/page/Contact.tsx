@@ -1,7 +1,14 @@
-import  {Container, Image, Col, Row, Form, Button} from "react-bootstrap"
-import { Link } from "react-router-dom"
-import img from "../assets/images/contact1.png"
-import {  useState } from "react"
+// import  {Container, Image, Col, Row, Form, Button} from "react-bootstrap"
+// import { Link } from "react-router-dom"
+// import img from "../assets/images/contact1.png"
+//n
+import { useState } from "react";
+import { Container, Row, Col } from "react-bootstrap";
+import contactImg from "../assets/images/contact-img.svg";
+import 'animate.css';
+import TrackVisibility from 'react-on-screen';
+
+
 
 
 
@@ -9,7 +16,8 @@ const BASE_URL = import.meta.env.VITE_APP_BASE_URL
 const Contact = () => {
   console.log(BASE_URL)
   const formInitialDetails = {
-    name: '',
+    firstName: '',
+    lastName: '',
     email: '',
     phone: '',
     subject:'',
@@ -17,7 +25,7 @@ const Contact = () => {
   }
   const [formDetails, setFormDetails] = useState(formInitialDetails);
   const [buttonText, setButtonText] = useState('Send Message');
-  const [status, setStatus] = useState('');
+  const [status, setStatus] = useState(null);
 
   const onFormUpdate = (category: string, value:string) : void => {
       setFormDetails({
@@ -50,90 +58,137 @@ const Contact = () => {
   };
   
   return (
-    <section id="Contact" className="section">
-        <Container className='py-5'>
+//     <section id="Contact" className="section">
+//         <Container className='py-5'>
          
-            <Row className='' >
+//             <Row className='' >
              
               
                 
-                     <h2 className=" pt-3 text-center">Contact</h2>
+//                      <h2 className=" pt-3 text-center">Contact</h2>
                   
                
 
-                <Col sm={12} lg={6}   className="Contactframe">
+//                 <Col sm={12} lg={6}   className="Contactframe">
                 
-                <Row className="mt-3">
-                <Image src={img} fluid  /> 
-               <Col>
+//                 <Row className="mt-3">
+//                 <Image src={img} fluid  /> 
+//                <Col>
  
 
 
-               <Row className=" w-100  mt-5  ">
-               <Link to='https://wa.link/vqp6e0' target="_blank" className='text-decoration-none '>
-  <div className="d-flex align-items-center ">
-  <div className=" flex-shrink-0"><i className='bx bx-phone-call  bx-sm'></i></div>
-  <div className="flex-grow-1 ms-3"><div className="text-start fs-5 ">+234904456965</div></div>
+//                <Row className=" w-100  mt-5  ">
+//                <Link to='https://wa.link/vqp6e0' target="_blank" className='text-decoration-none '>
+//   <div className="d-flex align-items-center ">
+//   <div className=" flex-shrink-0"><i className='bx bx-phone-call  bx-sm'></i></div>
+//   <div className="flex-grow-1 ms-3"><div className="text-start fs-5 ">+234904456965</div></div>
   
-</div>
-</Link></Row>
-               <Row className=" w-100  mt-5  ">
-               <Link to='https://wa.link/vqp6e0' target="_blank" className='text-decoration-none '>
-  <div className="d-flex align-items-center ">
-  <div className=" flex-shrink-0"><i className='bx bx-envelope  bx-sm'></i></div>
-  <div className="flex-grow-1 ms-3"><span className="text-start fs-6 ">adeyemibukun.softwareengineer@gmail.com</span></div>
+// </div>
+// </Link></Row>
+//                <Row className=" w-100  mt-5  ">
+//                <Link to='https://wa.link/vqp6e0' target="_blank" className='text-decoration-none '>
+//   <div className="d-flex align-items-center ">
+//   <div className=" flex-shrink-0"><i className='bx bx-envelope  bx-sm'></i></div>
+//   <div className="flex-grow-1 ms-3"><span className="text-start fs-6 ">adeyemibukun.softwareengineer@gmail.com</span></div>
   
-</div>
-</Link></Row>
+// </div>
+// </Link></Row>
 
                
-             </Col>
-             </Row>
-             </Col>
+//              </Col>
+//              </Row>
+//              </Col>
                 
-                <Col sm={12} lg={6}   className="Contactframe py-5">
-                    <Col>
-                <Form onSubmit={handleSubmit}>
-      <Row className="mb-1">
-        <Form.Group as={Col} controlId="formGridEmail">
-          <Form.Label>YOUR NAME</Form.Label>
-          <Form.Control className="form-text shadow-none " value={formDetails.name} onChange={(e) => onFormUpdate('name', e.target.value)}  type="text" placeholder="" required/>
-        </Form.Group>
+//                 <Col sm={12} lg={6}   className="Contactframe py-5">
+//                     <Col>
+//                 <Form onSubmit={handleSubmit}>
+//       <Row className="mb-1">
+//         <Form.Group as={Col} controlId="formGridEmail">
+//           <Form.Label>YOUR NAME</Form.Label>
+//           <Form.Control className="form-text shadow-none " value={formDetails.name} onChange={(e) => onFormUpdate('name', e.target.value)}  type="text" placeholder="" required/>
+//         </Form.Group>
 
-        <Form.Group as={Col} controlId="formGridPassword">
-          <Form.Label>PHONE</Form.Label>
-          <Form.Control className="form-text shadow-none " value={formDetails.phone} onChange={(e) => onFormUpdate('phone', e.target.value)} type="text" placeholder="" required />
-        </Form.Group>
-      </Row>
+//         <Form.Group as={Col} controlId="formGridPassword">
+//           <Form.Label>PHONE</Form.Label>
+//           <Form.Control className="form-text shadow-none " value={formDetails.phone} onChange={(e) => onFormUpdate('phone', e.target.value)} type="text" placeholder="" required />
+//         </Form.Group>
+//       </Row>
 
 
-      <Form.Group className="mb-3" controlId="formGridAddress1">
-        <Form.Label>EMAIL</Form.Label>
-        <Form.Control className="form-text shadow-none " value={formDetails.email} onChange={(e) => onFormUpdate('email', e.target.value)} type="email" placeholder="" required/>
-      </Form.Group>
+//       <Form.Group className="mb-3" controlId="formGridAddress1">
+//         <Form.Label>EMAIL</Form.Label>
+//         <Form.Control className="form-text shadow-none " value={formDetails.email} onChange={(e) => onFormUpdate('email', e.target.value)} type="email" placeholder="" required/>
+//       </Form.Group>
 
-      <Form.Group className="mb-3" controlId="formGridAddress1">
-        <Form.Label>SUBJECT</Form.Label>
-        <Form.Control className="form-text shadow-none " value={formDetails.subject} type="text" onChange={(e) => onFormUpdate('subject', e.target.value)} placeholder="" required/>
-      </Form.Group>
+//       <Form.Group className="mb-3" controlId="formGridAddress1">
+//         <Form.Label>SUBJECT</Form.Label>
+//         <Form.Control className="form-text shadow-none " value={formDetails.subject} type="text" onChange={(e) => onFormUpdate('subject', e.target.value)} placeholder="" required/>
+//       </Form.Group>
 
-      <Form.Group className="mb-3" controlId="formGridAddress2">
-        <Form.Label>YOUR MESSAGE</Form.Label>
-        <Form.Control className="form-text shadow-none " value={formDetails.message}  as="textarea" onChange={(e) => onFormUpdate('message', e.target.value)} rows={8} placeholder="" required />
-      </Form.Group>
+//       <Form.Group className="mb-3" controlId="formGridAddress2">
+//         <Form.Label>YOUR MESSAGE</Form.Label>
+//         <Form.Control className="form-text shadow-none " value={formDetails.message}  as="textarea" onChange={(e) => onFormUpdate('message', e.target.value)} rows={8} placeholder="" required />
+//       </Form.Group>
 
-      <div className="d-grid gap-2">
-      <Button className=" bio-button " variant="outline-secondary" type="submit" size="lg">
-       {buttonText}
-      </Button>
-      <p className="context-text text-center">{status}</p>
+//       <div className="d-grid gap-2">
+//       <Button className=" bio-button " variant="outline-secondary" type="submit" size="lg">
+//        {buttonText}
+//       </Button>
+//       <p className="context-text text-center">{status}</p>
       
-      </div>
-    </Form>
-    </Col>
-                </Col>
-            </Row>
-        </Container>
+//       </div>
+//     </Form>
+//     </Col>
+//                 </Col>
+//             </Row>
+//         </Container>
+//     </section>
+ <section className="contact" id="connect">
+      <Container>
+        <Row className="align-items-center">
+          <Col size={12} md={6}>
+            <TrackVisibility>
+              {({ isVisible }) =>
+                <img className={isVisible ? "animate__animated animate__zoomIn" : ""} src={contactImg} alt="Contact Us"/>
+              }
+            </TrackVisibility>
+          </Col>
+          <Col size={12} md={6}>
+            <TrackVisibility>
+              {({ isVisible }) =>
+                <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
+                <h2>Get In Touch</h2>
+                <form onSubmit={handleSubmit}>
+                  <Row>
+                    <Col size={12} sm={6} className="px-1">
+                      <input type="text" value={formDetails.firstName} placeholder="First Name" onChange={(e) => onFormUpdate('firstName', e.target.value)} />
+                    </Col>
+                    <Col size={12} sm={6} className="px-1">
+                      <input type="text" value={formDetails.lastName} placeholder="Last Name" onChange={(e) => onFormUpdate('lastName', e.target.value)}/>
+                    </Col>
+                    <Col size={12} sm={6} className="px-1">
+                      <input type="email" value={formDetails.email} placeholder="Email Address" onChange={(e) => onFormUpdate('email', e.target.value)} />
+                    </Col>
+                    <Col size={12} sm={6} className="px-1">
+                      <input type="tel" value={formDetails.phone} placeholder="Phone No." onChange={(e) => onFormUpdate('phone', e.target.value)}/>
+                    </Col>
+                    <Col size={12} className="px-1">
+                      <textarea rows={6} value={formDetails.message} placeholder="Message" onChange={(e) => onFormUpdate('message', e.target.value)}></textarea>
+                      <button type="submit"><span>{buttonText}</span></button>
+                    </Col>
+                    {
+                      status &&
+                      <Col>
+                        <p className={status?.success === false ? "danger" : "success"}>{status?.message}</p>
+                      </Col>
+                    }
+                  </Row>
+                </form>
+              </div>}
+            </TrackVisibility>
+          </Col>
+        </Row>
+      </Container>
     </section>
   )
 }

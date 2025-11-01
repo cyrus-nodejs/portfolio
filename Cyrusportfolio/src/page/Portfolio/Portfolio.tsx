@@ -1,52 +1,225 @@
-import WebImage from './WebApp/Web';
-import DesktopImage from './Desktop/Desktop';
-import MobileImage from './Mobile/Mobile';
-import AllAppImage from './AllApp/AllApp';
-import {Container ,Nav, Tab, Row} from 'react-bootstrap';
-// import Projecbox from "./Project/Projectbox"
+import { Container, Row, Col, Tab, Nav } from "react-bootstrap";
+import { motion } from "framer-motion";
+import { Variants } from "framer-motion";
+import { useState } from "react";
+import { ProjectCard } from "./ProjectCard";
+import projImg1 from "../../assets/images/jollofai.png";
+import projImg2 from "../../assets/images/shoppingluxury.netlify.app_(Nest Hub Max) (2).png";
+import projImg3 from "../../assets/images/Linka.jpg";
+import projImg4 from "../../assets/images/DarkmusicappDesktop.png";
+import projImg5 from "../../assets/images/Lightchatdesktop.png";
+import projImg6 from "../../assets/images/devloggerdesktoplight.png";
+import projImg7 from "../../assets/images/Sitexx.jpg";
+import colorSharp2 from "../../assets/images/color-sharp2.png";
+import "animate.css";
+import TrackVisibility from "react-on-screen";
+
+
 const Portfolio = () => {
-  
+  const [expandedIndex, setExpandedIndex] = useState(null);
+  const handleExpand = (index) => {
+    setExpandedIndex(expandedIndex === index ? null : index);
+  };
+
+  // ──────────────── PROJECT GROUPS ────────────────
+  const aiProjects = [
+    {
+      title: "🧠 Jollof AI — Smart Recipe Recommender",
+      description: "Node js ·Express · FastAPI · React · MongoDB · OpenAI API · Google Vision",
+      details: [
+        "Integrated OpenAI and LangChain to intelligently analyze ingredients and generate personalized recipe summaries, enhancing user experience and recommendation accuracy.",
+        "Boosted user engagement by 60% through multimodal ingredient input — enabling recipe matching via text, voice, and image recognition.",
+        "Accelerated backend performance by 40% by implementing efficient MongoDB indexing and caching for similarity-based recipe queries.",
+        "Developed a modular, high-performance FastAPI microservice for real-time embedding generation and semantic recipe matching.",
+      ],
+      imgUrl: projImg1,
+      githubUrl: "https://github.com/team-accelerators/JollofAPI",
+      liveUrl: "https://jollofai.netlify.app",
+    },
+    {
+      title: "⚙️ SiteX AI powered Equipment Rentals Platform",
+      description: "Node.js · Express · PostgreSQL · Paystack API · Docker · Prisma",
+      details: [
+        "Automated recurring payments using Paystack API, cutting manual billing by 75%.",
+        "Implemented robust JWT authentication and role-based access control.",
+        "Deployed via Docker & Nginx with GitHub Actions CI/CD for zero-downtime updates.",
+        "Improved uptime to 99.9% through Redis caching and API performance monitoring.",
+      ],
+      imgUrl: projImg7,
+      githubUrl: "https://github.com/SiteXxx/SiteXxx-Backend",
+      liveUrl: "#",
+    },
+    {
+      title: "🤖 Linka – AI Meeting Notetaker",
+      description: "Chrome AI APIs · Gemini Nano · On-Device ML",
+      details: [
+        "Built a privacy-first AI meeting tool with real-time transcription and summarization.",
+        "Leveraged Chrome’s Gemini Nano APIs for local, cloud-free processing.",
+        "Implemented smart translation and multilingual summaries using AI inference models.",
+        "Supported PDF, Docs, and Markdown exports — fully local and private.",
+      ],
+      imgUrl: projImg3,
+      githubUrl: "https://github.com/The-Engineer-Network/Linka-AI-Meeting-Notetaker-",
+      liveUrl: "#",
+    },
+  ];
+
+  const pythonProjects = [
+    {
+      title: "🎵 Music App — Django + React",
+      description: "Python · Django REST · React · PostgreSQL",
+      details: [
+        "Developed a full-stack music streaming app with playlists, subscriptions, and artist discovery.",
+        "Implemented JWT-secured authentication via Django REST Framework.",
+        "Built a responsive React frontend with an integrated audio player.",
+        "Added admin dashboards for artist content and premium plan management.",
+      ],
+      imgUrl: projImg4,
+      githubUrl: "https://github.com/cyrus-nodejs/musicapp",
+      liveUrl: "https://musicplanet.netlify.app/",
+    },
+    {
+      title: "🧑‍💻 Developer Workflow Tracker",
+      description: "Django REST · React · Chart.js · OAuth",
+      details: [
+        "Built a productivity tracker with Google & GitHub OAuth authentication.",
+        "Integrated Chart.js dashboards for commit frequency and goal analytics.",
+        "Synced GitHub PRs and commits to produce visual performance insights.",
+        "Delivered weekly reports for developer productivity tracking.",
+      ],
+      imgUrl: projImg6,
+      githubUrl: "https://github.com/emmaadey/devlogger",
+      liveUrl: "https://devlogger.emmaadey.com",
+    },
+  ];
+
+  const nodeProjects = [
+    {
+      title: "🛍️ E-Commerce App — MERN Stack",
+      description: "MongoDB · Express · React · Node.js · Stripe API",
+      details: [
+        "Built a full-featured store with JWT authentication and product management dashboard.",
+        "Integrated Stripe for smooth, secure checkout with 35% reduction in payment errors.",
+        "Optimized UI with instant product search and category filtering.",
+        "Enabled CRUD operations for admins — users, products, orders.",
+      ],
+      imgUrl: projImg2,
+      githubUrl: "https://github.com/cyrus-nodejs/e-commerce",
+      liveUrl: 'https://shoppingluxury.netlify.app/',
+    },
+    {
+      title: "💬 ChatPlanet — Real-Time Messaging",
+      description: "React · Node.js · Socket.IO · PostgreSQL",
+      details: [
+        "Engineered scalable chat for 1,000+ users using WebSocket & Socket.IO.",
+        "Integrated JWT-based authentication and live presence tracking.",
+        "Added group chat, avatars, and message history sync.",
+        "Reduced latency from 300ms → 80ms via socket batching optimization.",
+      ],
+      imgUrl: projImg5,
+      githubUrl: "https://github.com/cyrus-nodejs/chatplanet",
+      liveUrl: "https://wen-chat.netlify.app/login",
+    },
+  ];
+
+  // ──────────────── ANIMATIONS ────────────────
+  const containerVariants = {
+    hidden: {},
+    visible: {
+      transition: { staggerChildren: 0.25 },
+    },
+  };
+ const cardVariants: Variants = {
+  hidden: { opacity: 0, y: 40 },
+  visible: {
+    opacity: 1,
+    y: 0,
+    transition: {
+      duration: 0.8,
+      // eslint-disable-next-line @typescript-eslint/no-explicit-any
+      ease: "easeOut" as any, // 👈 cast to 'any' or use [0.25, 0.1, 0.25, 1] instead
+    },
+  },
+};
+
+  const tabs = [
+    { key: "ai", label: "AI & ML Integrations", data: aiProjects },
+    { key: "python", label: "Python", data: pythonProjects },
+    { key: "node", label: "Node.js", data: nodeProjects },
+  ];
 
   return (
-    <section  id="Portfolio" className="  section">
-    <Container className="pt-5">
-      <Row className=''>
-  
-      <h2 className="text-center pt-3">Projects</h2>
-      </Row>
-    <Tab.Container id="left-tabs-example" defaultActiveKey="all"   >
-      <Row>
-          <Nav variant="tab" className="  "  >
-            
-            <Nav.Item className="port-menu rounded-2 m-1">
-              <Nav.Link className=" text-reset " eventKey="all">All</Nav.Link>
-            </Nav.Item>
-            <Nav.Item className="port-menu rounded-2 m-1">
-              <Nav.Link className="port-menu-dark text-reset" eventKey="desktop">Desktop App</Nav.Link>
-            </Nav.Item>
-            <Nav.Item className="port-menu rounded-2  m-1">
-              <Nav.Link className="port-menu-dark text-reset" eventKey="mobile">Mobile App</Nav.Link>
-            </Nav.Item >
-             <Nav.Item className="port-menu rounded-2 m-1">
-              <Nav.Link className="port-menu-dark text-reset" eventKey="web">Web App</Nav.Link>
-            </Nav.Item>
-          </Nav>
-      
-      
-          <Tab.Content className=" ">
-            <Tab.Pane eventKey="all"><AllAppImage /></Tab.Pane>
-            <Tab.Pane eventKey="mobile"><MobileImage /></Tab.Pane>
-            <Tab.Pane eventKey="web"><WebImage /></Tab.Pane>
-            <Tab.Pane eventKey="desktop"><DesktopImage/></Tab.Pane>
+    <section className="project" id="project">
+      <Container>
+        <Row>
+          <Col size={12}>
+            <TrackVisibility>
+              {({ isVisible }) => (
+                <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
+                  <h2>Technical Projects Portfolio</h2>
+                  <p>
+                    Each project blends deep backend expertise with scalable architecture
+                    and measurable product impact.
+                  </p>
 
-          </Tab.Content>
+                  <Tab.Container id="projects-tabs" defaultActiveKey="ai">
+                    <Nav
+                      variant="pills"
+                      className="nav-pills mb-5 justify-content-center align-items-center"
+                    >
+                      {tabs.map((tab) => (
+                        <Nav.Item key={tab.key}>
+                          <Nav.Link eventKey={tab.key}>{tab.label}</Nav.Link>
+                        </Nav.Item>
+                      ))}
+                    </Nav>
 
-      </Row>
-      
-    </Tab.Container>
-    </Container>
+                    <Tab.Content
+                      className={isVisible ? "animate__animated animate__slideInUp" : ""}
+                    >
+                      {tabs.map((tab) => (
+                        <Tab.Pane eventKey={tab.key} key={tab.key}>
+                          <motion.div
+                            className="row"
+                            variants={containerVariants}
+                            initial="hidden"
+                            whileInView="visible"
+                            viewport={{ once: true }}
+                          >
+                            {tab.data.map((project, index) => (
+                              <motion.div
+                                key={index}
+                                className="col-md-6 mb-4"
+                                variants={cardVariants}
+                                whileHover={{ y: -5 }}
+                              >
+                                <ProjectCard
+                                  {...project}
+                                  isExpanded={expandedIndex === `${tab.key}-${index}`}
+                                  onExpand={() =>
+                                    handleExpand(
+                                      expandedIndex === `${tab.key}-${index}`
+                                        ? null
+                                        : `${tab.key}-${index}`
+                                    )
+                                  }
+                                />
+                              </motion.div>
+                            ))}
+                          </motion.div>
+                        </Tab.Pane>
+                      ))}
+                    </Tab.Content>
+                  </Tab.Container>
+                </div>
+              )}
+            </TrackVisibility>
+          </Col>
+        </Row>
+      </Container>
+      <img className="background-image-right" src={colorSharp2} alt="background" />
     </section>
-  )
-}
+  );
+};
 
-export default Portfolio
+export default Portfolio;

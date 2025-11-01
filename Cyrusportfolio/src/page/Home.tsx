@@ -7,7 +7,8 @@ import Appbar from '../component/Navbar'
 import Bio from "../page/Bio"
 import Features from "../page/Features"
 import Portfolio from "./Portfolio/Portfolio"
-import Resume from "../page/Resume/Resume"
+import BlogSection from './Blog/Blogsection';
+// import Resume from "../page/Resume/Resume"
 import Contact from "../page/Contact"
 import Footer from "../../src/component/Footer"
 
@@ -20,10 +21,10 @@ const Home = () => {
       <Row>
         <Appbar />
          <Bio />
+           <Features />
          <Portfolio />
-         <Features />
-         <Resume />
          <Contact />
+         <BlogSection />
          <Footer />
       
 
