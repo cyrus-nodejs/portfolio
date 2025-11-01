@@ -45,7 +45,7 @@ const About = () => {
               className="about-text"
             >
               <motion.h2
-                className="fw-bold mb-3 text-primary"
+                className="fw-bold mb-3 "
                 style={{ fontSize: "2.2rem", letterSpacing: "-0.5px" }}
               >
                 👋 About Me
