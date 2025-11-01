@@ -11,7 +11,7 @@ import BlogSection from './Blog/Blogsection';
 // import Resume from "../page/Resume/Resume"
 import Contact from "../page/Contact"
 import Footer from "../../src/component/Footer"
-
+ import About from './AboutMe';
 const Home = () => {
 
 
@@ -23,8 +23,10 @@ const Home = () => {
          <Bio />
            <Features />
          <Portfolio />
+          <About />
+            <BlogSection />
          <Contact />
-         <BlogSection />
+      
          <Footer />
       
 
