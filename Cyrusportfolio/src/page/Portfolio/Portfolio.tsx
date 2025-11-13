@@ -6,10 +6,11 @@ import { ProjectCard } from "./ProjectCard";
 import projImg1 from "../../assets/images/jollofai.png";
 import projImg2 from "../../assets/images/shoppingluxury.netlify.app_(Nest Hub Max) (2).png";
 import projImg3 from "../../assets/images/Linka.jpg";
-import projImg4 from "../../assets/images/DarkmusicappDesktop.png";
+import projImg4 from "../../assets/images/darkmusicappdesktop.png";
 import projImg5 from "../../assets/images/Lightchatdesktop.png";
 import projImg6 from "../../assets/images/devloggerdesktoplight.png";
 import projImg7 from "../../assets/images/Sitexx.jpg";
+import projImg8 from '../../assets/images/todo-planet.netlify.app_(Nest Hub Max).png'
 import colorSharp2 from "../../assets/images/color-sharp2.png";
 import "animate.css";
 import TrackVisibility from "react-on-screen";
@@ -119,6 +120,16 @@ const Portfolio = () => {
       imgUrl: projImg5,
       githubUrl: "https://github.com/cyrus-nodejs/chatplanet",
       liveUrl: "https://wen-chat.netlify.app/login",
+    },
+    {
+      title: "📝 Todo Application",
+      description: "About Full-stack Todo application with React, TypeScript, Node.js, Express, MongoDB, reminders, and notification system.",
+      details: [
+        
+      ],
+      imgUrl: projImg8,
+      githubUrl: "https://github.com/cyrus-nodejs/todoapp",
+      liveUrl: "https://todo-planet.netlify.app",
     },
   ];
 
