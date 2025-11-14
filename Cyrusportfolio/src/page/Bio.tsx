@@ -15,7 +15,7 @@ const Bio = () => {
   const [isDeleting, setIsDeleting] = useState(false);
   const [text, setText] = useState('');
   const [delta, setDelta] = useState(300 - Math.random() * 100);
-  const toRotate: string[] = ['Full-Stack', 'Backend',  'AI', 'Machine Learning'];
+  const toRotate: string[] = ['Full Stack', 'Backend',  'Software'];
   const period: number = 2000;
 
   useEffect(() => {
@@ -60,7 +60,7 @@ const Bio = () => {
                   </h1>
 
                   <p className="py-2">
-                    I’m a <strong>Full-Stack Software Engineer</strong> focused on
+                    I’m a <strong> Software Engineer</strong> focused on
                     building <strong>scalable backend systems</strong> and integrating
                     <strong> AI & Machine Learning</strong> into modern web and mobile applications.
                   </p>
