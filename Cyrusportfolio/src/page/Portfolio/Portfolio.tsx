@@ -154,7 +154,7 @@ const Portfolio = () => {
 };
 
   const tabs = [
-    { key: "ai", label: "AI & ML Integrations", data: aiProjects },
+    { key: "ai", label: "Microservices", data: aiProjects },
     { key: "python", label: "Python", data: pythonProjects },
     { key: "node", label: "Node.js", data: nodeProjects },
   ];
