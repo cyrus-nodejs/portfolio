@@ -10,7 +10,7 @@ import projImg4 from "../../assets/images/darkmusicappdesktop.png";
 import projImg5 from "../../assets/images/Lightchatdesktop.png";
 import projImg6 from "../../assets/images/devloggerdesktoplight.png";
 import projImg7 from "../../assets/images/Sitexx.jpg";
-import projImg8 from '../../assets/images/todo-planet.netlify.app_(Nest Hub Max).png'
+import projImg8 from '../../assets/images/todo-planet.netlify.app_(Nest Hub).png'
 import colorSharp2 from "../../assets/images/color-sharp2.png";
 import "animate.css";
 import TrackVisibility from "react-on-screen";
