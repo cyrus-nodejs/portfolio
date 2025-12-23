@@ -3,14 +3,6 @@ import { motion } from "framer-motion";
 import { Variants } from "framer-motion";
 import { useState } from "react";
 import { ProjectCard } from "./ProjectCard";
-import projImg1 from "../../assets/images/jollofai.png";
-import projImg2 from "../../assets/images/shoppingluxury.netlify.app_(Nest Hub Max) (2).png";
-import projImg3 from "../../assets/images/Linka.jpg";
-import projImg4 from "../../assets/images/darkmusicappdesktop.png";
-import projImg5 from "../../assets/images/Lightchatdesktop.png";
-import projImg6 from "../../assets/images/devloggerdesktoplight.png";
-import projImg7 from "../../assets/images/Sitexx.jpg";
-import projImg8 from '../../assets/images/todo-planet.netlify.app_(Nest Hub).png'
 import colorSharp2 from "../../assets/images/color-sharp2.png";
 import "animate.css";
 import TrackVisibility from "react-on-screen";
@@ -23,115 +15,147 @@ const Portfolio = () => {
   };
 
   // ──────────────── PROJECT GROUPS ────────────────
-  const aiProjects = [
+  const expressProjects = [
     {
       title: "🧠 Jollof AI — Smart Recipe Recommender",
-      description: "Node js ·Express · FastAPI · React · MongoDB · OpenAI API · Google Vision",
+      description: "An AI powered recipe generation and recommendation system",
+      stack: "Node js ·Express · FastAPI · React · MongoDB · Machine Learning · Google Vision",
       details: [
-        "Integrated OpenAI and LangChain to intelligently analyze ingredients and generate personalized recipe summaries, enhancing user experience and recommendation accuracy.",
+        "Integrated machine learning algorithms to intelligently analyze ingredients and generate personalized recipe summaries, enhancing user experience and recommendation accuracy.",
         "Boosted user engagement by 60% through multimodal ingredient input — enabling recipe matching via text, voice, and image recognition.",
         "Accelerated backend performance by 40% by implementing efficient MongoDB indexing and caching for similarity-based recipe queries.",
         "Developed a modular, high-performance FastAPI microservice for real-time embedding generation and semantic recipe matching.",
       ],
-      imgUrl: projImg1,
       githubUrl: "https://github.com/team-accelerators/JollofAPI",
       liveUrl: "https://jollofai.netlify.app",
     },
     {
-      title: "⚙️ SiteX AI powered Equipment Rentals Platform",
-      description: "Node.js · Express · PostgreSQL · Paystack API · Docker · Prisma",
-      details: [
-        "Automated recurring payments using Paystack API, cutting manual billing by 75%.",
-        "Implemented robust JWT authentication and role-based access control.",
-        "Deployed via Docker & Nginx with GitHub Actions CI/CD for zero-downtime updates.",
-        "Improved uptime to 99.9% through Redis caching and API performance monitoring.",
-      ],
-      imgUrl: projImg7,
-      githubUrl: "https://github.com/SiteXxx/SiteXxx-Backend",
-      liveUrl: "#",
-    },
-    {
-      title: "🤖 Linka – AI Meeting Notetaker",
-      description: "Chrome AI APIs · Gemini Nano · On-Device ML",
-      details: [
-        "Built a privacy-first AI meeting tool with real-time transcription and summarization.",
-        "Leveraged Chrome’s Gemini Nano APIs for local, cloud-free processing.",
-        "Implemented smart translation and multilingual summaries using AI inference models.",
-        "Supported PDF, Docs, and Markdown exports — fully local and private.",
-      ],
-      imgUrl: projImg3,
-      githubUrl: "https://github.com/The-Engineer-Network/Linka-AI-Meeting-Notetaker-",
-      liveUrl: "#",
-    },
-  ];
-
-  const pythonProjects = [
-    {
-      title: "🎵 Music App — Django + React",
-      description: "Python · Django REST · React · PostgreSQL",
-      details: [
-        "Developed a full-stack music streaming app with playlists, subscriptions, and artist discovery.",
-        "Implemented JWT-secured authentication via Django REST Framework.",
-        "Built a responsive React frontend with an integrated audio player.",
-        "Added admin dashboards for artist content and premium plan management.",
-      ],
-      imgUrl: projImg4,
-      githubUrl: "https://github.com/cyrus-nodejs/musicapp",
-      liveUrl: "https://musicplanet.netlify.app/",
-    },
-    {
-      title: "🧑‍💻 Developer Workflow Tracker",
-      description: "Django REST · React · Chart.js · OAuth",
-      details: [
-        "Built a productivity tracker with Google & GitHub OAuth authentication.",
-        "Integrated Chart.js dashboards for commit frequency and goal analytics.",
-        "Synced GitHub PRs and commits to produce visual performance insights.",
-        "Delivered weekly reports for developer productivity tracking.",
-      ],
-      imgUrl: projImg6,
-      githubUrl: "https://github.com/emmaadey/devlogger",
-      liveUrl: "https://devlogger.emmaadey.com",
-    },
-  ];
-
-  const nodeProjects = [
-    {
       title: "🛍️ E-Commerce App — MERN Stack",
-      description: "MongoDB · Express · React · Node.js · Stripe API",
+      description: "A fullstack e-commerce platform with Stripe payment integration  ",
+      stack:"MongoDB · Express · React · Node.js · Stripe API",
       details: [
         "Built a full-featured store with JWT authentication and product management dashboard.",
         "Integrated Stripe for smooth, secure checkout with 35% reduction in payment errors.",
         "Optimized UI with instant product search and category filtering.",
         "Enabled CRUD operations for admins — users, products, orders.",
       ],
-      imgUrl: projImg2,
+      // imgUrl: projImg2,
       githubUrl: "https://github.com/cyrus-nodejs/e-commerce",
       liveUrl: 'https://shoppingluxury.netlify.app/',
     },
     {
       title: "💬 ChatPlanet — Real-Time Messaging",
-      description: "React · Node.js · Socket.IO · PostgreSQL",
+      description: "A web based real time social messaging platform",
+      stack:"React · Node.js · Socket.IO · PostgreSQL",
       details: [
         "Engineered scalable chat for 1,000+ users using WebSocket & Socket.IO.",
         "Integrated JWT-based authentication and live presence tracking.",
         "Added group chat, avatars, and message history sync.",
         "Reduced latency from 300ms → 80ms via socket batching optimization.",
       ],
-      imgUrl: projImg5,
+      // imgUrl: projImg5,
       githubUrl: "https://github.com/cyrus-nodejs/chatplanet",
       liveUrl: "https://wen-chat.netlify.app/login",
     },
     {
-      title: "📝 Todo Application",
-      description: "About Full-stack Todo application with React, TypeScript, Node.js, Express, MongoDB, reminders, and notification system.",
+  title: "📝 Todo Application",
+  description: "A Full-stack Todo app featuring reminders and a real-time notification system.",
+  stack: "React, TypeScript, Node.js, Express, MongoDB",
+  details: [
+    "Designed and developed a scalable full-stack application using React and TypeScript with a Node.js/Express backend",
+    "Implemented secure user authentication and authorization using JWT and protected API routes",
+    "Built a robust CRUD system for task management with support for task completion and updates",
+    "Engineered a reminder and notification system to improve task tracking and user engagement",
+    "Developed a RESTful API following best practices and clean architecture principles",
+    "Integrated MongoDB with optimized schemas for efficient data persistence and retrieval",
+    "Ensured application responsiveness and cross-device compatibility",
+    "Deployed and maintained the application using modern cloud and CI/CD-friendly platforms"
+  ],
+  githubUrl: "https://github.com/cyrus-nodejs/todoapp",
+  liveUrl: "https://todo-planet.netlify.app",
+}
+    // {
+    //   title: "⚙️ SiteX AI powered Equipment Rentals Platform",
+    //   description: "Node.js · Express · PostgreSQL · Paystack API · Docker · Prisma",
+    //   details: [
+    //     "Automated recurring payments using Paystack API, cutting manual billing by 75%.",
+    //     "Implemented robust JWT authentication and role-based access control.",
+    //     "Deployed via Docker & Nginx with GitHub Actions CI/CD for zero-downtime updates.",
+    //     "Improved uptime to 99.9% through Redis caching and API performance monitoring.",
+    //   ],
+    //   // imgUrl: projImg7,
+    //   githubUrl: "https://github.com/SiteXxx/SiteXxx-Backend",
+    //   liveUrl: "#",
+    // },
+    
+  ];
+
+  const djangoProjects = [
+    {
+      title: "🎵 Music App — Django + React",
+      description: 'Music streaming app with admin dashboard',
+      stack: "Python · Django REST · React · PostgreSQL",
       details: [
-        
+        "Developed a full-stack music streaming app with playlists, subscriptions, and artist discovery.",
+        "Implemented JWT-secured authentication via Django REST Framework.",
+        "Built a responsive React frontend with an integrated audio player.",
+        "Added admin dashboards for artist content and premium plan management.",
       ],
-      imgUrl: projImg8,
-      githubUrl: "https://github.com/cyrus-nodejs/todoapp",
-      liveUrl: "https://todo-planet.netlify.app",
+      // imgUrl: projImg4,
+      githubUrl: "https://github.com/cyrus-nodejs/musicapp",
+      liveUrl: "https://musicplanet.netlify.app/",
+    },
+    {
+      title: "🧑‍💻 Developer Workflow Tracker",
+      description: "A Developer productivity monitoring system",
+      stack:"Python, Django REST · React · Chart.js · OAuth",
+      details: [
+        "Built a productivity tracker with Google & GitHub OAuth authentication.",
+        "Integrated Chart.js dashboards for commit frequency and goal analytics.",
+        "Synced GitHub PRs and commits to produce visual performance insights.",
+        "Delivered weekly reports for developer productivity tracking.",
+      ],
+      // imgUrl: projImg6,
+      githubUrl: "https://github.com/emmaadey/devlogger",
+      liveUrl: "https://devlogger.emmaadey.com",
     },
   ];
+
+  const nestjsProjects = [
+     {
+      title: "🧠 Employee  Management System",
+      description: "A role-based platform that allows super users to create organisations, admins to invite employees, and employees to onboard securely.",
+      stack:"Next.js, React, TypeScript, Tailwind CSS, shadcn/ui NestJS, Node.js",
+     
+      details: [
+        "Role-based access control (Super Admin, Admin, Employee)",
+        "Secure invite links with expiry",
+        "Organisation-scoped data isolation",
+        "Developed a modular, high-performance FastAPI microservice for real-time embedding generation and semantic recipe matching.",
+      ],
+      // imgUrl: projImg1,
+      githubUrl: "https://github.com/team-accelerators/JollofAPI",
+      liveUrl: "https://jollofai.netlify.app",
+    },
+
+        {
+      title: "🧠 SaaS Dashboard & Analytics Platform",
+      description: "A responsive SaaS dashboard for managing users, analytics, and system configuration with real-time data updates.",
+        stack:"Next.js, React, TypeScript, Tailwind CSS, shadcn/ui NestJS, Node.js",
+      details: [
+        "Modular dashboard layout",
+        "Real-time updates with WebSockets",
+       "Server-side rendering for performance",
+        "Protected routes & permissions",
+        "Clean, scalable API architecture"
+      ],
+      // imgUrl: projImg1,
+      githubUrl: "https://github.com/team-accelerators/JollofAPI",
+      liveUrl: "https://employee-manager.netlify.app",
+    },
+  ];
+
+
 
   // ──────────────── ANIMATIONS ────────────────
   const containerVariants = {
@@ -154,9 +178,12 @@ const Portfolio = () => {
 };
 
   const tabs = [
-    { key: "ai", label: "Microservices", data: aiProjects },
-    { key: "python", label: "Python", data: pythonProjects },
-    { key: "node", label: "Node.js", data: nodeProjects },
+    { key: "expressjs", label: "Expressjs ", data: expressProjects },
+    { key: "nestjs", label: "Nestjs ", data: nestjsProjects},
+    { key: "python", label: "Python ", data: djangoProjects },
+    
+   
+    
   ];
 
   return (
@@ -173,7 +200,7 @@ const Portfolio = () => {
                     and measurable product impact.
                   </p>
 
-                  <Tab.Container id="projects-tabs" defaultActiveKey="ai">
+                  <Tab.Container id="projects-tabs" defaultActiveKey="expressjs">
                     <Nav
                       variant="pills"
                       className="nav-pills mb-5 justify-content-center align-items-center"

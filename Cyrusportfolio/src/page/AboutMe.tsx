@@ -1,6 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
-import profileImg from "../assets/images/Gemini_Generated_Image_3d07am3d07am3d07.png";
+import profileImg from "../assets/images/1765793631850.jpg";
 import colorSharp from "../assets/images/color-sharp.png";
 import { Variants } from "framer-motion";
 

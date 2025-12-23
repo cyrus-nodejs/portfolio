@@ -1,7 +1,4 @@
-// import  {Container, Image, Col, Row, Form, Button} from "react-bootstrap"
-// import { Link } from "react-router-dom"
-// import img from "../assets/images/contact1.png"
-//n
+
 import { useState } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import contactImg from "../assets/images/contact-img.svg";
