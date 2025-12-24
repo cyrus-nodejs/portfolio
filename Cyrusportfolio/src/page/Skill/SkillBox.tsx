@@ -1,4 +1,4 @@
-import React from "react";
+
 import { motion, Variants } from "framer-motion";
 import colorSharp from "../../assets/images/color-sharp.png";
 
@@ -54,8 +54,8 @@ const Skills = () => {
             <div className="p-4 bg-dark text-light rounded-4 h-100 shadow-sm">
               <h5 className="fw-semibold mb-2">🧩 Backend</h5>
               <p className="small text-secondary mb-0">
-                Node.js, TypeScript, Python, NestJS, Express.js, FastAPI,
-                Django, Flask — building secure, scalable APIs and services.
+                Python NestJS, ExpressJs, FastAPI,
+                Django, building secure, scalable APIs and services.
               </p>
             </div>
           </motion.div>

@@ -26,7 +26,7 @@ const Portfolio = () => {
         "Accelerated backend performance by 40% by implementing efficient MongoDB indexing and caching for similarity-based recipe queries.",
         "Developed a modular, high-performance FastAPI microservice for real-time embedding generation and semantic recipe matching.",
       ],
-      githubUrl: "https://github.com/team-accelerators/JollofAPI",
+      githubUrl: "https://github.com/cyrus-nodejs/jollofai",
       liveUrl: "https://jollofai.netlify.app",
     },
     {
@@ -116,8 +116,8 @@ const Portfolio = () => {
         "Delivered weekly reports for developer productivity tracking.",
       ],
       // imgUrl: projImg6,
-      githubUrl: "https://github.com/emmaadey/devlogger",
-      liveUrl: "https://devlogger.emmaadey.com",
+      githubUrl: "https://github.com/cyrus-nodejs/devlogger",
+      liveUrl: "https://devlogger.netlify.com",
     },
   ];
 
@@ -134,7 +134,7 @@ const Portfolio = () => {
         "Developed a modular, high-performance FastAPI microservice for real-time embedding generation and semantic recipe matching.",
       ],
       // imgUrl: projImg1,
-      githubUrl: "https://github.com/team-accelerators/JollofAPI",
+      githubUrl: "https://github.com/cyrus-nodejs/employee-manager",
       liveUrl: "https://jollofai.netlify.app",
     },
 
@@ -150,8 +150,8 @@ const Portfolio = () => {
         "Clean, scalable API architecture"
       ],
       // imgUrl: projImg1,
-      githubUrl: "https://github.com/team-accelerators/JollofAPI",
-      liveUrl: "https://employee-manager.netlify.app",
+      githubUrl: "https://github.com/cyrus-nodejs/saas-dashboard",
+      liveUrl: "https://saas-dashboard.netlify.app",
     },
   ];
 
@@ -180,7 +180,7 @@ const Portfolio = () => {
   const tabs = [
     { key: "expressjs", label: "Expressjs ", data: expressProjects },
     { key: "nestjs", label: "Nestjs ", data: nestjsProjects},
-    { key: "python", label: "Python ", data: djangoProjects },
+    { key: "django", label: "Django + FastAPI ", data: djangoProjects },
     
    
     
