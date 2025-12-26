@@ -134,8 +134,8 @@ const Portfolio = () => {
         "Developed a modular, high-performance FastAPI microservice for real-time embedding generation and semantic recipe matching.",
       ],
       // imgUrl: projImg1,
-      githubUrl: "https://github.com/cyrus-nodejs/employee-manager",
-      liveUrl: "https://jollofai.netlify.app",
+      githubUrl: "https://github.com/cyrus-nodejs/employee-management-system",
+      liveUrl: "https://employee-manager.netlify.app",
     },
 
         {
