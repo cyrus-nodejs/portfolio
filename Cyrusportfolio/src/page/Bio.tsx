@@ -17,7 +17,7 @@ const Bio = () => {
   const [text, setText] = useState("");
   const [delta, setDelta] = useState(300 - Math.random() * 100);
 
-  const toRotate: string[] = ["Full-Stack", "Backend", "Software"];
+  const toRotate: string[] = ["Fullstack", "Backend", "Software"];
   const period = 2000;
 
   useEffect(() => {

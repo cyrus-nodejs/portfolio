@@ -15,11 +15,28 @@ const Portfolio = () => {
   };
 
   // ──────────────── PROJECT GROUPS ────────────────
-  const expressProjects = [
+  const nodejsProjects = [
+       {
+      title: "🧠 Employee  Management System",
+      description: "A role-based platform that allows super users to create organisations, admins to invite employees, and employees to onboard securely.",
+      stack:"NestJS · Next.js·  TypeScript · Tailwind · Shadcn/ui",
+     
+      details: [
+        "Role-based access control (Super Admin, Admin, Employee)",
+        "Secure invite links with expiry",
+        "Organisation-scoped data isolation",
+        "Developed a modular, high-performance FastAPI microservice for real-time embedding generation and semantic recipe matching.",
+      ],
+      // imgUrl: projImg1,
+      githubUrl: "https://github.com/cyrus-nodejs/employee-management-system",
+      liveUrl: "https://employee-hr.netlify.app",
+    },
+
+    
     {
       title: "🧠 Jollof AI — Smart Recipe Recommender",
       description: "An AI powered recipe generation and recommendation system",
-      stack: "Node js ·Express · FastAPI · React · MongoDB · Machine Learning · Google Vision",
+      stack: "Express · FastAPI · React · MongoDB · Machine Learning · Google Vision",
       details: [
         "Integrated machine learning algorithms to intelligently analyze ingredients and generate personalized recipe summaries, enhancing user experience and recommendation accuracy.",
         "Boosted user engagement by 60% through multimodal ingredient input — enabling recipe matching via text, voice, and image recognition.",
@@ -29,10 +46,25 @@ const Portfolio = () => {
       githubUrl: "https://github.com/cyrus-nodejs/jollofai",
       liveUrl: "https://jollofai.netlify.app",
     },
+        {
+      title: "🧠 SaaS Dashboard & Analytics Platform",
+      description: "A responsive SaaS dashboard for managing users, analytics, and system configuration with real-time data updates.",
+         stack:"NestJS · Next.js·  TypeScript · Tailwind · Shadcn/ui",
+      details: [
+        "Modular dashboard layout",
+        "Real-time updates with WebSockets",
+       "Server-side rendering for performance",
+        "Protected routes & permissions",
+        "Clean, scalable API architecture"
+      ],
+      // imgUrl: projImg1,
+      githubUrl: "https://github.com/cyrus-nodejs/saas-dashboard",
+      liveUrl: "https://saas-dashboard.netlify.app",
+    },
     {
       title: "🛍️ E-Commerce App — MERN Stack",
       description: "A fullstack e-commerce platform with Stripe payment integration  ",
-      stack:"MongoDB · Express · React · Node.js · Stripe API",
+      stack:"MongoDB · Express · React · Stripe API",
       details: [
         "Built a full-featured store with JWT authentication and product management dashboard.",
         "Integrated Stripe for smooth, secure checkout with 35% reduction in payment errors.",
@@ -121,38 +153,8 @@ const Portfolio = () => {
     },
   ];
 
-  const nestjsProjects = [
-     {
-      title: "🧠 Employee  Management System",
-      description: "A role-based platform that allows super users to create organisations, admins to invite employees, and employees to onboard securely.",
-      stack:"Next.js, React, TypeScript, Tailwind CSS, shadcn/ui NestJS, Node.js",
-     
-      details: [
-        "Role-based access control (Super Admin, Admin, Employee)",
-        "Secure invite links with expiry",
-        "Organisation-scoped data isolation",
-        "Developed a modular, high-performance FastAPI microservice for real-time embedding generation and semantic recipe matching.",
-      ],
-      // imgUrl: projImg1,
-      githubUrl: "https://github.com/cyrus-nodejs/employee-management-system",
-      liveUrl: "https://employee-manager.netlify.app",
-    },
-
-        {
-      title: "🧠 SaaS Dashboard & Analytics Platform",
-      description: "A responsive SaaS dashboard for managing users, analytics, and system configuration with real-time data updates.",
-        stack:"Next.js, React, TypeScript, Tailwind CSS, shadcn/ui NestJS, Node.js",
-      details: [
-        "Modular dashboard layout",
-        "Real-time updates with WebSockets",
-       "Server-side rendering for performance",
-        "Protected routes & permissions",
-        "Clean, scalable API architecture"
-      ],
-      // imgUrl: projImg1,
-      githubUrl: "https://github.com/cyrus-nodejs/saas-dashboard",
-      liveUrl: "https://saas-dashboard.netlify.app",
-    },
+  const fastAPIProjects = [
+  
   ];
 
 
@@ -178,9 +180,9 @@ const Portfolio = () => {
 };
 
   const tabs = [
-    { key: "expressjs", label: "Expressjs ", data: expressProjects },
-    { key: "nestjs", label: "Nestjs ", data: nestjsProjects},
-    { key: "django", label: "Django + FastAPI ", data: djangoProjects },
+    { key: "expressjs", label: "NodeJs ", data: nodejsProjects },
+    { key: "nestjs", label: "Django ", data:djangoProjects},
+    { key: "django", label: " FastAPI ", data: fastAPIProjects },
     
    
     
