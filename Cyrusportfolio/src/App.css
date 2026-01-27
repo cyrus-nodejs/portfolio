@@ -1,3 +1,6 @@
+
+
+
 /************ Custom Font ************/
 @font-face {
 	font-family: Centra;
@@ -14,6 +17,41 @@
 	src: url('./assets/font/CentraNo2-Book.ttf');
 	font-weight: 400;
 }
+
+:root {
+  --fs-hero: clamp(2.5rem, 5vw, 3.5rem);
+  --fs-subhero: clamp(1.5rem, 3vw, 2.25rem);
+  --fs-body: 1.125rem;
+  --lh-body: 1.7;
+}
+
+h1 {
+  font-size: var(--fs-hero);
+}
+
+h2 {
+  font-size: var(--fs-subhero);
+}
+
+.hero-text {
+  font-size: var(--fs-body);
+  line-height: var(--lh-body);
+  max-width: 42rem;
+  opacity: 0.85;
+}
+
+.banner {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+.tagline {
+  padding: 0.4rem 0.9rem;
+  border-radius: 999px;
+  font-weight: 600;
+}
+
+
 
 /************ Default Css ************/
 * {
@@ -629,4 +667,60 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   color: #B8B8B8;
   letter-spacing: 0.5px;
   margin-top: 20px;
+}
+
+
+/* Prevents the layout from jumping when the text is empty */
+.min-height-custom {
+  min-height: 1.2em;
+}
+
+/* Authentic typing cursor blink */
+.wrap {
+  border-right: 0.08em solid #0d6efd;
+  animation: blink 0.75s step-end infinite;
+}
+
+@keyframes blink {
+  from, to { border-color: transparent }
+  50% { border-color: #0d6efd; }
+}
+
+/* Subtle floating animation for the image */
+.floating-animation {
+  animation: up-down 3s ease-in-out infinite alternate-reverse both;
+}
+
+@keyframes up-down {
+  0% { transform: translateY(10px); }
+  100% { transform: translateY(-10px); }
+}
+
+.transition-all {
+  transition: all 0.3s ease-in-out;
+}
+
+.hover-shadow:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(13, 110, 253, 0.2);
+}
+
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+
+  .floating-animation {
+    animation: none !important;
+  }
+}
+
+.typewriter {
+  border-right: 3px solid var(--bs-primary);
+  padding-right: 0.25rem;
 }

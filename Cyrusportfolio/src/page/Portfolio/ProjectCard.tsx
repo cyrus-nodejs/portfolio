@@ -1,23 +1,29 @@
-
 import { motion, AnimatePresence } from "framer-motion";
-import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
+import { Button, Badge } from "react-bootstrap";
 
-type ProjectCardProps = {
+interface Metric {
+  label: string;
+  value: string;
+}
+
+interface ProjectCardProps {
   title: string;
   description: string;
+  stack: string;
   details: string[];
-  stack:string;
+  metrics?: Metric[];
   githubUrl?: string;
   liveUrl?: string;
   isExpanded: boolean;
   onExpand: () => void;
-};
+}
 
 export const ProjectCard = ({
   title,
   description,
-  details,
   stack,
+  details,
+  metrics,
   githubUrl,
   liveUrl,
   isExpanded,
@@ -25,81 +31,65 @@ export const ProjectCard = ({
 }: ProjectCardProps) => {
   return (
     <motion.div
-      className="card bg-dark text-light rounded-4 shadow-lg h-100"
-      whileHover={{ scale: 1.02 }}
+      layout
+      className="p-4 bg-dark text-light rounded-4 h-100 d-flex flex-column"
     >
-      <div className="card-body p-4 d-flex flex-column">
-        {/* Title */}
-        <h5 className="card-title mb-2 fw-semibold">
-          {title}
-        </h5>
-       
-           {/* Short Description */}
-        <p className="card-text text-secondary small mb-3">
-          {description}
-        </p>
-         {/* Tech stack */}
-        <p className="card-text text-secondary small mb-3">
-          {stack}
-        </p>
-          
-        {/* Actions */}
-        <div className="d-flex justify-content-between align-items-center mb-3">
-          <button
-            onClick={onExpand}
-            className="btn btn-link p-0 text-info fw-medium text-decoration-none"
-          >
-            {isExpanded ? "Show Less ▲" : "Learn More ▼"}
-          </button>
+      {/* Header */}
+      <div className="d-flex justify-content-between align-items-start mb-2">
+        <h5 className="fw-semibold mb-0">{title}</h5>
+        <Button size="sm" variant="outline-primary" onClick={onExpand}>
+          {isExpanded ? "Hide" : "Details"}
+        </Button>
+      </div>
 
-          <div className="d-flex align-items-center gap-3">
-            {githubUrl && (
-              <a
-                href={githubUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-light fs-5"
-                title="View on GitHub"
-              >
-                <FaGithub />
-              </a>
-            )}
+      {/* Description */}
+      <p className="small text-secondary mb-2">{description}</p>
 
-            {liveUrl && (
-              <a
-                href={liveUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-info small d-flex align-items-center gap-1 text-decoration-none"
-                title="View Live Demo"
-              >
-                <FaExternalLinkAlt />
-                <span>Live</span>
-              </a>
-            )}
-          </div>
+      {/* Metrics */}
+      {metrics && metrics.length > 0 && (
+        <div className="d-flex flex-wrap gap-2 mb-3">
+          {metrics.map((m) => (
+            <Badge key={m.label} bg="secondary" className="fw-normal">
+              {m.label}: {m.value}
+            </Badge>
+          ))}
         </div>
+      )}
 
-        {/* Expandable Details */}
-        <AnimatePresence>
-          {isExpanded && (
-            <motion.div
-              className="bg-secondary bg-opacity-25 rounded-3 p-3 mt-2"
-              initial={{ opacity: 0, height: 0 }}
-              animate={{ opacity: 1, height: "auto" }}
-              exit={{ opacity: 0, height: 0 }}
-              transition={{ duration: 0.35, ease: "easeInOut" }}
-            >
-              <ul className="mb-0 ps-3 small text-light">
-                {details.map((point, idx) => (
-                  <li key={idx} className="mb-2">
-                    {point}
-                  </li>
-                ))}
-              </ul>
-            </motion.div>
-          )}
-        </AnimatePresence>
+      {/* Stack */}
+      <p className="small mb-3">
+        <strong>Stack:</strong> {stack}
+      </p>
+
+      {/* Expandable Details */}
+      <AnimatePresence initial={false}>
+        {isExpanded && (
+          <motion.ul
+            className="small ps-3 mb-3 flex-grow-1"
+            initial={{ opacity: 0, height: 0 }}
+            animate={{ opacity: 1, height: "auto" }}
+            exit={{ opacity: 0, height: 0 }}
+            transition={{ duration: 0.25, ease: "easeOut" }}
+          >
+            {details.map((detail, idx) => (
+              <li key={idx}>{detail}</li>
+            ))}
+          </motion.ul>
+        )}
+      </AnimatePresence>
+
+      {/* Links */}
+      <div className="mt-auto d-flex gap-3 flex-wrap">
+        {githubUrl && (
+          <a href={githubUrl} target="_blank" rel="noreferrer">
+            GitHub
+          </a>
+        )}
+        {liveUrl && (
+          <a href={liveUrl} target="_blank" rel="noreferrer">
+            Live
+          </a>
+        )}
       </div>
     </motion.div>
   );

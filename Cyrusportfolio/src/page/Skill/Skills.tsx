@@ -1,7 +1,7 @@
 import {Col, Row, Form, ProgressBar} from 'react-bootstrap';
 
 
-import React, { useState, useEffect } from 'react';
+import  { useState, useEffect } from 'react';
 
 
 
