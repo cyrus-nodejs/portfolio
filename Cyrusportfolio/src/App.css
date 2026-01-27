@@ -724,3 +724,39 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   border-right: 3px solid var(--bs-primary);
   padding-right: 0.25rem;
 }
+
+/* Wrap nav links in a scrollable container */
+.nav-scroll-wrapper {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch; /* smooth scroll on iOS */
+  scroll-behavior: smooth;
+  padding-bottom: 0.25rem;
+}
+
+/* Hide scrollbar */
+.nav-scroll-wrapper::-webkit-scrollbar {
+  display: none;
+}
+
+.nav-scroll-wrapper {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;     /* Firefox */
+}
+
+/* Make nav links flex and nowrap for horizontal scroll */
+.navbar-nav {
+  flex-wrap: nowrap;
+}
+
+/* Optional: spacing between links */
+.navbar-nav .nav-link {
+  white-space: nowrap;
+  margin-right: 1rem;
+}
+
+/* Desktop override: normal wrap */
+@media (min-width: 768px) {
+  .nav-scroll-wrapper {
+    overflow-x: visible;
+  }
+}
