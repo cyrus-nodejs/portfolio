@@ -7,9 +7,10 @@ import { projects } from "./projects.config";
 import { containerVariants, cardVariants } from "../../hooks/motion/motionVariant";
 
 import colorSharp2 from "../../assets/images/color-sharp2.png";
+import { p } from "framer-motion/client";
 
 const tabs = [
-  { key: "web", label: "Web Projects" },
+  { key: "web", label: "Web" },
   { key: "mobile", label: "Mobile" },
   { key: "desktop", label: "Desktop" },
 ] as const;
@@ -54,13 +55,13 @@ const Portfolio = () => {
                 ))}
               </Nav>
 
-              {/* Tab Content */}
+            
               <Tab.Content>
+               
                 {tabs.map((tab) => {
                   const filteredProjects = projects.filter((p) =>
-                    p.categories.includes(tab.key)
+                   p.categories.includes(tab.key)
                   );
-
                   return (
                     <Tab.Pane eventKey={tab.key} key={tab.key}>
                       <motion.div

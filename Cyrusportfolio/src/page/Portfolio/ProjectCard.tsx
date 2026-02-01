@@ -34,7 +34,7 @@ export const ProjectCard = ({
       layout
       className="p-4 bg-dark text-light rounded-4 h-100 d-flex flex-column"
     >
-      {/* Header */}
+   
       <div className="d-flex justify-content-between align-items-start mb-2">
         <h5 className="fw-semibold mb-0">{title}</h5>
         <Button size="sm" variant="outline-primary" onClick={onExpand}>
@@ -56,12 +56,12 @@ export const ProjectCard = ({
         </div>
       )}
 
-      {/* Stack */}
+
       <p className="small mb-3">
         <strong>Stack:</strong> {stack}
       </p>
 
-      {/* Expandable Details */}
+  
       <AnimatePresence initial={false}>
         {isExpanded && (
           <motion.ul
@@ -78,7 +78,7 @@ export const ProjectCard = ({
         )}
       </AnimatePresence>
 
-      {/* Links */}
+  
       <div className="mt-auto d-flex gap-3 flex-wrap">
         {githubUrl && (
           <a href={githubUrl} target="_blank" rel="noreferrer">

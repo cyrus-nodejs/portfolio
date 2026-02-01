@@ -1,7 +1,5 @@
 
 
-
-/************ Custom Font ************/
 @font-face {
 	font-family: Centra;
 	src: url('./assets/font/CentraNo2-Bold.ttf');
@@ -125,7 +123,7 @@ p.success {
 p.danger {
 	color: red;
 }
-/************ Navbar Css ************/
+
 nav.navbar {
   padding: 18px 0;
   position: fixed;
@@ -393,7 +391,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 
 /************ Projects Css ************/
-.project {
+ .project {
   padding: 80px 0;
   position: relative;
   background-color: black;
@@ -417,7 +415,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   margin: 0 auto;
   border-radius: 50px;
   background-color: rgb(255 255 255 / 10%);
-  overflow: hidden;
+
 }
 .project .nav.nav-pills .nav-item {
   width: 33.33333%;
@@ -444,6 +442,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
     background: linear-gradient(90.21deg, #AA367C -5.91%, #4A2FBD 111.58%);
     top: 0;
     left: 0;
+      pointer-events: none; 
     z-index: -1;
     transition: 0.3s ease-in-out;
 }
@@ -516,7 +515,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   width: 35%;
   right: 0;
   z-index: -4;
-}
+} 
 
 /************ Projects Css ************/
 .contact {
@@ -670,12 +669,12 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 
 
-/* Prevents the layout from jumping when the text is empty */
+
 .min-height-custom {
   min-height: 1.2em;
 }
 
-/* Authentic typing cursor blink */
+
 .wrap {
   border-right: 0.08em solid #0d6efd;
   animation: blink 0.75s step-end infinite;
@@ -686,7 +685,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   50% { border-color: #0d6efd; }
 }
 
-/* Subtle floating animation for the image */
+
 .floating-animation {
   animation: up-down 3s ease-in-out infinite alternate-reverse both;
 }
@@ -725,38 +724,23 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   padding-right: 0.25rem;
 }
 
-/* Wrap nav links in a scrollable container */
-.nav-scroll-wrapper {
-  overflow-x: auto;
-  -webkit-overflow-scrolling: touch; /* smooth scroll on iOS */
-  scroll-behavior: smooth;
-  padding-bottom: 0.25rem;
-}
 
-/* Hide scrollbar */
-.nav-scroll-wrapper::-webkit-scrollbar {
-  display: none;
-}
 
-.nav-scroll-wrapper {
-  -ms-overflow-style: none;  /* IE and Edge */
-  scrollbar-width: none;     /* Firefox */
-}
 
-/* Make nav links flex and nowrap for horizontal scroll */
+
 .navbar-nav {
   flex-wrap: nowrap;
-}
+} 
 
-/* Optional: spacing between links */
+
 .navbar-nav .nav-link {
   white-space: nowrap;
   margin-right: 1rem;
-}
+} 
 
-/* Desktop override: normal wrap */
-@media (min-width: 768px) {
+
+ @media (min-width: 768px) {
   .nav-scroll-wrapper {
     overflow-x: visible;
   }
-}
+} 

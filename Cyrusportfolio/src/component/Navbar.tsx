@@ -28,12 +28,11 @@ const Appbar = () => {
   return (
     <Navbar expand="md" className={scrolled ? "scrolled" : "bg-dark"} fixed="top">
       <Container fluid>
-        {/* Brand Logo */}
-        {/* <Navbar.Brand href="/"><img src={logo} alt="Logo" /></Navbar.Brand> */}
+    
 
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
-          {/* ───── Horizontal scroll Nav ───── */}
+         
           <div className="nav-scroll-wrapper flex-grow-1">
             <Nav className="d-flex align-items-center">
               {navLinks.map(link => (
@@ -49,7 +48,7 @@ const Appbar = () => {
             </Nav>
           </div>
 
-          {/* Social Icons & Connect Button */}
+       
           <span className="navbar-text d-flex align-items-center gap-3 ms-3">
             <div className="social-icon d-flex gap-2">
               <a target="_blank" href="https://www.linkedin.com/in/emmanuel-adeyemi-464ba5227"><img src={navIcon1} alt="LinkedIn" /></a>
