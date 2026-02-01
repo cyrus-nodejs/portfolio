@@ -34,7 +34,7 @@ export const projects: Project[] = [
       "Scalable modular backend architecture.",
     ],
     githubUrl: "https://github.com/cyrus-nodejs/Onboardly",
-    liveUrl: "https://onboardly.netlify.app",
+    liveUrl: "https://onboardly.vercel.ap",
   },
 
   {
@@ -96,8 +96,8 @@ export const projects: Project[] = [
       "RESTful API with scalable backend architecture.",
       "Optimized database schema for high-volume transactions.",
     ],
-    githubUrl: "https://github.com/cyrus-nodejs/inventory-order-management",
-    liveUrl: "https://inventory-management-app.vercel.app",
+    githubUrl: "https://github.com/cyrus-nodejs/StockFlow",
+    liveUrl: "https://stockflow.vercel.app",
   },
 
   {
