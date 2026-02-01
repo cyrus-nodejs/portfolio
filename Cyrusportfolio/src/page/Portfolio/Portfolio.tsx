@@ -110,6 +110,7 @@ const Portfolio = () => {
         whileInView={{ opacity: 0.25 }}
         transition={{ duration: prefersReducedMotion ? 0 : 1 }}
         viewport={{ once: true }}
+        style={{ pointerEvents: "none", zIndex: 0 }}
       />
     </section>
   );
