@@ -19,11 +19,11 @@ export const projects: Project[] = [
   {
     title: "🧠 Onboardly",
     featured: true,
-    metrics: [
-      { label: "Engagement", value: "+60%" },
-      { label: "Latency", value: "−40%" },
-      { label: "Users", value: "1k+" },
-    ],
+    // metrics: [
+    //   { label: "Engagement", value: "+60%" },
+    //   { label: "Latency", value: "−40%" },
+    //   { label: "Users", value: "1k+" },
+    // ],
     description: "Role-based platform to manage organizations, admins, and employees securely.",
     stack: "NestJS · Next.js · TypeScript · Tailwind · shadcn/ui",
     categories: ["web"],
@@ -40,11 +40,11 @@ export const projects: Project[] = [
   {
     title: "🧠 Jollof AI",
     featured: true,
-    metrics: [
-      { label: "Engagement", value: "+60%" },
-      { label: "Latency", value: "−40%" },
-      { label: "Users", value: "1k+" },
-    ],
+    // metrics: [
+    //   { label: "Engagement", value: "+60%" },
+    //   { label: "Latency", value: "−40%" },
+    //   { label: "Users", value: "1k+" },
+    // ],
     description: "AI-powered recipe recommendation system with text, voice, and image input.",
     stack: "Express · React · MongoDB · ML · Google Vision",
     categories: ["web"],
@@ -60,11 +60,11 @@ export const projects: Project[] = [
   {
     title: "💬 ChatPlanet",
     featured: true,
-    metrics: [
-      { label: "Engagement", value: "+60%" },
-      { label: "Latency", value: "−40%" },
-      { label: "Users", value: "1k+" },
-    ],
+    // metrics: [
+    //   { label: "Engagement", value: "+60%" },
+    //   { label: "Latency", value: "−40%" },
+    //   { label: "Users", value: "1k+" },
+    // ],
     description: "Real-time messaging platform with group chat, avatars, and live presence.",
     stack: "React · Node.js · Socket.IO · PostgreSQL",
     categories: ["web"],
@@ -78,48 +78,48 @@ export const projects: Project[] = [
     liveUrl: "https://wen-chat.netlify.app/login",
   },
 
-  {
-    title: "📦 Stockflow",
-    featured: true,
-    metrics: [
-      { label: "Engagement", value: "+60%" },
-      { label: "Latency", value: "−40%" },
-      { label: "Users", value: "500+" },
-    ],
-    description: "Inventory, Orders & Analytics Platform.",
-    stack: "PostgreSQL · NestJS · Next.js · Node.js · Tailwind CSS",
-    categories: ["desktop"],
-    details: [
-      "Centralized inventory tracking with stock alerts.",
-      "Order lifecycle management (create, update, fulfill, cancel).",
-      "Role-based access control for admins, staff, and managers.",
-      "RESTful API with scalable backend architecture.",
-      "Optimized database schema for high-volume transactions.",
-    ],
-    githubUrl: "https://github.com/cyrus-nodejs/StockFlow",
-    liveUrl: "https://stockflow.vercel.app",
-  },
+  // {
+  //   title: "📦 Stockflow",
+  //   featured: true,
+  //   metrics: [
+  //     { label: "Engagement", value: "+60%" },
+  //     { label: "Latency", value: "−40%" },
+  //     { label: "Users", value: "500+" },
+  //   ],
+  //   description: "Inventory, Orders & Analytics Platform.",
+  //   stack: "PostgreSQL · NestJS · Next.js · Node.js · Tailwind CSS",
+  //   categories: ["web"],
+  //   details: [
+  //     "Centralized inventory tracking with stock alerts.",
+  //     "Order lifecycle management (create, update, fulfill, cancel).",
+  //     "Role-based access control for admins, staff, and managers.",
+  //     "RESTful API with scalable backend architecture.",
+  //     "Optimized database schema for high-volume transactions.",
+  //   ],
+  //   githubUrl: "https://github.com/cyrus-nodejs/StockFlow",
+  //   liveUrl: "https://stockflow.vercel.app",
+  // },
 
-  {
-    title: "🛍️ E-Commerce App",
-    featured: true,
-    metrics: [
-      { label: "Engagement", value: "+60%" },
-      { label: "Latency", value: "−40%" },
-      { label: "Users", value: "1k+" },
-    ],
-    description: "Fullstack e-commerce platform with Stripe payments and admin dashboard.",
-    stack: "MongoDB · Express · React · Node.js · Stripe API",
-    categories: ["mobile"],
-    details: [
-      "Store with JWT authentication and product management dashboard.",
-      "Stripe integration for secure checkout, reducing payment errors by 35%.",
-      "Instant product search and category filtering.",
-      "CRUD operations for users, products, orders.",
-    ],
-    githubUrl: "https://github.com/cyrus-nodejs/e-commerce",
-    liveUrl: "https://shoppingluxury.netlify.app/",
-  },
+  // {
+  //   title: "🛍️ E-Commerce App",
+  //   featured: true,
+  //   metrics: [
+  //     { label: "Engagement", value: "+60%" },
+  //     { label: "Latency", value: "−40%" },
+  //     { label: "Users", value: "1k+" },
+  //   ],
+  //   description: "Fullstack e-commerce platform with Stripe payments and admin dashboard.",
+  //   stack: "MongoDB · Express · React · Node.js · Stripe API",
+  //   categories: ["web"],
+  //   details: [
+  //     "Store with JWT authentication and product management dashboard.",
+  //     "Stripe integration for secure checkout, reducing payment errors by 35%.",
+  //     "Instant product search and category filtering.",
+  //     "CRUD operations for users, products, orders.",
+  //   ],
+  //   githubUrl: "https://github.com/cyrus-nodejs/e-commerce",
+  //   liveUrl: "https://shoppingluxury.netlify.app/",
+  // },
 
 ];
 
